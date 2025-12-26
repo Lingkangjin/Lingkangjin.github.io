@@ -1,26 +1,130 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Lingkang Jin, Ph.D."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+<strong>Energy Systems Researcher \| Optimization modeler \| Data Scientist</strong>
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
-
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
-
-A data-driven personal website
+Bio
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+Lingkang is a Postdoctoral Researcher at the Department of Electrical Engineering, Eindhoven University of Technology, The Netherlands. He received the B.Sc. and M.Sc. degrees in Mechanical Engineering, as well as the Ph.D. degree in Energy Systems from Università Politecnica delle Marche, Italy, in 2017, 2019, and 2024, respectively. Since 2024, he has been a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology, The Netherlands. His research interests include energy storage integration and control, multi-energy systems, power-to-hydrogen conversion, power system operations, physics-informed modeling, machine learning, and optimization.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+
+Education
+======
+* Ph.D in Energy Systems,  [Università Politecnica delle Marche](https://www.univpm.it/Entra/), 2024
+* M.S. in Mechanical engineering with thermo-mechanical specialization, [Università Politecnica delle Marche](https://www.univpm.it/Entra/), 2019
+* B.S. in Mechanical engineering, [Università Politecnica delle Marche](https://www.univpm.it/Entra/) , 2017
+
+Work experience
+======
+* Jan 2024-Now: Postdoctoral Researcher
+  * Technical University of Eindhoven
+  * Duties includes: Scientific research on grid congestion management, supervision of Msc students, writing research proposals and project management.
+  * Supervisor: Nikolaos Paterakis (n.paterakis@tue.nl) and Phuong Nguyen (p.nguyen.hong@tue.nl)
+
+* Nov 2020-Oct 2023: Ph.D Researcher
+  * Università Politecnica delle Marche
+  * Duties included: Free research Ph.D. candidate on energy system modelling, optimization and control. thesis work on impact of the different types of energy storage systems on power system operation and planning.
+  * Supervisor: Gabriele Comodi (g.comodi@staff.univpm.it)
+
+* Dec 2019-Oct 2020: Engineering consultant
+  * Capgemini Engineering
+  * Duties included: Consultant for Whirlpool EMEA as lab engineering, supporting the testing activities for new appliances development and certification.
+  * Supervisor: Piotr Rosiak
+
+
+```mermaid
+flowchart LR
+  %% Left-to-right timeline
+  %% Each milestone has its own color; subblocks inherit the same class
+
+  %% Milestone 1
+  subgraph M1["2013-2017"]
+    direction TB
+    M1_main["Bsc in Mechanical Engineering"]    
+    class M1_main,M1_a,M1_b,M1_c milestone1;
+  end
+
+  %% Milestone 2
+  subgraph M2["2017-2019"]
+    direction TB
+    M2_main["Msc in Mechanical Engineering"]
+    class M2_main,M2_a,M2_b milestone2;
+  end
+
+  %% Milestone 3
+  subgraph M3["2020-2023"]
+    direction TB
+    M3_main["PhD in Energy Systems"]
+    class M3_main,M3_a milestone3;
+  end
+  
+  subgraph M4["2024-now"]
+    direction TB
+    M4_main["Postdoctoral Researcher"]
+    class M4_main,M4_a milestone3;
+  end
+
+  %% Timeline connections
+  M1_main ==> M2_main ==> M3_main ==> M4_main
+
+  %% Styles per milestone
+  classDef milestone1 fill:#ffd166,stroke:#e07a00,color:#1a1a1a,stroke-width:2px;
+  classDef milestone2 fill:#06d6a0,stroke:#048b74,color:#0a0a0a,stroke-width:2px;
+  classDef milestone3 fill:#118ab2,stroke:#0b5f7e,color:#ffffff,stroke-width:2px;
+```
+  
+Skills
+======
+* Optimization models and algorithms application in energy systems (planning and scheduling)
+  * Linear programming
+  * Mixed-integer linear programming
+  * Mixed- Integer Conic programming
+  * Bilevel Optimization
+* Multi-physics system level energy storage modeling and simulation 
+  * Power-to-hydrogen systems
+  * Lithium-ion batteries electrochemical modeling and degradation analysis
+  * Alkaline electrolyser modeling
+* Power systems analysis and operation
+  * Power flow and optimal power flow for transmission and distribution systems
+  * Grid congestion management techniques (technical and market-based)
+  * Asset management and control of distributed energy resources
+* Data analysis and programming
+  * Python (Pandas, Numpy, Matplotlib, SciPy, Geopandas, Pyomo, plotly, seaborn, etc.)
+  * Gurobi, CPLEX, MOSEK
+  * LaTeX
+* Software development and versioning control
+  * Git and GitHub
+  * Jupyter Notebooks
+  * Docker
+  * Markdown and HTML
+
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
 
 Getting started
 ======

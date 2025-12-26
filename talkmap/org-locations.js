@@ -1,22 +1,17 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "Advancing multi-energy hub design: An integrated approach for optimizing residential clusters in high res penetration scenarios<br />IEEE SEST 2024; Turin, Italy",
+    45.0677551,
+    7.6824892
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Empowering low-voltage grids: Real-world implementation of home batteries for effective congestion management<br />IEEE PowerTech 2025; Kiel, Germany",
+    54.3227085,
+    10.135555
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
-  ],
-  [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "Multi-Objective Congestion Management in Low-Voltage Grids: Coordinating End-Users and System Operators for Real-World Implementation<br />IEEE Power and Energy Society ISGT Europe 2025; Valletta, Malta",
+    35.8989979,
+    14.5136607
   ]
 ];
