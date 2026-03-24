@@ -38,46 +38,6 @@ Work experience
   * Supervisor: Piotr Rosiak
 
 
-```mermaid
-flowchart LR
-  %% Left-to-right timeline
-  %% Each milestone has its own color; subblocks inherit the same class
-
-  %% Milestone 1
-  subgraph M1["2013-2017"]
-    direction TB
-    M1_main["Bsc in Mechanical Engineering"]    
-    class M1_main,M1_a,M1_b,M1_c milestone1;
-  end
-
-  %% Milestone 2
-  subgraph M2["2017-2019"]
-    direction TB
-    M2_main["Msc in Mechanical Engineering"]
-    class M2_main,M2_a,M2_b milestone2;
-  end
-
-  %% Milestone 3
-  subgraph M3["2020-2023"]
-    direction TB
-    M3_main["PhD in Energy Systems"]
-    class M3_main,M3_a milestone3;
-  end
-  
-  subgraph M4["2024-now"]
-    direction TB
-    M4_main["Postdoctoral Researcher"]
-    class M4_main,M4_a milestone3;
-  end
-
-  %% Timeline connections
-  M1_main ==> M2_main ==> M3_main ==> M4_main
-
-  %% Styles per milestone
-  classDef milestone1 fill:#ffd166,stroke:#e07a00,color:#1a1a1a,stroke-width:2px;
-  classDef milestone2 fill:#06d6a0,stroke:#048b74,color:#0a0a0a,stroke-width:2px;
-  classDef milestone3 fill:#118ab2,stroke:#0b5f7e,color:#ffffff,stroke-width:2px;
-```
   
 Skills
 ======
@@ -104,25 +64,3 @@ Skills
   * Docker
   * Markdown and HTML
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently involved in ORKEST project as R4 leader 
-* Support in daily revision of Ph.D. students 
