@@ -3,7 +3,7 @@ title: '<a href="https://projecten.topsectorenergie.nl/projecten/orkest-optimal-
 excerpt: |
   **Description**
   <p style="text-align: justify;">
-  The transition to a sustainable energy supply is proceeding rapidly. Wind and solar energy are making a growing contribution, and the number of EV charging stations and heat pumps is increasing rapidly. E-boilers are making their debut. We cannot keep up with the speed at which this is happening with investments in grid capacity. The grids are becoming fuller and congestion is occurring in an increasing number of places. In other words, it is becoming increasingly clear that the grid is a major obstacle to the speed of the energy transition. It is therefore only logical that the focus should be placed on accelerating the energy transition in this area. However, placing a significantly heavier load on the current grid would lead to excessive disruptions, which would actually reduce the available capacity. At the same time, it is also clear that capacity increases are possible (conditionally, and depending on various factors), but only if the actual impact on the reliability of the grid and its components is understood, and if this can be achieved using optimization methods (taking that reliability into account).
+  Grid and user assets coordination for the increasing renewable energy transition while maintaining the components reliability.
   </p>
   **Partners**
   Stedin, DNV Netherldans B.V., Netbeheer Nederland, Phase to Phase B.v., Technolution B.v. , Eindhoven Technical University

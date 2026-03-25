@@ -11,16 +11,16 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks and conferences"
+  - title: "Events"
     url: /talks/
 
   - title: "Teaching and supervision"
     url: /teaching/
     
-  - title: "Projects Portfolio"
+  - title: "Projects"
     url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "Awards"
     url: /year-archive/
     
   - title: "CV"
