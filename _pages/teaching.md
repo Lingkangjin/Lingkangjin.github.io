@@ -1,21 +1,26 @@
 ---
 layout: archive
-title: "Teaching"
+#title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
+
 ## Teaching
 
-**[T5]** March 2026: *Market participation of renewable producers*, MSc Electrical Engineering (5LEPO), TU Eindhoven, NL
+**[T7]** March 2026: *Optimization application for the system integration*, System  integration project(5LEFO), Msc. in Sustainable Energy Technology, TU Eindhoven, NL
 
-**[T4]** Oct. 2025: *Energy storage and their role in the power systems*, MSc Electrical Engineering, TU Eindhoven, NL
+**[T6]** Mar 2026: *Market participation of renewable producers*, Electricity markets: modeling and optimization (5LEP0),MSc Electrical Engineering, TU Eindhoven, NL
 
-**[T3]** March 2025: *Master Lecture: How to build an optimization model*, MSc Sustainable Energy Technology, TU Eindhoven, NL
+**[T5]** Dec 2025: *Energy storage and their role in the power systems*, Electrical power system for EE (5EWD0), MSc Electrical Engineering TU Eindhoven, NL
 
-**[T2]** March 2022: *Sistemi di accumulo e loro gestione*, MSc Mechanical Engineering, UNIVPM, IT
+**[T4]** Mar 2025: *Master Lecture: How to build an optimization model*, System  integration project(5LEFO), Msc. in Sustainable Energy Technology, TU Eindhoven, NL
 
-**[T1]** March 2022: *Pyomo optimization model set-up*, MSc Mechanical Engineering, UNIVPM, IT
+**[T3]** Oct 2024: *Energy storage and their role in the power systems*, Electrical power system for EE (5EWD0), MSc Electrical Engineering TU Eindhoven, NL
+
+**[T2]** Mar 2022: *Sistemi di accumulo e loro gestione*, MSc Mechanical Engineering, UNIVPM, IT
+
+**[T1]** Mar 2022: *Pyomo optimization model set-up*, MSc Mechanical Engineering, UNIVPM, IT
 
 <br/>
 

@@ -12,10 +12,34 @@ Bio
 ======
 <p align="justify">Lingkang is a Postdoctoral Researcher at the Department of Electrical Engineering, Eindhoven University of Technology, The Netherlands. He received the B.Sc. and M.Sc. degrees in Mechanical Engineering, as well as the Ph.D. degree in Energy Systems from Università Politecnica delle Marche, Italy, in 2017, 2019, and 2024, respectively. Since 2024, he has been a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology, The Netherlands. His research interests include energy storage integration and control, multi-energy systems, power-to-hydrogen conversion, power system operations, physics-informed modeling, machine learning, and optimization.</p>
 
+
+Events and updates 
+======
+
+* **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination  
+* **26 Apr- 10 May 2026** Eurotech visiting in DTU wind, Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
+* **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
+* **15 Jun 2025,** Joined the [ORKEST](https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711) project as R4 leader
+* **30 Mar 2024,** PhD defense with thesis: *Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage*
+* **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
+* **Mar-May 2023,** Visiting PhD at Eindoven university of Technology EES group under supervision of Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
+* **Mar-Sep 2022,** Visiting Phd at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. [Henrik Lund Frandsen](https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/) and collaboration with Prof. [Rafael Nogueira Nakashima](https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/)
+* **Oct 2020,** Started PhD in industrial engineering with specialization in energy systems, at Universita' Politecnica delle Marche under supervision of Prof. Gabriele Comodi
+
+
+
 Featured Papers
 ======
 
 <style>
+  /* Force the right column content to expand to full available width */
+  .page {
+    padding-right: 0 !important;
+  }
+  .page__inner-wrap {
+    max-width: 100% !important;
+  }
+
   /* Container for the papers */
   .paper-container {
     display: flex;
@@ -88,8 +112,8 @@ Featured Papers
 </div>
 
 <script>
-  function makeFullScreen(iframeId) {
-    var elem = document.getElementById(iframeId);
+  function makeFullScreen(elemId) {
+    var elem = document.getElementById(elemId);
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
     } else if (elem.webkitRequestFullscreen) { /* Safari support */
@@ -98,19 +122,17 @@ Featured Papers
       elem.msRequestFullscreen();
     }
   }
+
+  function exitFullScreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari support */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 support */
+      document.msExitFullscreen();
+    }
+  }
 </script>
-
-Events and updates
-======
-
-* **3 July 2026,** ORKEST Demo Q2 in Stedin office in Utrecht, I will present the results of R4 as result leader
-* **1 April 2026,** I will join Horizon Europe Erasmus Project-SG: SKILL as TU/e representative
-* **15 June 2025,** Joined the ORKEST project as R4 leader
-* **30 March 2024,** PhD defended
-* **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project
-* **March-May 2023,** Visiting PhD at Eindoven university of Technology EES group under supervision of Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
-* **March-Sept 2022,** Visiting Phd at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. [Henrik Lund Frandsen](https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/) and collaboration with Prof. [Rafael Nogueira Nakashima](https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/)
-* **Oct 2020,** Started PhD in industrial engineering with specialization in energy systems, at Universita' Politecnica delle Marche under supervision of Prof. Gabriele Comodi
 
 
 
@@ -124,7 +146,7 @@ Education
 
 Work experience
 ======
-**[W3]** Jan 2024-Now: Postdoctoral Researcher *at* Eindhoven University of Technology (NL) with supervisors: Dr. [Nikolaos Paterakis](https://www.tue.nl/en/research/researchers/nikolaos-paterakis) and Dr. [Phuong Nguyen](https://www.tue.nl/en/research/researchers/phuong-nguyen)
+**[W3]** Jan 2024-Now: Postdoctoral Researcher *at* Eindhoven University of Technology (NL) with supervisors: Dr. [Nikolaos Paterakis](https://www.tue.nl/en/research/researchers/nikolaos-paterakis), Dr. [Phuong Nguyen](https://www.tue.nl/en/research/researchers/phuong-nguyen) and Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
 
 **[W2]** Nov 2020-Oct 2023: Ph.D Researcher *at*  Università Politecnica delle Marche (IT) with supervisor: Prof. Gabriele Comodi (g.comodi@staff.univpm.it)
 
@@ -134,6 +156,8 @@ Work experience
   
 Skills
 ======
+**[S6]ML and AI application** (energy context): Graph Neural Network, supervised and unsupervised machine learning 
+
 **[S5]Optimization models application in energy systems** (planning and scheduling): Linear, Mixed-Integer Linear programming, Mixed- Integer Conic programming, Bilevel Optimization
 
 **[S4] Multi-physics system level energy storage modeling and simulation:** Power-to-hydrogen systems, Lithium-ion batteries electrochemical modeling and degradation analysis, Alkaline electrolyser modeling
