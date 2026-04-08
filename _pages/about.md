@@ -13,7 +13,7 @@ Bio
 <p align="justify">Lingkang is a Postdoctoral Researcher at the Department of Electrical Engineering, Eindhoven University of Technology, The Netherlands. He received the B.Sc. and M.Sc. degrees in Mechanical Engineering, as well as the Ph.D. degree in Energy Systems from Università Politecnica delle Marche, Italy, in 2017, 2019, and 2024, respectively. Since 2024, he has been a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology, The Netherlands. His research interests include energy storage integration and control, multi-energy systems, power-to-hydrogen conversion, power system operations, physics-informed modeling, machine learning, and optimization.</p>
 
 
-Events and updates 
+News and updates 📈 
 ======
 
 * **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination  
@@ -28,7 +28,7 @@ Events and updates
 
 
 
-Featured Papers
+Featured  Open Access Papers 
 ======
 
 <style>
@@ -167,3 +167,11 @@ Skills
 **[S2] Data analysis and programming:** Python (Pandas, Numpy, Matplotlib, Pytorch, SciPy, Geopandas, Pyomo, plotly, seaborn, etc.), Solvers (Gurobi, CPLEX, MOSEK, HiGHs, Ipopt), Text editing (Latex)
 
 **[S1] Software development and CI/CD:** Git and GitHub, Jupyter Notebooks, Docker, Github actions, Mlflow, Streamlit, SPhinx
+
+GitHub Projects & Contributions 💻
+======
+You can find my open-source projects (limited due to the confidentiality) and code repositories on my [GitHub profile 1](https://github.com/Lingkangjin) and [GitHub profile 2](https://github.com/lingkang95).
+
+Some of my featured projects include:
+* [**Project 1**](https://github.com/Lingkangjin/AEC-Modelling) - ALkaline Electrolyzer four-parameters semi-empirical Modelling.
+
