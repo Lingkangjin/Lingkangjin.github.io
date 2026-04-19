@@ -9,6 +9,317 @@ author_profile: true
   <div class="wordwrap">You can find my full record of articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
+
+
+## Collaboration Network 🌍
+
+
+<style>
+  /* Main wrapper for the interactive map section */
+  .network-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 2em auto;
+    font-family: inherit;
+  }
+
+  @media (min-width: 768px) {
+    .network-section {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  /* Map Container */
+  .map-container {
+    position: relative;
+    flex: 1.2;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    overflow: hidden;
+  }
+
+  /* The Map Image */
+  .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Interactive Pins */
+  .map-pin {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: translate(-50%, -100%); 
+    transition: transform 0.2s ease;
+  }
+
+  .map-pin:hover {
+    transform: translate(-50%, -110%) scale(1.2);
+  }
+
+  /* SVG Pin icon */
+  .pin-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.3));
+  }
+
+  /* Pin positioning */
+  .pin-denmark     { top: 48%; left: 44%; }
+  .pin-netherlands { top: 56%; left: 39%; }
+  .pin-italy       { top: 78%; left: 46%; }
+
+  /* Colors matching your image */
+  .color-denmark     { fill: #b8e010; }
+  .color-netherlands { fill: #c71b22; }
+  .color-italy       { fill: #0081c6; }
+
+  /* Information Panel (Right side) */
+  .info-panel {
+    flex: 0.8;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  /* Grid for Logos */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .partner-logo {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    filter: grayscale(100%);
+  }
+
+  .partner-logo:hover, .partner-logo.active {
+    filter: grayscale(0%);
+    border-color: #ddd;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  /* Project Details Box */
+  .project-details {
+    display: none; 
+    background-color: #fcfcfc;
+    border-left: 4px solid #333;
+    padding: 15px;
+    margin-top: auto;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .project-details h4 {
+    margin: 0 0 10px 0;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .project-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .initial-message {
+    color: #888;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<div class="network-section">
+  
+  <div class="map-container">
+    <img src="/images/europe-map-blank.png" alt="Map of Europe" class="map-image">
+    
+    <div class="map-pin pin-denmark" onclick="showCountry('denmark')" title="Denmark">
+      <svg class="pin-svg" viewBox="0 0 24 24"><path class="color-denmark" d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 16 8 16s8-10.75 8-16c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+    </div>
+
+    <div class="map-pin pin-netherlands" onclick="showCountry('netherlands')" title="Netherlands">
+      <svg class="pin-svg" viewBox="0 0 24 24"><path class="color-netherlands" d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 16 8 16s8-10.75 8-16c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+    </div>
+
+    <div class="map-pin pin-italy" onclick="showCountry('italy')" title="Italy">
+      <svg class="pin-svg" viewBox="0 0 24 24"><path class="color-italy" d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 16 8 16s8-10.75 8-16c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+    </div>
+  </div>
+
+  <div class="info-panel">
+    <h3 class="panel-title" id="panelTitle">Institutional Partners</h3>
+    
+    <div id="initialMessage" class="initial-message">
+      Select a country pin on the map to explore research partners and projects.
+    </div>
+
+    <div class="logo-grid" id="logoGrid"></div>
+
+    <div class="project-details" id="projectDetails">
+      <h4 id="institutionName">Institution Name</h4>
+      <p id="projectText">Project description goes here.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const networkData = {
+    denmark: {
+      name: "Denmark Collaborations",
+      color: "#b8e010",
+      partners: [
+        {
+          id: "dtu",
+          logo: "/images/icons/dtu.png",
+          name: "Technical University of Denmark (DTU)",
+          project: "Visiting PhD research stay. Collaboration focused on thermal and electrochemical analysis based on Alkaline electrolyzers."
+        }
+      ]
+    },
+    netherlands: {
+      name: "Netherlands Collaborations",
+      color: "#c71b22",
+      partners: [
+        {
+          id: "tue",
+          logo: "/images/icons/tue.png",
+          name: "Eindhoven University of Technology (TU/e)",
+          project: "Current Postdoctoral institution. Main responsible researcher for the NO GIZMOS, ORKEST project and representative for Horizon Europe Erasmus Project SG: SKILL."
+        },
+        {
+          id: "enexis",
+          logo: "/images/icons/enexis.png",
+          name: "Enexis Holding N.V.",
+          project: "DSO partner involved in NO-GIZMOS for the transformer level data provision"
+        },
+        {
+          id: "stedin",
+          logo: "/images/icons/stedin.png",
+          name: "Stedin",
+          project: "Partner and leader in the ORKEST project. "
+        },
+        {
+          id: "cgi",
+          logo: "/images/icons/cgi.png",
+          name: "CGI",
+          project: "Partner in NO-GIZMOS for the data management platform"
+        },
+        {
+          id: "iwell",
+          logo: "/images/icons/iwell.png",
+          name: "iwell",
+          project: "Partner in NO-GIZMOS for the battery level data provision and hardware"
+        }
+      ]
+    },
+    italy: {
+      name: "Italy Collaborations",
+      color: "#0081c6",
+      partners: [
+        {
+          id: "univpm",
+          logo: "/images/icons/univpm.png",
+          name: "Università Politecnica delle Marche",
+          project: "Institution for B.Sc., M.Sc., and Ph.D. degrees."
+        },
+        {
+          id: "snam",
+          logo: "/images/icons/snam.png",
+          name: "Snam",
+          project: "Industrial collaboration regarding blending of hydrogen with natural gas for the decarbonization"
+        },
+        {
+          id: "unibz",
+          logo: "/images/icons/unibz.png",
+          name: "Free University of Bozen-Bolzano",
+          project: "Joint academic research in optimization models application for the off-grid application using hydro-electric plant."
+        },
+        {
+          id: "enea",
+          logo: "/images/icons/enea.png",
+          name: "ENEA",
+          project: "National project collaboration focusing on local energy community."
+        }
+      ]
+    }
+  };
+
+  function showCountry(countryKey) {
+    const data = networkData[countryKey];
+    
+    const titleEl = document.getElementById('panelTitle');
+    titleEl.textContent = data.name;
+    titleEl.style.borderBottomColor = data.color;
+
+    document.getElementById('initialMessage').style.display = 'none';
+    document.getElementById('projectDetails').style.display = 'none';
+
+    const gridEl = document.getElementById('logoGrid');
+    gridEl.innerHTML = ''; 
+    
+    data.partners.forEach(partner => {
+      const img = document.createElement('img');
+      img.src = partner.logo;
+      img.alt = partner.name;
+      img.className = 'partner-logo';
+      img.onclick = () => showPartnerDetails(partner, img, data.color);
+      gridEl.appendChild(img);
+    });
+  }
+
+  function showPartnerDetails(partner, clickedImgEl, accentColor) {
+    document.querySelectorAll('.partner-logo').forEach(el => el.classList.remove('active'));
+    clickedImgEl.classList.add('active');
+
+    const detailsBox = document.getElementById('projectDetails');
+    document.getElementById('institutionName').textContent = partner.name;
+    document.getElementById('projectText').textContent = partner.project;
+    
+    detailsBox.style.borderLeftColor = accentColor;
+    detailsBox.style.display = 'block';
+  }
+</script>
+
 ## Journal Articles
 **[J13]** **Lingkang Jin**, Laurens Bliek, Nikolaos G. Paterakis. "Surrogate Models in Power System Scheduling Problems: Learning Active Constraints via Graph Neural Networks," *IEEE Transactions on Smart Grid*, 2026. [[DOI]](https://doi.org/10.1109/TSG.2026.3681028)
 
