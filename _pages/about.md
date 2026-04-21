@@ -10,7 +10,14 @@ redirect_from:
 
 Bio
 ======
-<p align="justify">Lingkang is a Postdoctoral Researcher at the Department of Electrical Engineering, Eindhoven University of Technology, The Netherlands. He received the B.Sc. and M.Sc. degrees in Mechanical Engineering, as well as the Ph.D. degree in Energy Systems from Università Politecnica delle Marche, Italy, in 2017, 2019, and 2024, respectively. Since 2024, he has been a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology, The Netherlands. His research interests include energy storage integration and control, multi-energy systems, power-to-hydrogen conversion, power system operations, physics-informed modeling, machine learning, and optimization.</p>
+Lingkang is a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology (TU/e), The Netherlands. 
+He earned his B.Sc. and M.Sc. degrees in Mechanical Engineering, followed by a Ph.D. in Energy Systems, from Università Politecnica delle Marche, Italy, in 2017, 2019, and 2024, respectively.
+
+His research focuses on developing **multi-physics asset integration and energy systems modeling through mathematical programming with support of  AI and Machine Learning tools to reduce computational burdens and enhance scenario generation**.
+
+Since 2020, Lingkang has achieved 13 journal publications (8 as first author) in high-impact venues such as Applied Energy, IEEE Transactions on Smart Grid, and the Journal of Energy Storage. He has also authored over 13 conference papers and serves as a regular reviewer for leading IEEE and Elsevier journals.
+
+
 
 Research Framework 🧩
 ======
@@ -298,9 +305,12 @@ Research Framework 🧩
 News and updates 📈 
 ======
 
-* **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination  
-* **26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
-* **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
+**03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination  
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
+**26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
+**01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
 * **15 Jun 2025,** Joined the [ORKEST](https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711) project as R4 leader
 * **30 Mar 2024,** PhD defense with thesis: [*Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage*](https://tesidottorato.depositolegale.it/handle/20.500.14242/307237)
 * **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
