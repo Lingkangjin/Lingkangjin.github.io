@@ -5,7 +5,7 @@ title: "Awards and recognition"
 author_profile: true
 ---
 
-*  2026, Eurotech alliance Visiting Researcher Grant for the visiting period in DTU, Denmark
+*  2026, [Eurotech alliance Visiting Researcher Grant](https://eurotech-universities.eu/funding/eurotech-visiting-researcher-programme/) for the visiting period in DTU wind and energy systems, Denmark
 *  2023, Erasmus+ grant for the visiting period in Eindhoven technical university, the Netherlands
 *  2022, Erasmus+ grant for the visiting period in DTU energy, Copenhagen (DK)
 *  2018, 3rd ranking in Formula SAE 3, team work for the design of the Formula SAE competition 
