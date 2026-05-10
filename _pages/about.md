@@ -308,9 +308,9 @@ News and updates 📈
 * <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
 **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination  
 * <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
-**26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
-* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
-**01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
+**22 May 2026** Invited presentation on surrogate modeling in power systems, at [IE&Information  Systems](https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/), invited by Dr. [Laurens Bliek](https://www.tue.nl/en/research/researchers/laurens-bliek)
+* **26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
+* **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
 * **15 Jun 2025,** Joined the [ORKEST](https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711) project as R4 leader
 * **30 Mar 2024,** PhD defense with thesis: [*Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage*](https://tesidottorato.depositolegale.it/handle/20.500.14242/307237)
 * **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
