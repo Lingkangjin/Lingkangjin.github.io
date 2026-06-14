@@ -23,6 +23,8 @@ News and updates 📈
 
 * <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
 **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination
+* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
+**15 June 2026,** 3 minutes Pitch as finalist for the best paper award from [Postdoc Association TU/e](https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026)
 * **22 May 2026** Invited presentation on surrogate modeling in power systems, at [IE&Information  Systems](https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/), invited by Dr. [Laurens Bliek](https://www.tue.nl/en/research/researchers/laurens-bliek)
 * **26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
 * **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
