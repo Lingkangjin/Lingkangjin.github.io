@@ -26,6 +26,8 @@ author_profile: true
 
 ## Supervision
 
+**[S9]**, Yuanchun Chen, *Data-Driven Efficiency Parametrization from Operational Telemetry: Improved State-of-Energy Tracking and Aging-Aware Dispatch for Battery Energy Storage Systems*, MSc Sustainable Energy Technology, Technical University of Eindhoven, 2026.
+
 **[S8]** Chengyuan Guan, *Optimal Sizing of Hybrid Renewable Energy Solutions for Data Centers: Case Studies of Non-Firm Grid, Reduced- and Off-Grid Scenarios*, MSc Sustainable Energy Technology, Technical University of Eindhoven, 2025.
 
 **[S7]** Dennis Hollanders, *Graph Neural Networks for Distribution Network Reconfiguration Optimization*, Department of Industrial Engineering & Innovation Sciences Information Systems Research Group , Technical University of Eindhoven, 2025.
