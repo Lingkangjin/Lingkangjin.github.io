@@ -7,14 +7,9 @@ redirect_from:
   - /about.html
 ---
 <strong>Energy Systems Researcher \| Optimization modeler \| Data Scientist</strong>
-
-Bio
-======
 Lingkang is a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology (TU/e), The Netherlands. 
 
 His research focuses on developing **multi-physics asset integration and energy systems modeling through mathematical programming with support of  AI and Machine Learning tools to reduce computational burdens and enhance scenario generation**.
-
-
 
 
 
@@ -30,13 +25,20 @@ News and updates 📈
 * **26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
 * **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
 * **15 Jun 2025,** Joined the [ORKEST](https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711) project as R4 leader
+
+<details markdown="1">
+<summary><strong>Show older news and updates...</strong></summary>
+
 * **30 Mar 2024,** PhD defense with thesis: [*Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage*](https://tesidottorato.depositolegale.it/handle/20.500.14242/307237)
 * **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
 * **Mar-May 2023,** Visiting PhD at Eindoven university of Technology EES group under supervision of Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
 * **Mar-Sep 2022,** Visiting Phd at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. [Henrik Lund Frandsen](https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/) and collaboration with Prof. [Rafael Nogueira Nakashima](https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/)
 * **Oct 2020,** Started PhD in industrial engineering with specialization in energy systems, at Universita' Politecnica delle Marche under supervision of Prof. [Gabriele Comodi](https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI)
 
+</details>
 
+
+<br>
 
 Research Framework 🧩
 ======

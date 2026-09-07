@@ -9,4 +9,4 @@ services:
     environment:
       - JEKYLL_ENV=docker
     # Update this line to run bundle install before starting the server
-    command: bash -c "bundle install && bundle exec jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml"
+    command: bash -c "bundle install && bundle exec jekyll serve -H 0.0.0.0 -w --force_polling --livereload --incremental --config _config.yml,_config_docker.yml"

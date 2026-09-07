@@ -1,45 +1,143 @@
 ---
 layout: archive
-#title: "Teaching"
 permalink: /teaching/
 author_profile: true
+teaching_courses:
+  - date: "Mar 2026"
+    title: "Optimization application for the system integration"
+    course: "System integration project (5LEFO), Msc. in Sustainable Energy Technology"
+    institution: "TU Eindhoven, NL"
+  - date: "Mar 2026"
+    title: "Market participation of renewable producers"
+    course: "Electricity markets: modeling and optimization (5LEP0), MSc Electrical Engineering"
+    institution: "TU Eindhoven, NL"
+  - date: "Dec 2025"
+    title: "Energy storage and their role in the power systems"
+    course: "Electrical power system for EE (5EWD0), MSc Electrical Engineering"
+    institution: "TU Eindhoven, NL"
+  - date: "Mar 2025"
+    title: "Master Lecture: How to build an optimization model"
+    course: "System integration project (5LEFO), Msc. in Sustainable Energy Technology"
+    institution: "TU Eindhoven, NL"
+  - date: "Oct 2024"
+    title: "Energy storage and their role in the power systems"
+    course: "Electrical power system for EE (5EWD0), MSc Electrical Engineering"
+    institution: "TU Eindhoven, NL"
+  - date: "Mar 2022"
+    title: "Sistemi di accumulo e loro gestione"
+    course: "MSc Mechanical Engineering"
+    institution: "UNIVPM, IT"
+  - date: "Mar 2022"
+    title: "Pyomo optimization model set-up"
+    course: "MSc Mechanical Engineering"
+    institution: "UNIVPM, IT"
+
+phd_supervision:
+  - name: "Ranier Alexsander Arruda Moura"
+    title: "Copula based synthetic profiles generation for the MV distribution networks"
+    institution: "Eindhoven University of Technology"
+    year: "2025-present"
+  - name: "Niek Brekelmans"
+    title: "MV/LV power transformer reliability and aging analysis for the system operations"
+    institution: "Eindhoven University of Technology"
+    year: "2025-present"
+  - name: "Yifan Zhang"
+    title: "MV/LV cables reliability and aging analysis for the system operations"
+    institution: "Eindhoven University of Technology"
+    year: "2025-present"
+
+msc_supervision:
+  - name: "Shuai Feng"
+    title: "Grid-Code-Compliant Hybrid Renewable Energy Solutions for Data Centers: Optimal Sizing under Post-Fault Active Power Requirements"
+    course: "MSc Sustainable Energy Technology"
+    institution: "Technical University of Eindhoven"
+    year: "2026"
+  - name: "Yuanchun Chen"
+    title: "Data-Driven Efficiency Parametrization from Operational Telemetry: Improved State-of-Energy Tracking and Aging-Aware Dispatch for Battery Energy Storage Systems"
+    course: "MSc Sustainable Energy Technology"
+    institution: "Technical University of Eindhoven"
+    year: "2026"
+  - name: "Chengyuan Guan"
+    title: "Optimal Sizing of Hybrid Renewable Energy Solutions for Data Centers: Case Studies of Non-Firm Grid, Reduced- and Off-Grid Scenarios"
+    course: "MSc Sustainable Energy Technology"
+    institution: "Technical University of Eindhoven"
+    year: "2025"
+  - name: "Dennis Hollanders"
+    title: "Graph Neural Networks for Distribution Network Reconfiguration Optimization"
+    course: "Dept. of Industrial Engineering & Innovation Sciences"
+    institution: "Technical University of Eindhoven"
+    year: "2025"
+  - name: "Stefan De Lange"
+    title: "Hybrid Heat Pump Optimization for Flexibility Provision: Modeling and Simulation"
+    course: "Dept. of Electrical Engineering"
+    institution: "Technical University of Eindhoven"
+    year: "2024"
+  - name: "Fabian Caipa Cure"
+    title: "Adaptive Distributionally Robust Optimization for Residential Energy Management under Non-firm Capacity Contracts"
+    course: "MSc Sustainable Energy Technology"
+    institution: "Technical University of Eindhoven"
+    year: "2024"
+  - name: "Francesco Panara"
+    title: "Study of Hydrogen-to-Power systems: state-of-the-art of alkaline and PEM fuel cells and performance evaluation"
+    course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
+    institution: "Universita' Politecnica delle Marche"
+    year: "2023"
+  - name: "Filippo Onori"
+    title: "Design and management of a BESS to provide flexibility service to the national electricity grid"
+    course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
+    institution: "Universita' Politecnica delle Marche"
+    year: "2023"
+  - name: "Francesca Mennilli"
+    title: "Study of systems related to Power-to-Hydrogen: state of art of the electrolyser and its modeling using Python"
+    course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
+    institution: "Universita' Politecnica delle Marche"
+    year: "2022"
+  - name: "Luca Ciotti"
+    title: "Study of systems related to Power-to-Hydrogen: state of art of the storage and its modeling using Python"
+    course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
+    institution: "Universita' Politecnica delle Marche"
+    year: "2022"
 ---
 
+<style>
+  .compact-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .compact-list li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+</style>
 
 ## Teaching
 
-**[T7]** March 2026: *Optimization application for the system integration*, System  integration project(5LEFO), Msc. in Sustainable Energy Technology, TU Eindhoven, NL
+<ul class="compact-list">
+  {% for course in page.teaching_courses %}
+  <li>
+    <strong>[T{{ forloop.rindex }}]</strong> {{ course.date }}: <i>{{ course.title }}</i>, {{ course.course }}, {{ course.institution }}
+  </li>
+  {% endfor %}
+</ul>
 
-**[T6]** Mar 2026: *Market participation of renewable producers*, Electricity markets: modeling and optimization (5LEP0),MSc Electrical Engineering, TU Eindhoven, NL
-
-**[T5]** Dec 2025: *Energy storage and their role in the power systems*, Electrical power system for EE (5EWD0), MSc Electrical Engineering TU Eindhoven, NL
-
-**[T4]** Mar 2025: *Master Lecture: How to build an optimization model*, System  integration project(5LEFO), Msc. in Sustainable Energy Technology, TU Eindhoven, NL
-
-**[T3]** Oct 2024: *Energy storage and their role in the power systems*, Electrical power system for EE (5EWD0), MSc Electrical Engineering TU Eindhoven, NL
-
-**[T2]** Mar 2022: *Sistemi di accumulo e loro gestione*, MSc Mechanical Engineering, UNIVPM, IT
-
-**[T1]** Mar 2022: *Pyomo optimization model set-up*, MSc Mechanical Engineering, UNIVPM, IT
-
-<br/>
+<hr>
 
 ## Supervision
 
-**[S9]**, Yuanchun Chen, *Data-Driven Efficiency Parametrization from Operational Telemetry: Improved State-of-Energy Tracking and Aging-Aware Dispatch for Battery Energy Storage Systems*, MSc Sustainable Energy Technology, Technical University of Eindhoven, 2026.
+**PhD Thesis Supervision (support)**
+<ul class="compact-list">
+  {% for phd in page.phd_supervision %}
+  <li>
+    <strong>[P{{ forloop.rindex }}]</strong> <strong>{{ phd.name }}</strong>, <i>{{ phd.title }}</i>, {{ phd.institution }}, {{ phd.year }}.
+  </li>
+  {% endfor %}
+</ul>
 
-**[S8]** Chengyuan Guan, *Optimal Sizing of Hybrid Renewable Energy Solutions for Data Centers: Case Studies of Non-Firm Grid, Reduced- and Off-Grid Scenarios*, MSc Sustainable Energy Technology, Technical University of Eindhoven, 2025.
-
-**[S7]** Dennis Hollanders, *Graph Neural Networks for Distribution Network Reconfiguration Optimization*, Department of Industrial Engineering & Innovation Sciences Information Systems Research Group , Technical University of Eindhoven, 2025.
-
-**[S6]** Stefan De Lange, *Hybrid Heat Pump Optimization for Flexibility Provision: Modeling and Simulation*, Department of Electrical Engineering, Technical University of Eindhoven, 2024.
-
-**[S5]** Fabian Caipa Cure, *Adaptive Distributionally Robust Optimization for Residential Energy Management under Non-firm Capacity Contracts*, Department of Mechanical Engineering, Master’s in Sustainable Energy Technology, Technical University of Eindhoven, 2024.
-
-**[S4]** Francesco Panara, *Study of Hydrogen-to-Power systems: state-of-the-art of alkaline and Proton Exchange Membrane fuel cells and performance evaluation through Python modelling*, Dipartimento di Ingegneria Industrial e Scienze Matematiche, Universita' Politecnica delle Marche, 2023.
-
-**[S3]** Filippo Onori, *Design and management of a “Battery Energy Storage System” (BESS) to provide flexibility service to the national electricity grid*, Dipartimento di Ingegneria Industrial e Scienze Matematiche, Universita' Politecnica delle Marche, 2023.
-
-**[S2]** Francesca Mennilli, *Study of systems related to Power-to-Hydrogen: state of art of the electrolyser and its modeling using Python*, Dipartimento di Ingegneria Industrial e Scienze Matematiche, Universita' Politecnica delle Marche, 2022.
-
-**[S1]** Luca Ciotti, *Study of systems related to Power-to-Hydrogen: state of art of the of the storage and its modeling using Python*, Dipartimento di Ingegneria Industrial e Scienze Matematiche, Universita' Politecnica delle Marche, 2022.
+**MSc Thesis Supervision**
+<ul class="compact-list">
+  {% for msc in page.msc_supervision %}
+  <li>
+    <strong>[S{{ forloop.rindex }}]</strong> <strong>{{ msc.name }}</strong>, <i>{{ msc.title }}</i>, {{ msc.course }}, {{ msc.institution }}, {{ msc.year }}.
+  </li>
+  {% endfor %}
+</ul>

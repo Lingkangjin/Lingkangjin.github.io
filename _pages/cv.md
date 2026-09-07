@@ -28,13 +28,23 @@ Education
 
 Work experience
 ======
-**[W3]** Jan 2024-Now: Postdoctoral Researcher *at* Eindhoven University of Technology (NL) with supervisors: Dr. [Nikolaos Paterakis](https://www.tue.nl/en/research/researchers/nikolaos-paterakis), Dr. [Phuong Nguyen](https://www.tue.nl/en/research/researchers/phuong-nguyen) and Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
+**[W3] Jan 2024-Now**: Postdoctoral Researcher *at* Eindhoven University of Technology (NL) with supervisors: Dr. [Nikolaos Paterakis](https://www.tue.nl/en/research/researchers/nikolaos-paterakis), Dr. [Phuong Nguyen](https://www.tue.nl/en/research/researchers/phuong-nguyen) and Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
 
-**[W2]** Nov 2020-Oct 2023: Ph.D Researcher *at*  Università Politecnica delle Marche (IT) with supervisor: Prof. [Gabriele Comodi](https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI) 
+**[W2] Nov 2020-Oct 2023**: Ph.D Researcher *at*  Università Politecnica delle Marche (IT) with supervisor: Prof. [Gabriele Comodi](https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI) 
 
-**[W1]** Dec 2019-Oct 2020: Engineering consultant *at* Whirlpool,  with supervisor: Piotr Rosiak
+**[W1] Dec 2019-Oct 2020**: Engineering consultant *at* Whirlpool,  with supervisor: Piotr Rosiak
 
 
+
+Professional Activities
+======
+**[A4]** **Reviewer for journals**: IEEE Transactions on Power Systems, IEEE Transactions on Smart Grid, Applied Energy, Sustainable Energy Grids and Networks, Sustainability, IEEE Systems, IEEE transactions on Intelligent transportation systems
+
+**[A3]** **Reviewer for conferences**: Innovative Smart Grid Technology Conference (ISGT) Europe, Smart Energy Systems and Technologies (SEST), PowerTech conference, Efficiency-Cost-Optimization-Simulation and Environmental Impact of Energy Systems (ECOS)
+
+**[A2]** Member of the IEEE Power and Energy Society (PES) and IEEE Industrial Electronics Society (IES)
+
+**[A1]** Member of the [Eindhoven Institute for Renewable Energy Systems (EIRES)](https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems/focus-areas/about-eires)
   
 <style>
   /* Tooltip styling for Jekyll */
