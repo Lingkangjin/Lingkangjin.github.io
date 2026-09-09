@@ -5,6 +5,50 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+
+education:
+  - degree: "Ph.D in industrial engineering with specialization in Energy Systems"
+    institution: "Università Politecnica delle Marche"
+    link: "https://www.univpm.it/Entra/"
+    year: "2020-2024"
+  - degree: "M.S. in Mechanical engineering with thermo-mechanical specialization"
+    institution: "Università Politecnica delle Marche"
+    link: "https://www.univpm.it/Entra/"
+    year: "2017-2019"
+  - degree: "B.S. in Mechanical engineering"
+    institution: "Università Politecnica delle Marche"
+    link: "https://www.univpm.it/Entra/"
+    year: "2014-2017"
+
+work_experience:
+  - date: "Jan 2024-Now"
+    role: "Postdoctoral Researcher"
+    institution: "Eindhoven University of Technology (NL)"
+    details: "supervisors: Dr. <a href='https://www.tue.nl/en/research/researchers/nikolaos-paterakis' target='_blank'>Nikolaos Paterakis</a>, Dr. <a href='https://www.tue.nl/en/research/researchers/phuong-nguyen' target='_blank'>Phuong Nguyen</a> and Dr. <a href='https://www.tue.nl/en/research/researchers/christina-papadimitriou' target='_blank'>Christina Papadimitriou</a>"
+  - date: "Nov 2020-Oct 2023"
+    role: "Ph.D Researcher"
+    institution: "Università Politecnica delle Marche (IT)"
+    details: "supervisor: Prof. <a href='https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI' target='_blank'>Gabriele Comodi</a>"
+  - date: "Dec 2019-Oct 2020"
+    role: "Engineering consultant"
+    institution: "Whirlpool"
+    details: "supervisor: Piotr Rosiak"
+
+professional_activities:
+  - text: "<strong>Reviewer for journals</strong>: IEEE Transactions on Power Systems, IEEE Transactions on Smart Grid, Applied Energy, Sustainable Energy Grids and Networks, Sustainability, IEEE Systems, IEEE transactions on Intelligent transportation systems"
+  - text: "<strong>Reviewer for conferences</strong>: Innovative Smart Grid Technology Conference (ISGT) Europe, Smart Energy Systems and Technologies (SEST), PowerTech conference, Efficiency-Cost-Optimization-Simulation and Environmental Impact of Energy Systems (ECOS)"
+  - text: "Member of the IEEE Power and Energy Society (PES) and IEEE Industrial Electronics Society (IES)"
+  - text: "Member of the <a href='https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems/focus-areas/about-eires' target='_blank'>Eindhoven Institute for Renewable Energy Systems (EIRES)</a>"
+
+languages:
+  - language: "Chinese"
+    proficiency: "Native"
+  - language: "Italian"
+    proficiency: "Native"
+  - language: "English"
+    proficiency: "Proficient"
+  - language: "Dutch"
+    proficiency: "A1"
 ---
 
 {% include base_path %}
@@ -15,38 +59,18 @@ redirect_from:
   </a>
 </p>
 
-
-
-
-Education
-======
-**[E3]** Ph.D in industrial engineering with specialization in Energy Systems,  [Università Politecnica delle Marche](https://www.univpm.it/Entra/), 2020-2024
-
-**[E2]** M.S. in Mechanical engineering with thermo-mechanical specialization, [Università Politecnica delle Marche](https://www.univpm.it/Entra/), 2017-2019
-
-**[E1]** B.S. in Mechanical engineering, [Università Politecnica delle Marche](https://www.univpm.it/Entra/) , 2014-2017
-
-Work experience
-======
-**[W3] Jan 2024-Now**: Postdoctoral Researcher *at* Eindhoven University of Technology (NL) with supervisors: Dr. [Nikolaos Paterakis](https://www.tue.nl/en/research/researchers/nikolaos-paterakis), Dr. [Phuong Nguyen](https://www.tue.nl/en/research/researchers/phuong-nguyen) and Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
-
-**[W2] Nov 2020-Oct 2023**: Ph.D Researcher *at*  Università Politecnica delle Marche (IT) with supervisor: Prof. [Gabriele Comodi](https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI) 
-
-**[W1] Dec 2019-Oct 2020**: Engineering consultant *at* Whirlpool,  with supervisor: Piotr Rosiak
-
-
-
-Professional Activities
-======
-**[A4]** **Reviewer for journals**: IEEE Transactions on Power Systems, IEEE Transactions on Smart Grid, Applied Energy, Sustainable Energy Grids and Networks, Sustainability, IEEE Systems, IEEE transactions on Intelligent transportation systems
-
-**[A3]** **Reviewer for conferences**: Innovative Smart Grid Technology Conference (ISGT) Europe, Smart Energy Systems and Technologies (SEST), PowerTech conference, Efficiency-Cost-Optimization-Simulation and Environmental Impact of Energy Systems (ECOS)
-
-**[A2]** Member of the IEEE Power and Energy Society (PES) and IEEE Industrial Electronics Society (IES)
-
-**[A1]** Member of the [Eindhoven Institute for Renewable Energy Systems (EIRES)](https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems/focus-areas/about-eires)
-  
 <style>
+  /* Compact list styling for CV sections */
+  .compact-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .compact-list li {
+    margin-bottom: 10px; 
+    line-height: 1.4;
+  }
+
   /* Tooltip styling for Jekyll */
   .tooltip {
     position: relative;
@@ -77,6 +101,7 @@ Professional Activities
     visibility: visible;
     opacity: 1;
   }
+
   /* Styling for the interactive accordions */
   details {
     margin-bottom: 1rem;
@@ -97,6 +122,43 @@ Professional Activities
     margin-top: 0.8rem;
   }
 </style>
+
+
+## Education
+
+<ul class="compact-list">
+  {% for ed in page.education %}
+  <li>
+    <strong>[E{{ forloop.rindex }}]</strong> {{ ed.degree }}, <a href="{{ ed.link }}" target="_blank">{{ ed.institution }}</a>, {{ ed.year }}
+  </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+## Work experience
+
+<ul class="compact-list">
+  {% for work in page.work_experience %}
+  <li>
+    <strong>[W{{ forloop.rindex }}]</strong> <strong>{{ work.date }}</strong>: {{ work.role }} <i>at</i> {{ work.institution }} with {{ work.details }}
+  </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+## Professional Activities
+
+<ul class="compact-list">
+  {% for activity in page.professional_activities %}
+  <li>
+    <strong>[A{{ forloop.rindex }}]</strong> {{ activity.text }}
+  </li>
+  {% endfor %}
+</ul>
+
+<hr>
 
 ## Technical Skills Portfolio
 
@@ -145,22 +207,14 @@ Professional Activities
   </ul>
 </details>
 
-[//]: # ()
-[//]: # (GitHub Projects & Contributions 💻)
+<hr>
 
-[//]: # (======)
+## Languages
 
-[//]: # (You can find my open-source projects &#40;limited due to the confidentiality&#41; and code repositories on my [GitHub profile 1]&#40;https://github.com/Lingkangjin&#41; and [GitHub profile 2]&#40;https://github.com/lingkang95&#41;.)
-
-[//]: # ()
-[//]: # (Some of my featured projects include:)
-
-[//]: # (* [**Project 1**]&#40;https://github.com/Lingkangjin/AEC-Modelling&#41; - ALkaline Electrolyzer four-parameters semi-empirical Modelling.)
-
-Languages 🌍
-======
-- Chinese: Native 
-- Italian: Native
-- English: Proficient 
-- Dutch: A1
-
+<ul class="compact-list">
+  {% for lang in page.languages %}
+  <li>
+    - {{ lang.language }}: {{ lang.proficiency }}
+  </li>
+  {% endfor %}
+</ul>
