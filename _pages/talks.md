@@ -35,3 +35,5 @@ Talks
 * **29 Jun-03 Jul 2025**, *Empowering Low-Voltage Grids: Real-World Implementation of Home Batteries for Effective Congestion Management*, IEEE PowerTech 2025, Kiel, Germany
 * **10-12 Sep 2024**, *Advancing Multi-Energy Hub Design: an Integrated Approach for Optimizing Residential Clusters in High RES Penetration Scenarios*, IEEE SEST 2024, Turin, Italy
 * **14-15 Sep 2023**, *Metal hydrides in hydrogen storage: optimization of dynamic control strategies*, 78 Congresso ATI, Carpi, Italy
+* ** 6-10 Nov 2022**,*Energy Transition Towards the Goal of "Fit For 55": The Case Study of the UNIVPM Campus as a Multi Energy-System*, [SDEWES 2022](https://www.paphos2022.sdewes.org/), Paphos, Cyprus
+* ** 10-15 Oct 2021, *valuation of the impact of green hydrogen blending scenarios in the Italian gas network: optimal design and dynamic simulation of operation strategies*, [SDEWES 2021](https://www.dubrovnik2021.sdewes.org/), Dubrovnik, Croatia

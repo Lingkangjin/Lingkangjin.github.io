@@ -161,6 +161,12 @@ conference_proceedings:
     year: "2023"
     link_text: "URL"
     link_url: "https://doi.org/10.52202/069564-0082"
+  - authors: "Sara Gremi, Mosè Rossi, <strong>Lingkang Jin</strong>, Matteo Lorenzetti, Danilo Salvi, Alessia Arteconi, Gabriele Comodi"
+    title: "Thermal Energy Storage (TES) application in an Italian District Heating (DH) network: A Computational Fluid Dynamic (CFD) analysis to assess the operating efficiency"
+    venue: "Proceedings of the 35th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS)"
+    year: "2022"
+    link_text: "URL"
+    link_url: "https://backend.orbit.dtu.dk/ws/portalfiles/portal/335878894/ECOS_2022_proceedings.pdf"
 ---
 
 <style>
