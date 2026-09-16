@@ -170,42 +170,116 @@ conference_proceedings:
 ---
 
 <style>
+  .pub-timeline {
+    position: relative;
+    padding: 10px 0 20px 24px;
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+    border-left: 2px solid #e2e8f0;
+  }
+
+  .pub-year-block {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .pub-year-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .pub-year-block::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+  }
+
+  .pub-year-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.8rem 0;
+    line-height: 1;
+  }
+
   .compact-list {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
   }
+
   .compact-list li {
-    margin-bottom: 8px; /* Slightly larger gap to accommodate multi-line references cleanly */
-    line-height: 1.4;
+    margin-bottom: 10px;
+    line-height: 1.45;
+    font-size: 0.95rem;
+  }
+
+  .pub-tag {
+    font-weight: 700;
+    color: #2563eb;
   }
 </style>
 
-<br>
-<strong>Journal Articles</strong>
+## Journal Articles
 
-<ul class="compact-list">
-  {% for paper in page.journal_articles %}
-  <li>
-    <strong>[J{{ forloop.rindex }}]</strong> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>, {{ paper.year }}. 
-    {% if paper.link_url != "" %}
-      <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
-    {% endif %}
-  </li>
+{% assign j_years = page.journal_articles | map: "year" | uniq | sort | reverse %}
+
+<div class="pub-timeline">
+  {% for yr in j_years %}
+    {% assign yr_journals = page.journal_articles | where: "year", yr %}
+    <div class="pub-year-block">
+      <div class="pub-year-title">{{ yr }}</div>
+      <ul class="compact-list">
+        {% for paper in yr_journals %}
+          {% for global_paper in page.journal_articles %}
+            {% if global_paper.title == paper.title %}
+              {% assign j_idx = forloop.rindex %}
+            {% endif %}
+          {% endfor %}
+          <li>
+            <span class="pub-tag">[J{{ j_idx }}]</span> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>.
+            {% if paper.link_url != "" and paper.link_url != nil %}
+              <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 <hr>
 
-<strong>Conference Proceedings</strong>
+## Conference Proceedings
 
-<ul class="compact-list">
-  {% for paper in page.conference_proceedings %}
-  <li>
-    <strong>[C{{ forloop.rindex }}]</strong> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>, {{ paper.year }}. 
-    {% if paper.link_url != "" %}
-      <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
-    {% endif %}
-  </li>
+{% assign c_years = page.conference_proceedings | map: "year" | uniq | sort | reverse %}
+
+<div class="pub-timeline">
+  {% for yr in c_years %}
+    {% assign yr_conferences = page.conference_proceedings | where: "year", yr %}
+    <div class="pub-year-block">
+      <div class="pub-year-title">{{ yr }}</div>
+      <ul class="compact-list">
+        {% for paper in yr_conferences %}
+          {% for global_paper in page.conference_proceedings %}
+            {% if global_paper.title == paper.title %}
+              {% assign c_idx = forloop.rindex %}
+            {% endif %}
+          {% endfor %}
+          <li>
+            <span class="pub-tag">[C{{ c_idx }}]</span> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>.
+            {% if paper.link_url != "" and paper.link_url != nil %}
+              <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>

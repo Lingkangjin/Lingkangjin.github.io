@@ -6,39 +6,178 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<strong>Energy Systems Researcher \| Optimization modeler \| Data Scientist</strong>
+
+<style>
+  /* Unified Vertical Timeline Styles */
+  .news-timeline {
+    position: relative;
+    padding: 10px 0 10px 24px;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid #e2e8f0;
+  }
+
+  .news-year-block {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .news-year-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .news-year-block::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+  }
+
+  .news-year-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.8rem 0;
+    line-height: 1;
+  }
+
+  .compact-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .compact-list li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+    font-size: 0.95rem;
+  }
+
+  .news-timeline details {
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .news-timeline summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+  }
+
+  .news-timeline summary:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<strong>Energy Systems Researcher \| Optimization modeler \| Data Scientist</strong>  
 Lingkang is a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology (TU/e), The Netherlands. 
 
-His research focuses on developing **multi-physics asset integration and energy systems modeling through mathematical programming with support of  AI and Machine Learning tools to reduce computational burdens and enhance scenario generation**.
+His research focuses on developing **multi-physics asset integration and energy systems modeling through mathematical programming with support of AI and Machine Learning tools to reduce computational burdens and enhance scenario generation**.
 
+## News and updates 📈
 
+<div class="news-timeline">
 
-News and updates 📈 
-======
+  <!-- 2026 -->
+  <div class="news-year-block">
+    <div class="news-year-title">2026</div>
+    <ul class="compact-list">
+      <li>
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New" width="18" height="18" style="vertical-align: middle; margin-right: 4px;" />
+        <strong>09 October:</strong> ORKEST Demo event for the Q3 2026 for the ORKEST results dissemination, Stedin Utrecht office
+      </li>
+      <li>
+        <strong>02–04 September:</strong> Speaker at the <a href="https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026" target="_blank">Nordic energy Informatic conference 2026</a>, Reykjavik, Iceland
+      </li>
+      <li>
+        <strong>03 July:</strong> ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination
+      </li>
+      <li>
+        <strong>15 June:</strong> 3 minutes Pitch as finalist for the best paper award from <a href="https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026" target="_blank">Postdoc Association TU/e</a>
+      </li>
+      <li>
+        <strong>10 June:</strong> Presenter at the Eurotech stand (18) at the <a href="https://interactive.eusew.eu/platform/eusew-2026/fair" target="_blank">EUSEW energy fair 2026</a>
+      </li>
+      <li>
+        <strong>22 May:</strong> Invited presentation on surrogate modeling in power systems, at <a href="https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/" target="_blank">IE&amp;Information Systems</a>, invited by Dr. <a href="https://www.tue.nl/en/research/researchers/laurens-bliek" target="_blank">Laurens Bliek</a>
+      </li>
+      <li>
+        <strong>26 Apr–10 May:</strong> Eurotech visiting in <a href="https://wind.dtu.dk/" target="_blank">DTU Wind and Energy Systems</a>, Denmark hosted by Dr. <a href="https://orbit.dtu.dk/en/persons/haris-ziras/" target="_blank">Haris Ziras</a>
+      </li>
+      <li>
+        <strong>01 April:</strong> Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 and WP3
+      </li>
+    </ul>
+  </div>
 
-* <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New Button" width="35" height="35" style="vertical-align: middle; margin-right: 5px;" />
-**02-04 September 2026,** Speaker at the [Nordic energy Informatic conference 2026](https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026), Reykjavik, Iceland
-* **03 Jul 2026,** ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination
-* **15 June 2026,** 3 minutes Pitch as finalist for the best paper award from [Postdoc Association TU/e](https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026)
-* **10 June 2026**, Presenter at the Eurotech stand (18) at the [EUSEW energy fair 2026](https://interactive.eusew.eu/platform/eusew-2026/fair) 
-* **22 May 2026** Invited presentation on surrogate modeling in power systems, at [IE&Information  Systems](https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/), invited by Dr. [Laurens Bliek](https://www.tue.nl/en/research/researchers/laurens-bliek)
-* **26 Apr- 10 May 2026** Eurotech visiting in [DTU Wind and Energy Systems](https://wind.dtu.dk/), Denmark hosted by Dr. [Haris Ziras](https://orbit.dtu.dk/en/persons/haris-ziras/).
-* **01 Apr 2026,** Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 abd WP3.
-* **15 Jun 2025,** Joined the [ORKEST](https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711) project as R4 leader
+  <!-- 2025 -->
+  <div class="news-year-block">
+    <div class="news-year-title">2025</div>
+    <ul class="compact-list">
+      <li>
+        <strong>15 June:</strong> Joined the <a href="https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711" target="_blank">ORKEST</a> project as R4 leader
+      </li>
+    </ul>
+  </div>
 
-<details markdown="1">
-<summary><strong>Show older news and updates...</strong></summary>
+  <!-- Collapsible Section for Older Years -->
+  <details>
+    <summary>Show older news and updates...</summary>
 
-* **30 Mar 2024,** PhD defense with thesis: [*Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage*](https://tesidottorato.depositolegale.it/handle/20.500.14242/307237)
-* **15 Jan 2024,** started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
-* **Mar-May 2023,** Visiting PhD at Eindoven university of Technology EES group under supervision of Dr.[Christina Papadimitriou](https://www.tue.nl/en/research/researchers/christina-papadimitriou)
-* **Mar-Sep 2022,** Visiting Phd at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. [Henrik Lund Frandsen](https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/) and collaboration with Prof. [Rafael Nogueira Nakashima](https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/)
-* **Oct 2020,** Started PhD in industrial engineering with specialization in energy systems, at Universita' Politecnica delle Marche under supervision of Prof. [Gabriele Comodi](https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI)
+    <!-- 2024 -->
+    <div class="news-year-block">
+      <div class="news-year-title">2024</div>
+      <ul class="compact-list">
+        <li>
+          <strong>30 March:</strong> PhD defense with thesis: <a href="https://tesidottorato.depositolegale.it/handle/20.500.14242/307237" target="_blank"><i>Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage</i></a>
+        </li>
+        <li>
+          <strong>15 January:</strong> Started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
+        </li>
+      </ul>
+    </div>
 
-</details>
+    <!-- 2023 -->
+    <div class="news-year-block">
+      <div class="news-year-title">2023</div>
+      <ul class="compact-list">
+        <li>
+          <strong>March–May:</strong> Visiting PhD at Eindhoven University of Technology EES group under supervision of Dr. <a href="https://www.tue.nl/en/research/researchers/christina-papadimitriou" target="_blank">Christina Papadimitriou</a>
+        </li>
+      </ul>
+    </div>
 
+    <!-- 2022 -->
+    <div class="news-year-block">
+      <div class="news-year-title">2022</div>
+      <ul class="compact-list">
+        <li>
+          <strong>March–September:</strong> Visiting PhD at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. <a href="https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/" target="_blank">Henrik Lund Frandsen</a> and collaboration with Prof. <a href="https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/" target="_blank">Rafael Nogueira Nakashima</a>
+        </li>
+      </ul>
+    </div>
 
-<br>
+    <!-- 2020 -->
+    <div class="news-year-block">
+      <div class="news-year-title">2020</div>
+      <ul class="compact-list">
+        <li>
+          <strong>October:</strong> Started PhD in industrial engineering with specialization in energy systems, at Università Politecnica delle Marche under supervision of Prof. <a href="https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI" target="_blank">Gabriele Comodi</a>
+        </li>
+      </ul>
+    </div>
+
+  </details>
+
+</div>
+
 
 Research Framework 🧩
 ======
@@ -140,7 +279,6 @@ Research Framework 🧩
     gap: 15px;
     align-items: center;
     justify-content: center;
-    /* Removed height: 100% to allow the "etc" to push to the bottom */
   }
 
   /* Items Formatting - Interactive */
@@ -179,9 +317,9 @@ Research Framework 🧩
 
   /* "Etc." Styling */
   .arch-etc {
-    margin-top: auto; /* Pushes the text to the bottom of the box */
+    margin-top: auto;
     padding-top: 15px;
-    text-align: right; /* Aligns to the bottom right */
+    text-align: right;
     font-size: 0.9em;
     color: #222;
   }
@@ -323,11 +461,10 @@ Research Framework 🧩
 </div>
 
 
-Featured  Open Access Papers 
+Selected  Open Access Papers 
 ======
 
 <style>
-  /* Force the right column content to expand to full available width */
   .page {
     padding-right: 0 !important;
   }
@@ -335,7 +472,6 @@ Featured  Open Access Papers
     max-width: 100% !important;
   }
 
-  /* Container for the papers */
   .paper-container {
     display: flex;
     flex-direction: row;
@@ -343,15 +479,13 @@ Featured  Open Access Papers
     justify-content: space-between;
   }
   
-  /* Individual paper styling */
   .paper-item {
     flex: 1;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Keeps the button neatly under the iframe */
+    flex-direction: column;
   }
   
-  /* Iframe styling */
   .paper-iframe {
     width: 100%;
     height: 350px;
@@ -360,11 +494,10 @@ Featured  Open Access Papers
     background-color: white;
   }
 
-  /* Full Screen Button styling */
   .fullscreen-btn {
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #494e52; /* A nice, professional dark gray */
+    background-color: #494e52;
     color: white;
     border: none;
     border-radius: 4px;
@@ -375,10 +508,9 @@ Featured  Open Access Papers
   }
   
   .fullscreen-btn:hover {
-    background-color: #2a2d2f; /* Darkens slightly when hovered */
+    background-color: #2a2d2f;
   }
 
-  /* Magic happens here: if the screen is 768px or smaller (tablets/phones), stack them */
   @media (max-width: 768px) {
     .paper-container {
       flex-direction: column;
@@ -411,9 +543,9 @@ Featured  Open Access Papers
     var elem = document.getElementById(elemId);
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari support */
+    } else if (elem.webkitRequestFullscreen) {
       elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 support */
+    } else if (elem.msRequestFullscreen) {
       elem.msRequestFullscreen();
     }
   }
@@ -421,11 +553,10 @@ Featured  Open Access Papers
   function exitFullScreen() {
     if (document.exitFullscreen) {
       document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) { /* Safari support */
+    } else if (document.webkitExitFullscreen) {
       document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) { /* IE11 support */
+    } else if (document.msExitFullscreen) {
       document.msExitFullscreen();
     }
   }
 </script>
-

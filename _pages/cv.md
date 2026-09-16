@@ -129,7 +129,7 @@ languages:
 <ul class="compact-list">
   {% for ed in page.education %}
   <li>
-    <strong>[E{{ forloop.rindex }}]</strong> {{ ed.degree }}, <a href="{{ ed.link }}" target="_blank">{{ ed.institution }}</a>, {{ ed.year }}
+    <strong>[Ed.{{ forloop.rindex }}]</strong> {{ ed.degree }}, <a href="{{ ed.link }}" target="_blank">{{ ed.institution }}</a>, {{ ed.year }}
   </li>
   {% endfor %}
 </ul>

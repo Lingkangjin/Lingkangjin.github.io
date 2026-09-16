@@ -5,7 +5,7 @@ author_profile: true
 teaching_courses:
   - date: "Mar 2026"
     title: "Optimization application for the system integration"
-    course: "System integration project (5LEFO), Msc. in Sustainable Energy Technology"
+    course: "System integration project (5LEFO), Msc. in Sustainable Energy SET"
     institution: "TU Eindhoven, NL"
   - date: "Mar 2026"
     title: "Market participation of renewable producers"
@@ -17,7 +17,7 @@ teaching_courses:
     institution: "TU Eindhoven, NL"
   - date: "Mar 2025"
     title: "Master Lecture: How to build an optimization model"
-    course: "System integration project (5LEFO), Msc. in Sustainable Energy Technology"
+    course: "System integration project (5LEFO), Msc. in Sustainable Energy SET"
     institution: "TU Eindhoven, NL"
   - date: "Oct 2024"
     title: "Energy storage and their role in the power systems"
@@ -48,6 +48,7 @@ phd_supervision:
 
 msc_supervision:
   - name: "Shuai Feng"
+    continued_phd: true
     title: "Grid-Code-Compliant Hybrid Renewable Energy Solutions for Data Centers: Optimal Sizing under Post-Fault Active Power Requirements"
     course: "MSc Sustainable Energy Technology"
     institution: "Technical University of Eindhoven"
@@ -68,6 +69,7 @@ msc_supervision:
     institution: "Technical University of Eindhoven"
     year: "2025"
   - name: "Stefan De Lange"
+    continued_phd: true
     title: "Hybrid Heat Pump Optimization for Flexibility Provision: Modeling and Simulation"
     course: "Dept. of Electrical Engineering"
     institution: "Technical University of Eindhoven"
@@ -83,11 +85,13 @@ msc_supervision:
     institution: "Universita' Politecnica delle Marche"
     year: "2023"
   - name: "Filippo Onori"
+    continued_phd: true
     title: "Design and management of a BESS to provide flexibility service to the national electricity grid"
     course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
     institution: "Universita' Politecnica delle Marche"
     year: "2023"
   - name: "Francesca Mennilli"
+    continued_phd: true
     title: "Study of systems related to Power-to-Hydrogen: state of art of the electrolyser and its modeling using Python"
     course: "Dipartimento di Ingegneria Industrial e Scienze Matematiche"
     institution: "Universita' Politecnica delle Marche"
@@ -100,44 +104,156 @@ msc_supervision:
 ---
 
 <style>
+  .pub-timeline {
+    position: relative;
+    padding: 10px 0 20px 24px;
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+    border-left: 2px solid #e2e8f0;
+  }
+
+  .pub-year-block {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .pub-year-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .pub-year-block::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+  }
+
+  .pub-year-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.8rem 0;
+    line-height: 1;
+  }
+
   .compact-list {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 0;
   }
+
   .compact-list li {
-    margin-bottom: 12px;
-    line-height: 1.4;
+    margin-bottom: 10px;
+    line-height: 1.45;
+    font-size: 0.95rem;
+  }
+
+  .pub-tag {
+    font-weight: 700;
+    color: #2563eb;
+  }
+
+  .phd-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    background-color: #dbeafe;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
   }
 </style>
 
 ## Teaching
 
-<ul class="compact-list">
-  {% for course in page.teaching_courses %}
-  <li>
-    <strong>[T{{ forloop.rindex }}]</strong> {{ course.date }}: <i>{{ course.title }}</i>, {{ course.course }}, {{ course.institution }}
-  </li>
+{% comment %} Extract 4-digit year from date (e.g., 'Mar 2026' -> '2026') {% endcomment %}
+{% assign t_years = "" | split: "" %}
+{% for course in page.teaching_courses %}
+  {% assign yr = course.date | split: " " | last %}
+  {% assign t_years = t_years | push: yr %}
+{% endfor %}
+{% assign t_years = t_years | uniq | sort | reverse %}
+
+<div class="pub-timeline">
+  {% for yr in t_years %}
+    <div class="pub-year-block">
+      <div class="pub-year-title">{{ yr }}</div>
+      <ul class="compact-list">
+        {% for course in page.teaching_courses %}
+          {% assign c_year = course.date | split: " " | last %}
+          {% if c_year == yr %}
+            {% assign t_idx = forloop.rindex %}
+            <li>
+              <span class="pub-tag">[T{{ t_idx }}]</span> {{ course.date }}: <i>{{ course.title }}</i>, {{ course.course }}, {{ course.institution }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 <hr>
 
-## Supervision
+## PhD Thesis Supervision (Support)
 
-**PhD Thesis Supervision (support)**
-<ul class="compact-list">
-  {% for phd in page.phd_supervision %}
-  <li>
-    <strong>[P{{ forloop.rindex }}]</strong> <strong>{{ phd.name }}</strong>, <i>{{ phd.title }}</i>, {{ phd.institution }}, {{ phd.year }}.
-  </li>
-  {% endfor %}
-</ul>
+{% assign phd_years = page.phd_supervision | map: "year" | uniq | sort | reverse %}
 
-**MSc Thesis Supervision**
-<ul class="compact-list">
-  {% for msc in page.msc_supervision %}
-  <li>
-    <strong>[S{{ forloop.rindex }}]</strong> <strong>{{ msc.name }}</strong>, <i>{{ msc.title }}</i>, {{ msc.course }}, {{ msc.institution }}, {{ msc.year }}.
-  </li>
+<div class="pub-timeline">
+  {% for yr in phd_years %}
+    {% assign yr_phds = page.phd_supervision | where: "year", yr %}
+    <div class="pub-year-block">
+      <div class="pub-year-title">{{ yr }}</div>
+      <ul class="compact-list">
+        {% for phd in yr_phds %}
+          {% for global_phd in page.phd_supervision %}
+            {% if global_phd.title == phd.title %}
+              {% assign p_idx = forloop.rindex %}
+            {% endif %}
+          {% endfor %}
+          <li>
+            <span class="pub-tag">[P{{ p_idx }}]</span> <strong>{{ phd.name }}</strong>, <i>{{ phd.title }}</i>, {{ phd.institution }}.
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
+
+<hr>
+
+## MSc Thesis Supervision
+
+{% assign msc_years = page.msc_supervision | map: "year" | uniq | sort | reverse %}
+
+<div class="pub-timeline">
+  {% for yr in msc_years %}
+    {% assign yr_mscs = page.msc_supervision | where: "year", yr %}
+    <div class="pub-year-block">
+      <div class="pub-year-title">{{ yr }}</div>
+      <ul class="compact-list">
+        {% for msc in yr_mscs %}
+          {% for global_msc in page.msc_supervision %}
+            {% if global_msc.title == msc.title %}
+              {% assign s_idx = forloop.rindex %}
+            {% endif %}
+          {% endfor %}
+          <li>
+            <span class="pub-tag">[S{{ s_idx }}]</span> <strong>{{ msc.name }}</strong>
+            {% if msc.continued_phd %}
+              <span class="phd-badge" title="Continued with PhD studies">🎓 Continued to PhD</span>
+            {% endif %}, <i>{{ msc.title }}</i>, {{ msc.course }}, {{ msc.institution }}.
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
