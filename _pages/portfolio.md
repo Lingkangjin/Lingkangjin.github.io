@@ -8,7 +8,7 @@ projects:
     excerpt: "SG-SKILL (Skill-based education for smart-grids job profiles) is a European Erasmus+ Blueprint project aimed at strengthening Europe’s workforce for the digital, green and resilient transformation of electricity grids"
     link: "https://sgskill.eddie-skills.eu/"
     partners: "Comillas, Politecnico di Milano, RWTH Aachen university, University of Cyprus., Technical University of Eindhoven, National Technical University of Athens, CIEMAT, ZABALA innovation, NOVEL group, Padre Piquer Foundation, iCert, E.DSO, T&D Europe, GAIA, Iberdrola Group"
-    role: "Task 2.3 leader and involvement in WP2 and WP3."   
+    role: "Task 2.3 and 4.2 leader and involvement in WP2 and WP3."   
     image: "/images/SG_SKIL.png"
   - title: "ORKEST - MOOI project (2025-now)"
     excerpt: "  Grid and user assets coordination and orchestration to solve the congestion issues for the increasing renewable energy transition while maintaining the components reliability."
