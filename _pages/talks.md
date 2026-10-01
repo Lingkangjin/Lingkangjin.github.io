@@ -84,10 +84,10 @@ author_profile: true
     <div class="year-title">2026</div>
     <ul class="compact-list">
       <li>
-        <span class="pub-tag">[E4]</span> <strong>28 Oct:</strong> <i>Bilevel optimization: modeling, algorithmic challenges and applications</i>, Presenter: Dr. <a href="https://www.tue.nl/en/research/researchers/yasmine-beck" target="_blank">Yasmine Beck</a>. <span class="badge-upcoming">Upcoming</span>
+        <span class="pub-tag">[E4]</span> <strong>28 Oct:</strong> Cross-sectoral talk: <i>Bilevel optimization: modeling, algorithmic challenges and applications</i>, Presenter: Dr. <a href="https://www.tue.nl/en/research/researchers/yasmine-beck" target="_blank">Yasmine Beck</a>. <span class="badge-upcoming">Upcoming</span>
       </li>
       <li>
-        <span class="pub-tag">[E3]</span> <strong>14 Oct:</strong> <i>Asset Management from Stedin engineering perspective</i>, presenters: Daniël Booman, Torben Fricke, Deniz Sahin, location Flux 2.251 TU/e, 9:00–10:30. <span class="badge-upcoming">Upcoming</span>
+        <span class="pub-tag">[E3]</span> <strong>14 Oct:</strong> Industry perspective talk:<i>Asset Management from Stedin engineering perspective</i>, presenters: Daniël Booman, Torben Fricke, Deniz Sahin, location Flux 2.251 TU/e, 9:00–10:30. <span class="badge-upcoming">Upcoming</span>
       </li>
     </ul>
   </div>

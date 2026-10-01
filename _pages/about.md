@@ -88,11 +88,15 @@ His research focuses on developing **multi-physics asset integration and energy 
   <!-- 2026 -->
   <div class="news-year-block">
     <div class="news-year-title">2026</div>
-    <ul class="compact-list">
+    <ul class="compact-list">     
       <li>
         <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New" width="18" height="18" style="vertical-align: middle; margin-right: 4px;" />
         <strong>09 October:</strong> ORKEST Demo event for the Q3 2026 for the ORKEST results dissemination, Stedin Utrecht office
       </li>
+       <li>
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New" width="18" height="18" style="vertical-align: middle; margin-right: 4px;" />
+        <strong>05 October:</strong> Research career panelist for Msc course professional development carrier course,TU/e, Eindhoven, The Netherlands
+      </li>  
       <li>
         <strong>02–04 September:</strong> Speaker at the <a href="https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026" target="_blank">Nordic energy Informatic conference 2026</a>, Reykjavik, Iceland
       </li>
