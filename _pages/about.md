@@ -2,565 +2,473 @@
 permalink: /
 title: "Lingkang Jin, Ph.D."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
+
+# Items dated after the site build appear under "Upcoming";
+# items from the last `news_new_days` days get a "New" badge.
+# Years older than last year are folded into "Show older news".
+news_new_days: 30
+
+# `date` (YYYY-MM-DD) drives sorting and grouping.
+# `label` is optional and replaces the displayed date (for ranges).
+news:
+  - date: 2026-12-16
+    text: "Co-organizing the 2026 annual EES research group meeting, Eindhoven, the Netherlands"
+  - date: 2026-10-28
+    text: "Chairing the research meeting on bilevel optimization with Dr. Yasmine Beck, TU/e, Eindhoven"
+  - date: 2026-10-14
+    text: "Chairing the research meeting with the Stedin asset management team, TU/e, Eindhoven"
+  - date: 2026-10-09
+    text: "<a href='/portfolio/'>ORKEST</a> Q3 2026 demo event for results dissemination, Stedin office, Utrecht"
+  - date: 2026-10-05
+    text: "Research-career panelist in the MSc professional development course, TU/e, Eindhoven"
+  - date: 2026-09-02
+    label: "02–04 September"
+    text: "Speaker at the <a href='https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026' target='_blank' rel='noopener noreferrer'>EIA Nordic Energy Informatics Conference 2026</a>, Reykjavik, Iceland"
+  - date: 2026-07-03
+    text: "ORKEST Q2 2026 demo event for results dissemination, Stedin office, Utrecht"
+  - date: 2026-06-15
+    text: "Best-paper award finalist with a 3-minute pitch at the <a href='https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026' target='_blank' rel='noopener noreferrer'>TU/e Postdoc Association</a>"
+  - date: 2026-06-10
+    text: "Presenter at the EuroTech stand (no. 18) at the <a href='https://interactive.eusew.eu/platform/eusew-2026/fair' target='_blank' rel='noopener noreferrer'>EUSEW 2026 Energy Fair</a>"
+  - date: 2026-05-22
+    text: "Invited talk on surrogate modeling in power systems at the <a href='https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/' target='_blank' rel='noopener noreferrer'>Information Systems group (IE&amp;IS)</a>, TU/e, hosted by Dr. <a href='https://www.tue.nl/en/research/researchers/laurens-bliek' target='_blank' rel='noopener noreferrer'>Laurens Bliek</a>"
+  - date: 2026-04-26
+    label: "26 April – 10 May"
+    text: "EuroTech research visit at <a href='https://wind.dtu.dk/' target='_blank' rel='noopener noreferrer'>DTU Wind and Energy Systems</a>, Denmark, hosted by Dr. <a href='https://orbit.dtu.dk/en/persons/haris-ziras/' target='_blank' rel='noopener noreferrer'>Haris Ziras</a>"
+  - date: 2026-04-01
+    text: "Joined the Erasmus+ Blueprint project <a href='https://sgskill.eddie-skills.eu/' target='_blank' rel='noopener noreferrer'>SG-SKILL</a> as TU/e representative (WP2 and WP3)"
+  - date: 2025-06-15
+    text: "Joined the <a href='https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711' target='_blank' rel='noopener noreferrer'>ORKEST</a> project as Result 4 leader"
+  - date: 2024-03-30
+    text: "PhD defense, thesis: <a href='https://tesidottorato.depositolegale.it/handle/20.500.14242/307237' target='_blank' rel='noopener noreferrer'><em>Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage</em></a>"
+  - date: 2024-01-15
+    text: "Started as postdoctoral researcher at TU/e, leading TU/e's research in the NO-GIZMOS project"
+  - date: 2023-03-01
+    label: "March – May"
+    text: "Visiting PhD at the TU/e Electrical Energy Systems group, supervised by Dr. <a href='https://www.tue.nl/en/research/researchers/christina-papadimitriou' target='_blank' rel='noopener noreferrer'>Christina Papadimitriou</a>"
+  - date: 2022-03-01
+    label: "March – September"
+    text: "Visiting PhD at DTU Energy (CMT section), Technical University of Denmark, supervised by Prof. <a href='https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/' target='_blank' rel='noopener noreferrer'>Henrik Lund Frandsen</a>, in collaboration with <a href='https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/' target='_blank' rel='noopener noreferrer'>Rafael Nogueira Nakashima</a>"
+  - date: 2020-10-01
+    label: "October"
+    text: "Started PhD in Industrial Engineering (Energy Systems) at Università Politecnica delle Marche, supervised by Prof. <a href='https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI' target='_blank' rel='noopener noreferrer'>Gabriele Comodi</a>"
+
+# Selected open-access papers.
+# `preview` is shown in the embedded viewer; `pdf` is the full paper link.
+papers:
+  - id: alk
+    title: "Alkaline electrolysis for green hydrogen production: A novel, simple model for thermo-electrochemical coupled system analysis"
+    preview: "/files/ALK.pdf"
+    pdf: "/files/paper1.pdf"
+  - id: batt
+    title: "Assessing battery degradation as a key performance indicator for multi-objective optimization of multi-carrier energy systems"
+    preview: "/files/Batt.pdf"
+    pdf: "/files/paper2.pdf"
+  - id: ofo
+    title: "Real-time measurement-based optimization for distribution system operation considering battery voltage and thermal constraints"
+    preview: "/files/OFO.pdf"
+    pdf: "/files/paper3.pdf"
 ---
 
 <style>
-  /* Unified Vertical Timeline Styles */
-  .news-timeline {
+  /* ───────── Shared tokens ───────── */
+  .home-scope, .news, .arch, .papers {
+    --accent: #2563eb;
+    --ink: #1e293b;
+    --muted: #64748b;
+    --line: #e2e8f0;
+  }
+
+  /* Widen the content column on this page so the paper previews fit.
+     Remove these two rules to keep the theme's default width. */
+  .page { padding-right: 0 !important; }
+  .page__inner-wrap { max-width: 100% !important; }
+
+  /* ───────── Intro ───────── */
+  .tagline {
+    font-weight: 700;
+    color: var(--accent, #2563eb);
+    letter-spacing: 0.01em;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ───────── News timeline ───────── */
+  .news {
     position: relative;
-    padding: 10px 0 10px 24px;
-    margin-top: 1.2rem;
-    margin-bottom: 2rem;
-    border-left: 2px solid #e2e8f0;
+    padding: 0.6rem 0 0.6rem 1.5rem;
+    margin: 1.2rem 0 2rem;
+    border-left: 2px solid var(--line);
   }
-
-  .news-year-block {
-    position: relative;
-    margin-bottom: 2rem;
-  }
-
-  .news-year-block:last-child {
-    margin-bottom: 0;
-  }
-
-  .news-year-block::before {
+  .news__block { position: relative; margin-bottom: 1.8rem; }
+  .news__block:last-child { margin-bottom: 0; }
+  .news__block::before {
     content: "";
     position: absolute;
-    left: -31px;
-    top: 5px;
+    left: calc(-1.5rem - 7px);
+    top: 4px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #2563eb;
-    border: 3px solid #ffffff;
+    background: var(--accent);
+    border: 3px solid #fff;
     box-shadow: 0 0 0 1px #cbd5e1;
   }
-
-  .news-year-title {
-    font-size: 1.25rem;
+  .news__block--upcoming::before { background: #f59e0b; }
+  .news__heading {
+    font-size: 1.15rem;
     font-weight: 700;
-    color: #1e293b;
-    margin: 0 0 0.8rem 0;
+    color: var(--ink);
+    margin: 0 0 0.7rem;
     line-height: 1;
   }
+  .news__list { list-style: none; margin: 0; padding: 0; }
+  .news__list li { margin-bottom: 0.6rem; line-height: 1.45; font-size: 0.92rem; }
+  .news__date { font-weight: 700; }
 
-  .compact-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    margin-right: 0.35rem;
+    vertical-align: 0.1em;
   }
+  .badge--new { background: #dcfce7; color: #166534; }
+  .badge--upcoming { background: #fef3c7; color: #92400e; }
 
-  .compact-list li {
-    margin-bottom: 10px;
-    line-height: 1.45;
-    font-size: 0.95rem;
-  }
-
-  .news-timeline details {
-    margin-top: 1.5rem;
-    padding-top: 0.5rem;
-  }
-
-  .news-timeline summary {
+  .news__older { margin-top: 1.4rem; }
+  .news__older summary {
     cursor: pointer;
     font-weight: 600;
-    color: #2563eb;
-    margin-bottom: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1.4rem;
   }
+  .news__older summary:hover { text-decoration: underline; }
 
-  .news-timeline summary:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<strong>Energy Systems Researcher \| Optimization modeler \| Data Scientist</strong>  
-Lingkang is a Postdoctoral Researcher in the Department of Electrical Engineering at Eindhoven University of Technology (TU/e), The Netherlands. 
-
-His research focuses on developing **multi-physics asset integration and energy systems modeling through mathematical programming with support of AI and Machine Learning tools to reduce computational burdens and enhance scenario generation**.
-
-## News and updates 📈
-
-<div class="news-timeline">
-
-  <!-- 2026 -->
-  <div class="news-year-block">
-    <div class="news-year-title">2026</div>
-    <ul class="compact-list">     
-      <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New" width="18" height="18" style="vertical-align: middle; margin-right: 4px;" />
-        <strong>09 October:</strong> ORKEST Demo event for the Q3 2026 for the ORKEST results dissemination, Stedin Utrecht office
-      </li>
-       <li>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/New%20Button.png" alt="New" width="18" height="18" style="vertical-align: middle; margin-right: 4px;" />
-        <strong>05 October:</strong> Research career panelist for Msc course professional development carrier course,TU/e, Eindhoven, The Netherlands
-      </li>  
-      <li>
-        <strong>02–04 September:</strong> Speaker at the <a href="https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026" target="_blank">Nordic energy Informatic conference 2026</a>, Reykjavik, Iceland
-      </li>
-      <li>
-        <strong>03 July:</strong> ORKEST Demo event for the Q2 2026 in Stedin Utrecht office for the ORKEST results dissemination
-      </li>
-      <li>
-        <strong>15 June:</strong> 3 minutes Pitch as finalist for the best paper award from <a href="https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026" target="_blank">Postdoc Association TU/e</a>
-      </li>
-      <li>
-        <strong>10 June:</strong> Presenter at the Eurotech stand (18) at the <a href="https://interactive.eusew.eu/platform/eusew-2026/fair" target="_blank">EUSEW energy fair 2026</a>
-      </li>
-      <li>
-        <strong>22 May:</strong> Invited presentation on surrogate modeling in power systems, at <a href="https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/" target="_blank">IE&amp;Information Systems</a>, invited by Dr. <a href="https://www.tue.nl/en/research/researchers/laurens-bliek" target="_blank">Laurens Bliek</a>
-      </li>
-      <li>
-        <strong>26 Apr–10 May:</strong> Eurotech visiting in <a href="https://wind.dtu.dk/" target="_blank">DTU Wind and Energy Systems</a>, Denmark hosted by Dr. <a href="https://orbit.dtu.dk/en/persons/haris-ziras/" target="_blank">Haris Ziras</a>
-      </li>
-      <li>
-        <strong>01 April:</strong> Joined Horizon Europe Erasmus Project-SG: SKILL as TU/e representative and involved in WP2 and WP3
-      </li>
-    </ul>
-  </div>
-
-  <!-- 2025 -->
-  <div class="news-year-block">
-    <div class="news-year-title">2025</div>
-    <ul class="compact-list">
-      <li>
-        <strong>15 June:</strong> Joined the <a href="https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711" target="_blank">ORKEST</a> project as R4 leader
-      </li>
-    </ul>
-  </div>
-
-  <!-- Collapsible Section for Older Years -->
-  <details>
-    <summary>Show older news and updates...</summary>
-
-    <!-- 2024 -->
-    <div class="news-year-block">
-      <div class="news-year-title">2024</div>
-      <ul class="compact-list">
-        <li>
-          <strong>30 March:</strong> PhD defense with thesis: <a href="https://tesidottorato.depositolegale.it/handle/20.500.14242/307237" target="_blank"><i>Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage</i></a>
-        </li>
-        <li>
-          <strong>15 January:</strong> Started the postdoc researcher position working in NO-GIZMOS project as main TU/e responsible researcher
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2023 -->
-    <div class="news-year-block">
-      <div class="news-year-title">2023</div>
-      <ul class="compact-list">
-        <li>
-          <strong>March–May:</strong> Visiting PhD at Eindhoven University of Technology EES group under supervision of Dr. <a href="https://www.tue.nl/en/research/researchers/christina-papadimitriou" target="_blank">Christina Papadimitriou</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2022 -->
-    <div class="news-year-block">
-      <div class="news-year-title">2022</div>
-      <ul class="compact-list">
-        <li>
-          <strong>March–September:</strong> Visiting PhD at Technical University of Denmark, DTU energy, CMT section under supervision of Prof. <a href="https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/" target="_blank">Henrik Lund Frandsen</a> and collaboration with Prof. <a href="https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/" target="_blank">Rafael Nogueira Nakashima</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2020 -->
-    <div class="news-year-block">
-      <div class="news-year-title">2020</div>
-      <ul class="compact-list">
-        <li>
-          <strong>October:</strong> Started PhD in industrial engineering with specialization in energy systems, at Università Politecnica delle Marche under supervision of Prof. <a href="https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI" target="_blank">Gabriele Comodi</a>
-        </li>
-      </ul>
-    </div>
-
-  </details>
-
-</div>
-
-
-Research Framework 🧩
-======
-
-<style>
-  /* Main Container */
-  .arch-container {
+  /* ───────── Research framework diagram ───────── */
+  .arch {
     max-width: 1000px;
-    margin: 2em auto;
-    font-family: inherit;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-
-  /* Top Section (Horizontal Flow) */
-  .arch-top-row {
+  .arch__row, .arch__branch {
     display: flex;
-    flex-direction: row;
     align-items: stretch;
     justify-content: center;
     gap: 10px;
-    width: 100%;
   }
+  .arch__row { width: 100%; }
 
-  /* Branches for Left and Right side logic */
-  .arch-branch {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  /* Base Box Style */
-  .arch-box {
-    border: 1px solid #333;
-    padding: 15px;
-    border-radius: 4px;
-    text-align: center;
+  .arch__box {
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-  }
-
-  .arch-box h4 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 0.95rem;
-    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
     color: #111;
   }
+  .arch__box h4 { margin: 0 0 15px; font-size: 0.95rem; }
+  .arch__box--physics { background: #f3dfdf; }
+  .arch__box--ai      { background: #e4eff5; }
+  .arch__box--center  { background: #fbeaba; width: 200px; justify-content: center; }
 
-  /* Specific Box Colors matching your diagram */
-  .box-components { background-color: #f3dfdf; }
-  .box-physics    { background-color: #f3dfdf; }
-  .box-center     { background-color: #fbeaba; width: 200px; justify-content: center;}
-  .box-ai-support { background-color: #e4eff5; }
-  .box-ml-tools   { background-color: #e4eff5; }
-  
-  .box-final {
-    background-color: #fcd55c;
-    border: 2px solid #333;
+  .arch__final {
+    width: 80%;
     padding: 15px 30px;
+    background: #fcd55c;
+    border: 2px solid #333;
     border-radius: 4px;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    width: 80%;
+    color: #111;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  /* Arrows styling */
-  .arch-arrow-container {
+  .arch__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: #555;
     font-weight: bold;
-  }
-  
-  .down-arrow {
-    font-size: 3rem;
     color: #555;
-    margin: -10px 0;
   }
+  .arch__arrow--down { font-size: 3rem; margin: -10px 0; }
 
-  /* Inner Grid Layouts */
-  .comp-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
+  .arch__grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  .arch__stack { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; }
 
-  .vert-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Items Formatting - Interactive */
-  .arch-item {
+  .arch__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.85em; 
-    font-weight: bold; 
+    font-size: 0.85em;
+    font-weight: bold;
     line-height: 1.2;
-    color: #222;
-    cursor: pointer; 
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.2s ease;
   }
-
-  .arch-item:hover {
-    transform: scale(1.08); 
-  }
-
-  .arch-item img {
+  .arch__item:hover { transform: scale(1.05); }
+  .arch__item img {
     width: 45px;
     height: 45px;
     object-fit: contain;
     margin-bottom: 5px;
-    transition: filter 0.2s ease-in-out; 
   }
+  .arch__item--lg img { width: 80px; height: 80px; }
 
-  .arch-item:hover img {
-    filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.35)); 
-  }
+  .arch__etc { margin-top: auto; padding-top: 15px; text-align: right; font-size: 0.9em; font-weight: bold; }
 
-  .arch-item.large-img img {
-    width: 80px;
-    height: 80px;
-  }
-
-  /* "Etc." Styling */
-  .arch-etc {
-    margin-top: auto;
-    padding-top: 15px;
-    text-align: right;
-    font-size: 0.9em;
-    color: #222;
-  }
-
-  /* Mobile Responsiveness */
   @media (max-width: 950px) {
-    .arch-top-row {
-      flex-direction: column;
-      align-items: center;
-    }
-    .arch-branch {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-    .arch-right-branch {
-      flex-direction: column-reverse; 
-    }
-    .arch-arrow-container {
-      transform: rotate(90deg); 
-      padding: 10px 0;
-    }
-    .box-center {
-      width: 100%;
-      max-width: 350px;
-    }
-    .box-final {
-      width: 100%;
-    }
-  }
-</style>
-
-<div class="arch-container">
-  
-  <div class="arch-top-row">
-    
-    <div class="arch-branch arch-left-branch">
-      <div class="arch-box box-components">
-        <h4>Components</h4>
-        <div class="comp-grid">
-          <div class="arch-item">
-            <img src="/images/icons/electrolyzer.png" alt="Electrolyzer">
-            <span>Electrolyzer<br>(Power to H2)</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/battery.svg" alt="Battery">
-            <span>Li-ion Battery</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/transformer.png" alt="Transformer">
-            <span>Power transformer</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/cables.png" alt="Cables">
-            <span>Cables</span>
-          </div>
-        </div>
-        <div class="arch-etc"><strong>... etc.</strong></div>
-      </div>
-
-      <div class="arch-arrow-container">➔</div>
-
-      <div class="arch-box box-physics">
-        <h4>Physic-based layer</h4>
-        <div class="vert-grid">
-          <div class="arch-item">
-            <img src="/images/icons/electrical.png" alt="Electrical">
-            <span>Electrical</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/chemical.png" alt="Chemical">
-            <span>Chemical</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/thermal.png" alt="Thermal">
-            <span>Thermal</span>
-          </div>
-        </div>
-        <div class="arch-etc"><strong>... etc.</strong></div>
-      </div>
-    </div>
-
-    <div class="arch-arrow-container">➔</div>
-
-    <div class="arch-box box-center">
-      <h4>System decisions/policy</h4>
-      <div class="vert-grid">
-        <div class="arch-item large-img">
-          <img src="/images/icons/scheduling.png" alt="Hub Scheduling">
-          <span>Multi Energy Hub<br>scheduling</span>
-        </div>
-      </div>
-      <div class="arch-etc"><strong>... etc.</strong></div>
-    </div>
-
-    <div class="arch-arrow-container">⬅</div>
-
-    <div class="arch-branch arch-right-branch">
-      <div class="arch-box box-ai-support">
-        <h4>AI-support layer</h4>
-        <div class="vert-grid">
-          <div class="arch-item">
-            <img src="/images/icons/speedup.png" alt="Speed up">
-            <span>Computational<br>speed up</span>
-          </div>
-          <div class="arch-item">
-            <img src="/images/icons/forecast.png" alt="Forecast">
-            <span>Forecast and<br>scenarios generation</span>
-          </div>
-        </div>
-        <div class="arch-etc"><strong>... etc.</strong></div>
-      </div>
-
-      <div class="arch-arrow-container">⬅</div>
-
-      <div class="arch-box box-ml-tools">
-        <h4>ML/AI tools</h4>
-        <div class="vert-grid">
-          <div class="arch-item large-img">
-            <img src="/images/icons/neura-net.png" alt="Neural Network">
-            <span>Neural Network applied to<br>optimization models</span>
-          </div>
-          <div class="arch-item large-img">
-            <img src="/images/icons/GNN.png" alt="GNN">
-            <span>Multi-layers Graph<br>Neural Network</span>
-          </div>
-        </div>
-        <div class="arch-etc"><strong>... etc.</strong></div>
-      </div>
-    </div>
-
-  </div> 
-  <div class="down-arrow">⇩</div>
-
-  <div class="box-final">
-    Multi-physic AI supported System Level Energy System Modeling
-  </div>
-
-</div>
-
-
-Selected  Open Access Papers 
-======
-
-<style>
-  .page {
-    padding-right: 0 !important;
-  }
-  .page__inner-wrap {
-    max-width: 100% !important;
+    .arch__row, .arch__branch { flex-direction: column; align-items: center; width: 100%; }
+    .arch__arrow { transform: rotate(90deg); padding: 10px 0; }
+    .arch__box--center { width: 100%; max-width: 350px; }
+    .arch__final { width: 100%; }
   }
 
-  .paper-container {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: space-between;
+  @media (prefers-reduced-motion: reduce) {
+    .arch__item { transition: none; }
+    .arch__item:hover { transform: none; }
   }
-  
-  .paper-item {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+
+  /* ───────── Papers ───────── */
+  .papers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
   }
-  
-  .paper-iframe {
+  .paper { display: flex; flex-direction: column; text-align: center; }
+  .paper__frame {
     width: 100%;
     height: 350px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    background-color: white;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
-
-  .fullscreen-btn {
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: #494e52;
-    color: white;
+  .paper__actions { display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.6rem; }
+  .paper__btn {
+    padding: 0.45rem 0.8rem;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.85em;
+    background: #494e52;
+    color: #fff !important;
+    font-size: 0.8em;
     font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  
-  .fullscreen-btn:hover {
-    background-color: #2a2d2f;
-  }
+  .paper__btn:hover { background: #2a2d2f; }
+  .paper__title { font-size: 0.9em; line-height: 1.3; margin: 0.7rem 0 0; font-weight: bold; }
+  .paper__title a { text-decoration: none; }
 
-  @media (max-width: 768px) {
-    .paper-container {
-      flex-direction: column;
-    }
+  /* Mobile browsers rarely render PDFs inside iframes: show the buttons only */
+  @media (max-width: 768px), (hover: none) {
+    .paper__frame, .paper__btn--fs { display: none; }
+    .paper { text-align: left; padding: 0.8rem; border: 1px solid #e5e7eb; border-radius: 6px; }
+    .paper__title { margin-top: 0; }
+    .paper__actions { justify-content: flex-start; order: 2; }
   }
 </style>
 
-<div class="paper-container">
-  <div class="paper-item">
-    <iframe id="pdf1" class="paper-iframe" src="/files/ALK.pdf#page=1&amp;view=FitH" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-    <button class="fullscreen-btn" onclick="makeFullScreen('pdf1')">⛶ Full Screen Preview</button>
-    <p style="font-size: 0.9em; margin-top: 10px; line-height: 1.2;"><b><a href="/files/paper1.pdf" target="_blank" style="text-decoration: none;">Alkaline electrolysis for green hydrogen production_ A novel, simple model for thermo-electrochemical coupled system analysis</a></b></p>
+{% assign now_s     = site.time | date: "%s" | plus: 0 %}
+{% assign this_year = site.time | date: "%Y" | plus: 0 %}
+{% assign last_year = this_year | minus: 1 %}
+{% assign new_s     = page.news_new_days | default: 30 | times: 86400 %}
+{% assign icons     = "/images/icons/" | relative_url %}
+
+<p class="tagline">Energy systems researcher · Optimization modeler · Data scientist</p>
+
+Lingkang is a postdoctoral researcher in the Electrical Energy Systems group, Department of Electrical Engineering, Eindhoven University of Technology (TU/e), the Netherlands, and a member of EIRES.
+
+His research brings **detailed multi-physics models of energy assets into system-level decision making**, using mathematical programming supported by AI and machine learning to cut computational cost and improve scenario generation. He works closely with grid operators on congestion management and teaches in the MSc course *5LEP0 Electricity Markets: Modeling and Optimization*.
+
+## News and updates 📈
+
+{% assign news_sorted = page.news | sort: "date" | reverse %}
+
+<div class="news">
+
+{% comment %} ── Upcoming (oldest first, so the next event is on top) ── {% endcomment %}
+{% assign upcoming = "" | split: "" %}
+{% for n in news_sorted %}
+  {% assign n_s = n.date | date: "%s" | plus: 0 %}
+  {% if n_s > now_s %}{% assign upcoming = upcoming | push: n %}{% endif %}
+{% endfor %}
+
+{% if upcoming.size > 0 %}
+<div class="news__block news__block--upcoming">
+  <div class="news__heading">Upcoming</div>
+  <ul class="news__list">
+  {% assign upcoming_asc = upcoming | reverse %}
+  {% for n in upcoming_asc %}
+    <li>
+      <span class="badge badge--upcoming">Upcoming</span>
+      <span class="news__date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
+      {{ n.text }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% comment %} ── Past items, grouped by year ── {% endcomment %}
+{% assign years = news_sorted | group_by_exp: "n", "n.date | date: '%Y'" %}
+{% assign opened_older = false %}
+
+{% for y in years %}
+  {% assign y_num = y.name | plus: 0 %}
+
+  {% assign past_items = "" | split: "" %}
+  {% for n in y.items %}
+    {% assign n_s = n.date | date: "%s" | plus: 0 %}
+    {% if n_s <= now_s %}{% assign past_items = past_items | push: n %}{% endif %}
+  {% endfor %}
+  {% if past_items.size == 0 %}{% continue %}{% endif %}
+
+  {% if y_num < last_year and opened_older == false %}
+    {% assign opened_older = true %}
+<details class="news__older">
+  <summary>Show older news and updates…</summary>
+  {% endif %}
+
+<div class="news__block">
+  <div class="news__heading">{{ y.name }}</div>
+  <ul class="news__list">
+  {% for n in past_items %}
+    {% assign n_s = n.date | date: "%s" | plus: 0 %}
+    {% assign age = now_s | minus: n_s %}
+    <li>
+      {% if age < new_s %}<span class="badge badge--new">New</span>{% endif %}
+      <span class="news__date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
+      {{ n.text }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
+{% if opened_older %}
+</details>
+{% endif %}
+
+</div>
+
+## Research framework 🧩
+
+<div class="arch" role="img" aria-label="Research framework: component models and physics-based layers feed system-level decisions, supported by an AI layer built on ML tools, together forming multi-physics, AI-supported system-level energy modeling.">
+
+  <div class="arch__row">
+
+    <div class="arch__branch">
+      <div class="arch__box arch__box--physics">
+        <h4>Components</h4>
+        <div class="arch__grid2">
+          <div class="arch__item"><img src="{{ icons }}electrolyzer.png" alt="" loading="lazy"><span>Electrolyzer<br>(Power-to-H₂)</span></div>
+          <div class="arch__item"><img src="{{ icons }}battery.svg" alt="" loading="lazy"><span>Li-ion battery</span></div>
+          <div class="arch__item"><img src="{{ icons }}transformer.png" alt="" loading="lazy"><span>Power transformer</span></div>
+          <div class="arch__item"><img src="{{ icons }}cables.png" alt="" loading="lazy"><span>Cables</span></div>
+        </div>
+        <div class="arch__etc">… etc.</div>
+      </div>
+
+      <div class="arch__arrow" aria-hidden="true">➔</div>
+
+      <div class="arch__box arch__box--physics">
+        <h4>Physics-based layer</h4>
+        <div class="arch__stack">
+          <div class="arch__item"><img src="{{ icons }}electrical.png" alt="" loading="lazy"><span>Electrical</span></div>
+          <div class="arch__item"><img src="{{ icons }}chemical.png" alt="" loading="lazy"><span>Chemical</span></div>
+          <div class="arch__item"><img src="{{ icons }}thermal.png" alt="" loading="lazy"><span>Thermal</span></div>
+        </div>
+        <div class="arch__etc">… etc.</div>
+      </div>
+    </div>
+
+    <div class="arch__arrow" aria-hidden="true">➔</div>
+
+    <div class="arch__box arch__box--center">
+      <h4>System decisions / policy</h4>
+      <div class="arch__stack">
+        <div class="arch__item arch__item--lg"><img src="{{ icons }}scheduling.png" alt="" loading="lazy"><span>Multi-energy hub<br>scheduling</span></div>
+      </div>
+      <div class="arch__etc">… etc.</div>
+    </div>
+
+    <div class="arch__arrow" aria-hidden="true">⬅</div>
+
+    <div class="arch__branch">
+      <div class="arch__box arch__box--ai">
+        <h4>AI-support layer</h4>
+        <div class="arch__stack">
+          <div class="arch__item"><img src="{{ icons }}speedup.png" alt="" loading="lazy"><span>Computational<br>speed-up</span></div>
+          <div class="arch__item"><img src="{{ icons }}forecast.png" alt="" loading="lazy"><span>Forecasting and<br>scenario generation</span></div>
+        </div>
+        <div class="arch__etc">… etc.</div>
+      </div>
+
+      <div class="arch__arrow" aria-hidden="true">⬅</div>
+
+      <div class="arch__box arch__box--ai">
+        <h4>ML/AI tools</h4>
+        <div class="arch__stack">
+          <div class="arch__item arch__item--lg"><img src="{{ icons }}neura-net.png" alt="" loading="lazy"><span>Neural networks embedded<br>in optimization models</span></div>
+          <div class="arch__item arch__item--lg"><img src="{{ icons }}GNN.png" alt="" loading="lazy"><span>Multi-layer graph<br>neural networks</span></div>
+        </div>
+        <div class="arch__etc">… etc.</div>
+      </div>
+    </div>
+
   </div>
-  
-  <div class="paper-item">
-    <iframe id="pdf2" class="paper-iframe" src="/files/Batt.pdf#page=1&amp;view=FitH" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-    <button class="fullscreen-btn" onclick="makeFullScreen('pdf2')">⛶ Full Screen Preview</button>
-    <p style="font-size: 0.9em; margin-top: 10px; line-height: 1.2;"><b><a href="/files/paper2.pdf" target="_blank" style="text-decoration: none;">Assessing battery degradation as a key performance indicator for multi-objective optimization of multi-carrier energy systems</a></b></p>
+
+  <div class="arch__arrow arch__arrow--down" aria-hidden="true">⇩</div>
+
+  <div class="arch__final">Multi-physics, AI-supported system-level energy modeling</div>
+
+</div>
+
+## Selected open-access papers
+
+<div class="papers">
+{% for p in page.papers %}
+  <div class="paper">
+    <iframe id="pdf-{{ p.id }}" class="paper__frame"
+            src="{{ p.preview | relative_url }}#page=1&amp;view=FitH"
+            title="Preview: {{ p.title }}"
+            loading="lazy" allowfullscreen></iframe>
+    <p class="paper__title">
+      <a href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>
+    </p>
+    <div class="paper__actions">
+      <button type="button" class="paper__btn paper__btn--fs"
+              data-target="pdf-{{ p.id }}" data-fallback="{{ p.preview | relative_url }}">⛶ Full screen</button>
+      <a class="paper__btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+    </div>
   </div>
-  
-  <div class="paper-item">
-    <iframe id="pdf3" class="paper-iframe" src="/files/OFO.pdf#page=1&amp;view=FitH" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-    <button class="fullscreen-btn" onclick="makeFullScreen('pdf3')">⛶ Full Screen Preview</button>
-    <p style="font-size: 0.9em; margin-top: 10px; line-height: 1.2;"><b><a href="/files/paper3.pdf" target="_blank" style="text-decoration: none;">Real-time Measurement-based Optimization for Distribution System Operation Considering Battery Voltage and Thermal Constraints</a></b></p>
-  </div>
+{% endfor %}
 </div>
 
 <script>
-  function makeFullScreen(elemId) {
-    var elem = document.getElementById(elemId);
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) {
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) {
-      elem.msRequestFullscreen();
-    }
-  }
-
-  function exitFullScreen() {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) {
-      document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-      document.msExitFullscreen();
-    }
-  }
+  document.querySelectorAll(".paper__btn--fs").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var el = document.getElementById(btn.dataset.target);
+      var req = el && (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen);
+      if (req) {
+        req.call(el);
+      } else {
+        // e.g. iOS Safari: no element fullscreen, open the PDF instead
+        window.open(btn.dataset.fallback, "_blank", "noopener");
+      }
+    });
+  });
 </script>

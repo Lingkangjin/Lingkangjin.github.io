@@ -6,215 +6,322 @@ author_profile: true
 redirect_from:
   - /resume
 
+cv_pdf: "/files/CV_Jin.pdf"
+
+# ── Education (most recent first) ────────────────────────────────
 education:
-  - degree: "Ph.D in industrial engineering with specialization in Energy Systems"
+  - degree: "Ph.D. in Industrial Engineering"
+    field: "Energy Systems"
     institution: "Università Politecnica delle Marche"
-    link: "https://www.univpm.it/Entra/"
-    year: "2020-2024"
-  - degree: "M.S. in Mechanical engineering with thermo-mechanical specialization"
+    location: "Italy"
+    link: "https://www.univpm.it/"
+    period: "2020 – 2024"
+  - degree: "M.Sc. in Mechanical Engineering"
+    field: "Thermo-mechanics"
     institution: "Università Politecnica delle Marche"
-    link: "https://www.univpm.it/Entra/"
-    year: "2017-2019"
-  - degree: "B.S. in Mechanical engineering"
+    location: "Italy"
+    link: "https://www.univpm.it/"
+    period: "2017 – 2019"
+  - degree: "B.Sc. in Mechanical Engineering"
     institution: "Università Politecnica delle Marche"
-    link: "https://www.univpm.it/Entra/"
-    year: "2014-2017"
+    location: "Italy"
+    link: "https://www.univpm.it/"
+    period: "2014 – 2017"
 
+# ── Work experience (most recent first) ──────────────────────────
 work_experience:
-  - date: "Jan 2024-Now"
+  - period: "Jan 2024 – present"
     role: "Postdoctoral Researcher"
-    institution: "Eindhoven University of Technology (NL)"
-    details: "supervisors: Dr. <a href='https://www.tue.nl/en/research/researchers/nikolaos-paterakis' target='_blank'>Nikolaos Paterakis</a>, Dr. <a href='https://www.tue.nl/en/research/researchers/phuong-nguyen' target='_blank'>Phuong Nguyen</a> and Dr. <a href='https://www.tue.nl/en/research/researchers/christina-papadimitriou' target='_blank'>Christina Papadimitriou</a>"
-  - date: "Nov 2020-Oct 2023"
-    role: "Ph.D Researcher"
-    institution: "Università Politecnica delle Marche (IT)"
-    details: "supervisor: Prof. <a href='https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI' target='_blank'>Gabriele Comodi</a>"
-  - date: "Dec 2019-Oct 2020"
-    role: "Engineering consultant"
+    institution: "Eindhoven University of Technology"
+    location: "The Netherlands"
+    supervisor_label: "Supervisors"
+    supervisors:
+      - name: "Dr. Nikolaos Paterakis"
+        url: "https://www.tue.nl/en/research/researchers/nikolaos-paterakis"
+      - name: "Dr. Phuong Nguyen"
+        url: "https://www.tue.nl/en/research/researchers/phuong-nguyen"
+      - name: "Dr. Christina Papadimitriou"
+        url: "https://www.tue.nl/en/research/researchers/christina-papadimitriou"
+  - period: "Nov 2020 – Oct 2023"
+    role: "Ph.D. Researcher"
+    institution: "Università Politecnica delle Marche"
+    location: "Italy"
+    supervisor_label: "Supervisor"
+    supervisors:
+      - name: "Prof. Gabriele Comodi"
+        url: "https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI"
+  - period: "Dec 2019 – Oct 2020"
+    role: "Engineering Consultant"
     institution: "Whirlpool"
-    details: "supervisor: Piotr Rosiak"
+    supervisor_label: "Supervisor"
+    supervisors:
+      - name: "Piotr Rosiak"
 
-professional_activities:
-  - text: "<strong>Reviewer for journals</strong>: IEEE Transactions on Power Systems, IEEE Transactions on Smart Grid, Applied Energy, Sustainable Energy Grids and Networks, Sustainability, IEEE Systems, IEEE transactions on Intelligent transportation systems"
-  - text: "<strong>Reviewer for conferences</strong>: Innovative Smart Grid Technology Conference (ISGT) Europe, Smart Energy Systems and Technologies (SEST), PowerTech conference, Efficiency-Cost-Optimization-Simulation and Environmental Impact of Energy Systems (ECOS)"
-  - text: "Member of the IEEE Power and Energy Society (PES) and IEEE Industrial Electronics Society (IES)"
-  - text: "Member of the <a href='https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems/focus-areas/about-eires' target='_blank'>Eindhoven Institute for Renewable Energy Systems (EIRES)</a>"
+# ── Teaching & supervision ───────────────────────────────────────
+teaching:
+  - "<strong>Lecturer</strong> in TU/e course <em>5LEP0 Electricity Markets: Modeling and Optimization</em> (e.g. market participation of renewable producers)"
+  - "<strong>Daily supervisor</strong> of M.Sc. industry internships and student research projects, Electrical Energy Systems group, TU/e"
 
+# ── Professional activities ──────────────────────────────────────
+reviewer_journals:
+  - IEEE Transactions on Power Systems
+  - IEEE Transactions on Smart Grid
+  - IEEE Transactions on Intelligent Transportation Systems
+  - IEEE Systems Journal
+  - Applied Energy
+  - Sustainable Energy, Grids and Networks
+  - Sustainability
+
+reviewer_conferences:
+  - IEEE PES ISGT Europe
+  - IEEE PES International Meeting
+  - IEEE PowerTech
+  - SEST (Smart Energy Systems and Technologies)
+  - ECOS (Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems)
+
+memberships:
+  - "IEEE Power & Energy Society (PES)"
+  - "<a href='https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems' target='_blank' rel='noopener noreferrer'>Eindhoven Institute for Renewable Energy Systems (EIRES)</a>"
+
+# ── Technical skills ─────────────────────────────────────────────
+# Abbreviations use <abbr class="tip" tabindex="0" data-tip="..."> so the
+# tooltip also works on touch screens and with keyboard focus.
+skills:
+  - title: "Energy Systems & Multi-Physics Modeling"
+    items:
+      - label: "System-level simulation"
+        text: "Multi-physics modeling of <abbr class='tip' tabindex='0' data-tip='Power-to-Hydrogen: converting electrical power into hydrogen via electrolysis'>P2H</abbr> systems, alkaline electrolyzers and lithium-ion batteries (electrochemical modeling and degradation analysis)."
+      - label: "Power systems analysis"
+        text: "Transmission and distribution power flow (<abbr class='tip' tabindex='0' data-tip='Optimal Power Flow: optimization of power generation and network flows'>OPF</abbr>), grid congestion management and DER asset management."
+      - label: "Thermodynamic assessment"
+        text: "Fluid property modeling with <strong>CoolProp</strong>, <strong>REFPROP</strong> and <strong>Cantera</strong>."
+  - title: "Optimization & Mathematical Modeling"
+    items:
+      - label: "Paradigms"
+        text: "LP, MILP, <abbr class='tip' tabindex='0' data-tip='Mixed-Integer Conic Programming: convex non-linear problems with integer decisions'>MICP</abbr> and bilevel optimization."
+      - label: "Applications"
+        text: "Planning and scheduling of complex energy networks."
+      - label: "Solvers"
+        text: "<strong>Gurobi</strong>, <strong>CPLEX</strong>, <strong>MOSEK</strong>, <strong>HiGHS</strong> and <strong>Ipopt</strong>."
+  - title: "AI, Machine Learning & Data Science"
+    items:
+      - label: "Data science pipeline"
+        text: "Exploratory data analysis, feature engineering, dimensionality reduction and end-to-end ML pipelines."
+      - label: "AI for energy"
+        text: "<abbr class='tip' tabindex='0' data-tip='Graph Neural Networks: deep learning on graph-structured data such as power grids'>GNNs</abbr> for optimization; supervised and unsupervised learning for load, weather and price forecasting."
+      - label: "Explainability"
+        text: "Model interpretation with <strong>SHAP</strong> and <strong>LIME</strong> for stakeholder reporting."
+  - title: "Mechanical Design & Prototyping"
+    items:
+      - label: "CAD"
+        text: "3D modeling in <strong>SolidWorks</strong> and <strong>Solid Edge</strong>; 2D drafting in <strong>AutoCAD</strong> and <strong>Rhinoceros</strong>."
+      - label: "CFD"
+        text: "<strong>Ansys Fluent</strong> and <strong>STAR-CCM+</strong>."
+      - label: "Workshop"
+        text: "CNC programming, manual machining and milling, carbon-fiber lamination."
+  - title: "Programming & Software Engineering"
+    items:
+      - label: "Python"
+        text: "Pandas, NumPy, SciPy, PyTorch, Pyomo, GeoPandas."
+      - label: "Visualization"
+        text: "<strong>Plotly</strong>, <strong>Seaborn</strong> and <strong>Streamlit</strong> dashboards."
+      - label: "DevOps"
+        text: "<strong>Git/GitHub</strong>, <strong>Docker</strong>/<strong>Podman</strong>, <strong>GitHub Actions</strong>, <strong>MLflow</strong> experiment tracking and <strong>Sphinx</strong> documentation."
+
+# ── Languages ────────────────────────────────────────────────────
 languages:
   - language: "Chinese"
-    proficiency: "Native"
+    level: "Native"
   - language: "Italian"
-    proficiency: "Native"
+    level: "Native"
   - language: "English"
-    proficiency: "Proficient"
+    level: "Proficient"
   - language: "Dutch"
-    proficiency: "A1"
+    level: "A1"
 ---
 
-{% include base_path %}
-
-<p>
-  <a class="btn btn--primary btn--text-black" href="{{ base_path }}/files/CV_Jin.pdf" download>
-    Download latest CV (PDF)
-  </a>
-</p>
-
 <style>
-  /* Compact list styling for CV sections */
-  .compact-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .compact-list li {
-    margin-bottom: 10px; 
-    line-height: 1.4;
+  /* All rules are scoped to .cv so they don't affect other pages */
+  .cv {
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #0366d6;
+    --panel: rgba(127, 127, 127, 0.06);
   }
 
-  /* Tooltip styling for Jekyll */
-  .tooltip {
+  .cv__download { margin: 0.5rem 0 1.5rem; }
+
+  /* Timeline (education + work) */
+  .cv-timeline { list-style: none; margin: 0 0 1rem; padding: 0; }
+  .cv-timeline li {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.45;
+  }
+  .cv-timeline li:last-child { border-bottom: none; }
+  .cv-timeline__date { color: var(--muted); font-size: 0.85em; white-space: nowrap; }
+  .cv-timeline__title { font-weight: bold; }
+  .cv-timeline__sub { font-size: 0.9em; }
+  .cv-timeline__note { font-size: 0.8em; color: var(--muted); margin-top: 0.15rem; }
+
+  /* Plain compact lists */
+  .cv-list { margin: 0 0 1rem 1.1rem; padding: 0; }
+  .cv-list li { margin-bottom: 0.35rem; line-height: 1.45; }
+
+  .cv-subhead { font-size: 0.95em; margin: 1rem 0 0.4rem; }
+
+  /* Skills accordions */
+  .cv-skill {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.9rem;
+    border-left: 4px solid var(--border);
+    background: var(--panel);
+    border-radius: 0 6px 6px 0;
+  }
+  .cv-skill[open] { border-left-color: var(--accent); }
+  .cv-skill summary { font-weight: bold; cursor: pointer; }
+  .cv-skill summary:hover,
+  .cv-skill summary:focus-visible { color: var(--accent); }
+  .cv-skill ul { margin: 0.6rem 0 0.2rem 1.1rem; }
+  .cv-skill li { margin-bottom: 0.35rem; }
+
+  /* Accessible tooltips: hover, keyboard focus or tap */
+  .cv abbr.tip {
     position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted #0366d6;
-    color: #0366d6;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent);
+    color: var(--accent);
     cursor: help;
   }
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 250px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 10px;
+  .cv abbr.tip::after {
+    content: attr(data-tip);
     position: absolute;
-    z-index: 1;
-    bottom: 125%; 
+    bottom: 135%;
     left: 50%;
-    margin-left: -125px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 0.85em;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 240px;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 0.75em;
     font-weight: normal;
+    line-height: 1.35;
+    text-align: center;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 10;
   }
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+  .cv abbr.tip:hover::after,
+  .cv abbr.tip:focus::after { opacity: 1; }
 
-  /* Styling for the interactive accordions */
-  details {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-left: 4px solid #eaecef;
-    background-color: #f6f8fa;
+  /* Languages */
+  .cv-langs { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin: 0; padding: 0; }
+  .cv-langs li {
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.85em;
   }
-  summary {
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.1em;
-    outline: none;
-  }
-  summary:hover {
-    color: #0366d6;
-  }
-  details > ul {
-    margin-top: 0.8rem;
+  .cv-langs span { color: var(--muted); }
+
+  @media (max-width: 600px) {
+    .cv-timeline li { grid-template-columns: 1fr; gap: 0.15rem; }
   }
 </style>
 
+<div class="cv" markdown="1">
+
+<p class="cv__download">
+  <a class="btn btn--primary" href="{{ page.cv_pdf | relative_url }}" download>
+    Download full CV (PDF)
+  </a>
+</p>
 
 ## Education
 
-<ul class="compact-list">
-  {% for ed in page.education %}
+<ul class="cv-timeline">
+{% for ed in page.education %}
   <li>
-    <strong>[Ed.{{ forloop.rindex }}]</strong> {{ ed.degree }}, <a href="{{ ed.link }}" target="_blank">{{ ed.institution }}</a>, {{ ed.year }}
+    <div class="cv-timeline__date">{{ ed.period }}</div>
+    <div>
+      <div class="cv-timeline__title">{{ ed.degree }}{% if ed.field %} — {{ ed.field }}{% endif %}</div>
+      <div class="cv-timeline__sub">
+        {% if ed.link %}<a href="{{ ed.link }}" target="_blank" rel="noopener noreferrer">{{ ed.institution }}</a>{% else %}{{ ed.institution }}{% endif %}{% if ed.location %}, {{ ed.location }}{% endif %}
+      </div>
+    </div>
   </li>
-  {% endfor %}
+{% endfor %}
 </ul>
-
-<hr>
 
 ## Work experience
 
-<ul class="compact-list">
-  {% for work in page.work_experience %}
+<ul class="cv-timeline">
+{% for work in page.work_experience %}
   <li>
-    <strong>[W{{ forloop.rindex }}]</strong> <strong>{{ work.date }}</strong>: {{ work.role }} <i>at</i> {{ work.institution }} with {{ work.details }}
+    <div class="cv-timeline__date">{{ work.period }}</div>
+    <div>
+      <div class="cv-timeline__title">{{ work.role }}</div>
+      <div class="cv-timeline__sub">{{ work.institution }}{% if work.location %}, {{ work.location }}{% endif %}</div>
+      {% if work.supervisors %}
+      <div class="cv-timeline__note">
+        {{ work.supervisor_label | default: "Supervisor" }}:
+        {% for s in work.supervisors %}{% if s.url %}<a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </li>
-  {% endfor %}
+{% endfor %}
 </ul>
 
-<hr>
+## Teaching & supervision
 
-## Professional Activities
-
-<ul class="compact-list">
-  {% for activity in page.professional_activities %}
-  <li>
-    <strong>[A{{ forloop.rindex }}]</strong> {{ activity.text }}
-  </li>
-  {% endfor %}
+<ul class="cv-list">
+{% for t in page.teaching %}
+  <li>{{ t }}</li>
+{% endfor %}
 </ul>
 
-<hr>
+## Professional activities
 
-## Technical Skills Portfolio
+<h3 class="cv-subhead">Reviewer — journals</h3>
+<p>{{ page.reviewer_journals | join: " · " }}</p>
 
-<details open>
-  <summary>1. Energy Systems & Multi-Physics Modeling</summary>
+<h3 class="cv-subhead">Reviewer — conferences</h3>
+<p>{{ page.reviewer_conferences | join: " · " }}</p>
+
+<h3 class="cv-subhead">Memberships</h3>
+<ul class="cv-list">
+{% for m in page.memberships %}
+  <li>{{ m }}</li>
+{% endfor %}
+</ul>
+
+## Technical skills
+
+{% for group in page.skills %}
+<details class="cv-skill"{% if group.open %} open{% endif %}>
+  <summary>{{ group.title }}</summary>
   <ul>
-    <li><strong>System-Level Simulation:</strong> Multi-physics modeling of <span class="tooltip">P2H<span class="tooltiptext">Power-to-Hydrogen: Converting electrical power into hydrogen gas via electrolysis.</span></span> systems, Alkaline electrolyzers, and Lithium-ion batteries (electrochemical modeling & degradation analysis).</li>
-    <li><strong>Power Systems Analysis:</strong> Transmission/distribution power flow (<span class="tooltip">OPF<span class="tooltiptext">Optimal Power Flow: Mathematical optimization of power generation and routing.</span></span>), grid congestion management, and DER asset management.</li>
-    <li><strong>Thermodynamic Assessment:</strong> Advanced fluid property modeling using <strong>CoolProp</strong>, <strong>RefProp</strong>, and <strong>Cantera</strong>.</li>
+  {% for item in group.items %}
+    <li><strong>{{ item.label }}:</strong> {{ item.text }}</li>
+  {% endfor %}
   </ul>
 </details>
-
-<details>
-  <summary>2. Optimization & Mathematical Modeling</summary>
-  <ul>
-    <li><strong>Optimization Paradigms:</strong> Linear (LP), Mixed-Integer Linear (MILP), <span class="tooltip">MICP<span class="tooltiptext">Mixed-Integer Conic Programming: Used for complex, non-linear convex optimization problems.</span></span>, and Bilevel Optimization.</li>
-    <li><strong>Energy Applications:</strong> Planning and scheduling optimization for complex energy networks.</li>
-    <li><strong>Solvers:</strong> Expert proficiency in <strong>Gurobi</strong>, <strong>CPLEX</strong>, <strong>MOSEK</strong>, <strong>HiGHS</strong>, and <strong>Ipopt</strong>.</li>
-  </ul>
-</details>
-
-<details>
-  <summary>3. AI, Machine Learning & Data Science</summary>
-  <ul>
-    <li><strong>Data Science Pipeline:</strong> Exploratory Data Analysis (EDA), feature engineering, dimensionality reduction, and full ML pipeline integration.</li>
-    <li><strong>Advanced AI Applications:</strong> <span class="tooltip">GNNs<span class="tooltiptext">Graph Neural Networks: Deep learning methods for data described by graphs (like power grids).</span></span> for optimization; Supervised/Unsupervised learning for energy time-series (load, weather, and price forecasting).</li>
-    <li><strong>Explainability & Reporting:</strong> Model interpretation using <strong>SHAP</strong> and <strong>LIME</strong> for stakeholder reporting.</li>
-  </ul>
-</details>
-
-<details>
-  <summary>4. Mechanical Design & Physical Prototyping</summary>
-  <ul>
-    <li><strong>Computer-Aided Design (CAD):</strong> 3D modeling (<strong>SolidWorks</strong>, <strong>SolidEdge</strong>) and 2D drafting (<strong>AutoCAD</strong>, <strong>Rhinoceros</strong>).</li>
-    <li><strong>Simulation (CFD):</strong> High-fidelity fluid dynamics using <strong>Ansys Fluent</strong> and <strong>Star-CCM+</strong>.</li>
-    <li><strong>Workshop & Manufacturing:</strong> CNC programming, manual machining/milling, and carbon fiber lamination.</li>
-  </ul>
-</details>
-
-<details>
-  <summary>5. Programming & Software Engineering</summary>
-  <ul>
-    <li><strong>Language & Libraries:</strong> <strong>Python</strong> (Pandas, NumPy, PyTorch, SciPy, Pyomo, GeoPandas).</li>
-    <li><strong>Visualization:</strong> Interactive dashboarding and plotting via <strong>Plotly</strong>, <strong>Seaborn</strong>, and <strong>Streamlit</strong>.</li>
-    <li><strong>DevOps & CI/CD:</strong> Version control (<strong>Git/GitHub</strong>), containerization (<strong>Docker,Podman</strong>), automated workflows (<strong>GitHub Actions</strong>), experiment tracking (<strong>MLflow</strong>), and documentation (<strong>Sphinx</strong>).</li>
-  </ul>
-</details>
-
-<hr>
+{% endfor %}
 
 ## Languages
 
-<ul class="compact-list">
-  {% for lang in page.languages %}
-  <li>
-    - {{ lang.language }}: {{ lang.proficiency }}
-  </li>
-  {% endfor %}
+<ul class="cv-langs">
+{% for l in page.languages %}
+  <li><strong>{{ l.language }}</strong> <span>· {{ l.level }}</span></li>
+{% endfor %}
 </ul>
+
+</div>

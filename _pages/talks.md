@@ -84,6 +84,9 @@ author_profile: true
     <div class="year-title">2026</div>
     <ul class="compact-list">
       <li>
+        <span class="pub-tag">[E5]</span> <strong>16 Dec:</strong> 2026 EES research day <span class="badge-upcoming">Upcoming</span>
+      </li>  
+      <li>
         <span class="pub-tag">[E4]</span> <strong>28 Oct:</strong> Cross-sectoral talk: <i>Bilevel optimization: modeling, algorithmic challenges and applications</i>, Presenter: Dr. <a href="https://www.tue.nl/en/research/researchers/yasmine-beck" target="_blank">Yasmine Beck</a>. <span class="badge-upcoming">Upcoming</span>
       </li>
       <li>
