@@ -1,0 +1,35 @@
+# Extra map entries that are not in _data/talks.yml.
+#   type  - career | visit | talk
+#   place - key in _data/places.yml
+- type: career
+  period: "2024 – present"
+  text: "Postdoctoral researcher, Electrical Energy Systems group"
+  place: eindhoven
+- type: career
+  period: "2020 – 2024"
+  text: "Ph.D. in Industrial Engineering (Energy Systems)"
+  place: ancona
+- type: career
+  period: "2014 – 2019"
+  text: "B.Sc. and M.Sc. in Mechanical Engineering"
+  place: ancona
+- type: visit
+  period: "Apr – May 2026"
+  text: "EuroTech visiting researcher, DTU Wind and Energy Systems (host: Dr. Haris Ziras)"
+  place: riso
+- type: visit
+  period: "Mar – May 2023"
+  text: "Visiting Ph.D., TU/e Electrical Energy Systems group (Dr. Christina Papadimitriou)"
+  place: eindhoven
+- type: visit
+  period: "Mar – Sep 2022"
+  text: "Visiting Ph.D., DTU Energy (Prof. Henrik Lund Frandsen)"
+  place: lyngby
+- type: talk
+  period: "2026"
+  text: "ORKEST demo events for results dissemination (Q2 and Q3)"
+  place: utrecht
+- type: talk
+  period: "2026"
+  text: "Presenter at the EuroTech stand, EUSEW 2026 Energy Fair"
+  place: brussels

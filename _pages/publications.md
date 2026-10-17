@@ -1,321 +1,220 @@
 ---
 layout: archive
+title: "Publications"
 permalink: /publications/
 author_profile: true
+
+# Keep each list ordered newest first: numbering counts down from the top.
+# Fields: authors, title, venue, year, link_url, quartile, status
+#   quartile - SCImago Journal Rank (SJR) best quartile, see https://www.scimagojr.com
+#              (leave empty if the journal is not ranked yet)
+#   status   - optional badge, e.g. "Early access" or "Accepted"
+# The link label is "DOI" for doi.org links and "Link" otherwise.
 journal_articles:
   - authors: "<strong>Lingkang Jin</strong>, Laurens Bliek, Nikolaos G. Paterakis"
     title: "Surrogate Models in Power System Scheduling Problems: Learning Active Constraints via Graph Neural Networks"
     venue: "IEEE Transactions on Smart Grid"
     year: "2026"
-    link_text: "DOI"
+    quartile: "Q1"
+    status: "Early access"
     link_url: "https://doi.org/10.1109/TSG.2026.3681028"
   - authors: "<strong>Lingkang Jin</strong>, Laurens Bliek, Nikolaos G. Paterakis"
     title: "Learning Active Constraints for Bilevel Optimization: Evaluating Classification Metrics on Real-World Distribution System Data"
-    venue: "IEEE Transactions on Smart Grid, vol. 17, no. 2, pp. 1303-1314"
+    venue: "IEEE Transactions on Smart Grid, vol. 17, no. 2, pp. 1303–1314"
     year: "2026"
-    link_text: "DOI"
+    quartile: "Q1"
     link_url: "https://doi.org/10.1109/TSG.2025.3632419"
   - authors: "<strong>Lingkang Jin</strong>, Mosè Rossi, Andrea Monforti Ferrario, Francesca Mennilli, Gabriele Comodi"
     title: "Designing hybrid energy storage systems for steady green hydrogen production in residential areas: A GIS-based framework"
-    venue: "Applied Energy, vol. 389, pp. 125765"
+    venue: "Applied Energy, vol. 389, 125765"
     year: "2025"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S0306261925004957"
   - authors: "<strong>Lingkang Jin</strong>, Rafael Nogueira Nakashima, Gabriele Comodi, Henrik Lund Frandsen"
     title: "Alkaline electrolysis for green hydrogen production: A novel, simple model for thermo-electrochemical coupled system analysis"
-    venue: "Applied Thermal Engineering, vol. 262, pp. 125154"
+    venue: "Applied Thermal Engineering, vol. 262, 125154"
     year: "2025"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S1359431124028229"
   - authors: "Francesca Mennilli, <strong>Lingkang Jin</strong>, Mosè Rossi, Gabriele Comodi"
     title: "Assessment of a NaOH-based alkaline electrolyser’s performance: System modelling and operating parameters optimisation"
-    venue: "International Journal of Hydrogen Energy, vol. 85, pp. 625-634"
+    venue: "International Journal of Hydrogen Energy, vol. 85, pp. 625–634"
     year: "2024"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S0360319924033342"
   - authors: "Mosè Rossi, <strong>Lingkang Jin</strong>, Andrea Monforti Ferrario, Marialaura Di Somma, Amedeo Buonanno, Christina Papadimitriou, Andrei Morch, Giorgio Graditi, Gabriele Comodi"
     title: "Energy Hub and Micro-Energy Hub Architecture in Integrated Local Energy Communities: Enabling Technologies and Energy Planning Tools"
-    venue: "Energies, vol. 17, no. 19"
+    venue: "Energies, vol. 17, no. 19, 4813"
     year: "2024"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.mdpi.com/1996-1073/17/19/4813"
   - authors: "<strong>Lingkang Jin</strong>, Milad Kazemi, Gabriele Comodi, Christina Papadimitriou"
     title: "Assessing battery degradation as a key performance indicator for multi-objective optimization of multi-carrier energy systems"
-    venue: "Applied Energy, vol. 361, pp. 122925"
+    venue: "Applied Energy, vol. 361, 122925"
     year: "2024"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S0306261924003088"
   - authors: "Andrea Pizzuti, <strong>Lingkang Jin</strong>, Mosè Rossi, Fabrizio Marinelli, Gabriele Comodi"
     title: "A novel approach for multi-stage investment decisions and dynamic variations in medium-term energy planning for multi-energy carriers community"
-    venue: "Applied Energy, vol. 353, pp. 122177"
+    venue: "Applied Energy, vol. 353, 122177"
     year: "2024"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S0306261923015416"
   - authors: "Enrico Marchegiani, Francesco Ferracuti, Andrea Monteriù, <strong>Lingkang Jin</strong>, Mosè Rossi, Gabriele Comodi, Lucio Ciabattoni"
     title: "Li-ion battery aging model robustness: An analysis using univariate and multivariate techniques"
-    venue: "Journal of Energy Storage, vol. 72, pp. 108591"
+    venue: "Journal of Energy Storage, vol. 72, 108591"
     year: "2023"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S2352152X23019886"
   - authors: "<strong>Lingkang Jin</strong>, Mosè Rossi, Andrea Monforti Ferrario, Jacopo Carlo Alberizzi, Massimiliano Renzi, Gabriele Comodi"
     title: "Integration of battery and hydrogen energy storage systems with small-scale hydropower plants in off-grid local energy communities"
-    venue: "Energy Conversion and Management, vol. 286, pp. 117019"
+    venue: "Energy Conversion and Management, vol. 286, 117019"
     year: "2023"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S0196890423003655"
   - authors: "<strong>Lingkang Jin</strong>, Mosè Rossi, Lucio Ciabattoni, Marialaura Di Somma, Giorgio Graditi, Gabriele Comodi"
     title: "Environmental constrained medium-term energy planning: The case study of an Italian university campus as a multi-carrier local energy community"
-    venue: "Energy Conversion and Management, vol. 278, pp. 116701"
+    venue: "Energy Conversion and Management, vol. 278, 116701"
     year: "2023"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.sciencedirect.com/science/article/pii/S019689042300047X"
   - authors: "Anam Nadeem, Mosè Rossi, Erica Corradi, <strong>Lingkang Jin</strong>, Gabriele Comodi, Nadeem Ahmed Sheikh"
     title: "Energy-Environmental Planning of Electric Vehicles (EVs): A Case Study of the National Energy System of Pakistan"
-    venue: "Energies, vol. 15, no. 9"
+    venue: "Energies, vol. 15, no. 9, 3054"
     year: "2022"
-    link_text: "URL"
+    quartile: "Q1"
     link_url: "https://www.mdpi.com/1996-1073/15/9/3054"
   - authors: "<strong>Lingkang Jin</strong>, Andrea Monforti Ferrario, Viviana Cigolotti, Gabriele Comodi"
     title: "Evaluation of the impact of green hydrogen blending scenarios in the Italian gas network: Optimal design and dynamic simulation of operation strategies"
-    venue: "Renewable and Sustainable Energy Transition, vol. 2, pp. 100022"
+    venue: "Renewable and Sustainable Energy Transition, vol. 2, 100022"
     year: "2022"
-    link_text: "URL"
+    quartile: ""
     link_url: "https://www.sciencedirect.com/science/article/pii/S2667095X2200006X"
 
 conference_proceedings:
   - authors: "Dennis Hollanders, <strong>Lingkang Jin</strong>, Laurens Bliek, Yingqian Zhang, Sen Zhan, Jiarui Yu, Nikolaos G. Paterakis"
     title: "Graph neural networks for distribution network reconfiguration optimization"
-    venue: "IEEE PES Innovative Smart Grid Technologies Asia-- ISGT Asia 2026, Wuhan, China, Oct. 30-Nov. 1, 2026"
+    venue: "IEEE PES Innovative Smart Grid Technologies Conference Asia (ISGT Asia 2026), Wuhan, China"
     year: "2026"
-    link_text: "DOI"
+    status: "Accepted"
     link_url: ""
   - authors: "Yuan-chun Chen, <strong>Lingkang Jin</strong>, Christina Papadimitriou"
     title: "Data-Driven Efficiency Parametrization from Operational Telemetry: Improved State-of-Energy Tracking and Aging-Aware Dispatch for BESS"
-    venue: "IEEE International Energy Conference 2026, 27-29 October 2026, Paris, France"
+    venue: "IEEE International Energy Conference (EnergyCon 2026), Paris, France"
     year: "2026"
-    link_text: "DOI"
+    status: "Accepted"
     link_url: ""
-  - authors: "Ranier Alexsander Arruda Moura, Niek Brekelmans <strong>Lingkang Jin</strong>, Khawja Khalid Mehmood, Anne van der Molen, Peter van der Wielen, Phuong Hong Nguyen"
+  - authors: "Ranier Alexsander Arruda Moura, Niek Brekelmans, <strong>Lingkang Jin</strong>, Khawja Khalid Mehmood, Anne van der Molen, Peter van der Wielen, Phuong Hong Nguyen"
     title: "A Hybrid Load Synthesizing Model Applied to Distribution Transformer Thermal Degradation"
-    venue: "Energy informatics conference, 14-16 October 2026, Beijing, China"
+    venue: "Energy Informatics Conference 2026, Beijing, China"
     year: "2026"
-    link_text: "DOI"
     link_url: "https://link.springer.com/chapter/10.1007/978-3-032-41864-7_23"
-  - authors: "<strong>Lingkang Jin</strong>, Ranier Alexsander Arruda Moura, Anne van der Molen, Peter van der Wielen,Phuong Hong Nguyen"
+  - authors: "<strong>Lingkang Jin</strong>, Ranier Alexsander Arruda Moura, Anne van der Molen, Peter van der Wielen, Phuong Hong Nguyen"
     title: "Operational Decision Map for Grid Operators: Orchestration of Grid and User Assets Through Scenario Based Multi-objective Optimization"
-    venue: "Nordic Energy Informatics Academy Conference 2026,2-4 September 2026, University of Iceland, Reykjavik, Iceland"
+    venue: "Nordic Energy Informatics Academy Conference (EIA Nordic 2026), Reykjavik, Iceland"
     year: "2026"
-    link_text: "DOI"
+    status: "Accepted"
     link_url: ""
   - authors: "<strong>Lingkang Jin</strong>, Laurens Bliek, Xin Li, Nikolaos G. Paterakis"
     title: "Graph neural networks for active constraints detection in home energy management systems"
-    venue: "International Conference on Smart Energy Systems and Technologies -- SEST 2026, Ciudad Real, Spain, Sep. 2-4, 2026"
+    venue: "International Conference on Smart Energy Systems and Technologies (SEST 2026), Ciudad Real, Spain"
     year: "2026"
-    link_text: "DOI"
     link_url: "https://ieeexplore.ieee.org/document/11712526"
   - authors: "Sen Zhan, <strong>Lingkang Jin</strong>, Xin Li, Haoyang Zhang, Nikolaos G. Paterakis"
     title: "Real-time feedback optimization for distribution system operation considering battery voltage and thermal constraints"
-    venue: "International Conference on Smart Energy Systems and Technologies -- SEST 2026, Ciudad Real, Spain, Sep. 2-4, 2026"
+    venue: "International Conference on Smart Energy Systems and Technologies (SEST 2026), Ciudad Real, Spain"
     year: "2026"
-    link_text: "DOI"
     link_url: "https://ieeexplore.ieee.org/document/11712283"
   - authors: "<strong>Lingkang Jin</strong>, Sen Zhan, Haoyang Zhang, Nikolaos G. Paterakis"
     title: "Multi-Objective Congestion Management in Low-Voltage Grids: Coordinating End-Users and System Operators for Real-World Implementation"
-    venue: "2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe)"
+    venue: "IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe 2025), Valletta, Malta"
     year: "2025"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/ISGTEurope64741.2025.11305401"
   - authors: "<strong>Lingkang Jin</strong>, Sen Zhan, Samuel Cudjoe, Nikolaos G. Paterakis"
     title: "Empowering Low-Voltage Grids: Real-World Implementation of Home Batteries for Effective Congestion Management"
-    venue: "2025 IEEE Kiel PowerTech"
+    venue: "IEEE PowerTech 2025, Kiel, Germany"
     year: "2025"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/PowerTech59965.2025.11180463"
   - authors: "Xin Li, Jeroen J. Markus, Stefan De Lange, <strong>Lingkang Jin</strong>, Koen Kok, Nikolaos G. Paterakis"
     title: "Hybrid Heat Pump Flexibility Allocation: Quantified Thermal Comfort-Based Congestion Management"
-    venue: "2025 IEEE International Conference on Environment and Electrical Engineering (EEEIC / I&CPS Europe)"
+    venue: "IEEE International Conference on Environment and Electrical Engineering (EEEIC / I&amp;CPS Europe 2025)"
     year: "2025"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/EEEIC/ICPSEurope64998.2025.11169153"
   - authors: "Haoyang Zhang, <strong>Lingkang Jin</strong>, Koen Kok, Nikolaos G. Paterakis"
     title: "Surrogate Model-Based Reinforcement Learning for Bidding Strategies in Local Flexibility Markets"
-    venue: "2025 IEEE International Conference on Environment and Electrical Engineering (EEEIC / I&CPS Europe)"
+    venue: "IEEE International Conference on Environment and Electrical Engineering (EEEIC / I&amp;CPS Europe 2025)"
     year: "2025"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/EEEIC/ICPSEurope64998.2025.11169071"
   - authors: "<strong>Lingkang Jin</strong>, Xin Li, Stefan De Lange, Han Slootweg, Nikolaos G. Paterakis"
     title: "Response Allocation of Domestic Hybrid Heat Pumps Flexibility for Congestion Management"
-    venue: "2024 IEEE PES Innovative Smart Grid Technologies Europe (ISGT EUROPE)"
+    venue: "IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe 2024), Dubrovnik, Croatia"
     year: "2024"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/ISGTEUROPE62998.2024.10863630"
   - authors: "Marialaura Di Somma, <strong>Lingkang Jin</strong>, Nicola Bianco, Christina Papadimitriou"
     title: "Advancing Multi-Energy Hub Design: an Integrated Approach for Optimizing Residential Clusters in High RES Penetration Scenarios"
-    venue: "2024 International Conference on Smart Energy Systems and Technologies (SEST)"
+    venue: "International Conference on Smart Energy Systems and Technologies (SEST 2024), Turin, Italy"
     year: "2024"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/SEST61601.2024.10694519"
   - authors: "Francesca Mennilli, <strong>Lingkang Jin</strong>, Mosè Rossi, Gabriele Comodi"
     title: "A Fitting Process for the Optimal Modelling of an Anion Exchange Membrane (AEM) Electrolyser"
-    venue: "Proceedings of the ASME Turbo Expo 2024: Power for Land, Sea, and Air"
+    venue: "Proceedings of the ASME Turbo Expo 2024: Power for Land, Sea, and Air, London, United Kingdom"
     year: "2024"
-    link_text: ""
     link_url: ""
   - authors: "<strong>Lingkang Jin</strong>, Mosè Rossi, Flavio Caresana, Leonardo Pelagalli, Gabriele Comodi"
     title: "Metal hydrides in hydrogen storage: optimization of dynamic control strategies"
-    venue: "Journal of Physics: Conference Series"
+    venue: "Journal of Physics: Conference Series, vol. 2648, 012056 (78th ATI Congress, Carpi, Italy)"
     year: "2023"
-    link_text: "URL"
-    link_url: "https://dx.doi.org/10.1088/1742-6596/2648/1/012056"
+    link_url: "https://doi.org/10.1088/1742-6596/2648/1/012056"
   - authors: "Francesca Mennilli, <strong>Lingkang Jin</strong>, Mosè Rossi, Alice Mugnini, Gabriele Comodi"
     title: "Energy analysis of a hydrogen integrated system in the residential sector"
-    venue: "Journal of Physics: Conference Series"
+    venue: "Journal of Physics: Conference Series, vol. 2648, 012057 (78th ATI Congress, Carpi, Italy)"
     year: "2023"
-    link_text: "URL"
-    link_url: "https://dx.doi.org/10.1088/1742-6596/2648/1/012057"
+    link_url: "https://doi.org/10.1088/1742-6596/2648/1/012057"
   - authors: "Jacopo Carlo Alberizzi, Miguel Angel Pérez Estevez, Massimiliano Renzi, <strong>Lingkang Jin</strong>, Mosè Rossi, Alessandro Alberizzi"
-    title: "Optimal Management of a Hydro – Wind Energy System with Hydrogen Storage"
-    venue: "2023 12th International Conference on Power Science and Engineering (ICPSE)"
+    title: "Optimal Management of a Hydro–Wind Energy System with Hydrogen Storage"
+    venue: "12th International Conference on Power Science and Engineering (ICPSE 2023)"
     year: "2023"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/ICPSE59506.2023.10329307"
   - authors: "Marialaura Di Somma, Amedeo Buonanno, Martina Caliano, <strong>Lingkang Jin</strong>, Mosè Rossi, Giorgio Graditi, Gabriele Comodi"
     title: "Stochastic energy management for the Italian UNIVPM campus as a multi-carrier energy hub participating in the day-ahead market"
-    venue: "IEEE EUROCON 2023 - 20th International Conference on Smart Technologies"
+    venue: "IEEE EUROCON 2023 – 20th International Conference on Smart Technologies, Turin, Italy"
     year: "2023"
-    link_text: "DOI"
     link_url: "https://doi.org/10.1109/EUROCON56442.2023.10199000"
   - authors: "Andreas Bechmann, Thanasis Barlas, Henrik Lund Frandsen, <strong>Lingkang Jin</strong>, Rafael Nogueira Nakashima"
     title: "The Hydrogen Wind Turbine: Design of a wind turbine optimised for hydrogen production"
-    venue: "Journal of Physics: Conference Series"
+    venue: "Journal of Physics: Conference Series, vol. 2507, 012010"
     year: "2023"
-    link_text: "URL"
-    link_url: "https://dx.doi.org/10.1088/1742-6596/2507/1/012010"
+    link_url: "https://doi.org/10.1088/1742-6596/2507/1/012010"
   - authors: "<strong>Lingkang Jin</strong>, Rafael Nogueira Nakashima, Henrik Lund Frandsen, Gabriele Comodi"
     title: "Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control"
-    venue: "Proceedings of the 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS)"
+    venue: "Proceedings of the 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), Las Palmas de Gran Canaria, Spain"
     year: "2023"
-    link_text: "URL"
     link_url: "https://doi.org/10.52202/069564-0082"
   - authors: "Sara Gremi, Mosè Rossi, <strong>Lingkang Jin</strong>, Matteo Lorenzetti, Danilo Salvi, Alessia Arteconi, Gabriele Comodi"
     title: "Thermal Energy Storage (TES) application in an Italian District Heating (DH) network: A Computational Fluid Dynamic (CFD) analysis to assess the operating efficiency"
-    venue: "Proceedings of the 35th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS)"
+    venue: "Proceedings of the 35th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2022), Copenhagen, Denmark"
     year: "2022"
-    link_text: "URL"
     link_url: "https://backend.orbit.dtu.dk/ws/portalfiles/portal/335878894/ECOS_2022_proceedings.pdf"
 ---
 
-<style>
-  .pub-timeline {
-    position: relative;
-    padding: 10px 0 20px 24px;
-    margin-top: 1.2rem;
-    margin-bottom: 2.5rem;
-    border-left: 2px solid #e2e8f0;
-  }
+{% assign all_pubs = page.journal_articles | concat: page.conference_proceedings %}
+{% assign first_author = 0 %}
+{% for p in all_pubs %}{% assign head = p.authors | slice: 0, 8 %}{% if head == "<strong>" %}{% assign first_author = first_author | plus: 1 %}{% endif %}{% endfor %}
+{% assign q1_count = page.journal_articles | where: "quartile", "Q1" | size %}
 
-  .pub-year-block {
-    position: relative;
-    margin-bottom: 2rem;
-  }
+<p class="section-intro">Full and up-to-date list on <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>. Journal tags give the <a href="https://www.scimagojr.com" target="_blank" rel="noopener noreferrer">SCImago (SJR)</a> best quartile of the journal.</p>
 
-  .pub-year-block:last-child {
-    margin-bottom: 0;
-  }
+<ul class="stat-row">
+  <li><strong>{{ page.journal_articles | size }}</strong>journal articles</li>
+  <li><strong>{{ q1_count }}</strong>in Q1 journals</li>
+  <li><strong>{{ page.conference_proceedings | size }}</strong>conference papers</li>
+  <li><strong>{{ first_author }}</strong>as first author</li>
+</ul>
 
-  .pub-year-block::before {
-    content: "";
-    position: absolute;
-    left: -31px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #2563eb;
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 0 1px #cbd5e1;
-  }
+## Journal articles
 
-  .pub-year-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin: 0 0 0.8rem 0;
-    line-height: 1;
-  }
+{% include pub-timeline.html items=page.journal_articles prefix="J" %}
 
-  .compact-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
+## Conference proceedings
 
-  .compact-list li {
-    margin-bottom: 10px;
-    line-height: 1.45;
-    font-size: 0.95rem;
-  }
-
-  .pub-tag {
-    font-weight: 700;
-    color: #2563eb;
-  }
-</style>
-
-## Journal Articles
-
-{% assign j_years = page.journal_articles | map: "year" | uniq | sort | reverse %}
-
-<div class="pub-timeline">
-  {% for yr in j_years %}
-    {% assign yr_journals = page.journal_articles | where: "year", yr %}
-    <div class="pub-year-block">
-      <div class="pub-year-title">{{ yr }}</div>
-      <ul class="compact-list">
-        {% for paper in yr_journals %}
-          {% for global_paper in page.journal_articles %}
-            {% if global_paper.title == paper.title %}
-              {% assign j_idx = forloop.rindex %}
-            {% endif %}
-          {% endfor %}
-          <li>
-            <span class="pub-tag">[J{{ j_idx }}]</span> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>.
-            {% if paper.link_url != "" and paper.link_url != nil %}
-              <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
-
-<hr>
-
-## Conference Proceedings
-
-{% assign c_years = page.conference_proceedings | map: "year" | uniq | sort | reverse %}
-
-<div class="pub-timeline">
-  {% for yr in c_years %}
-    {% assign yr_conferences = page.conference_proceedings | where: "year", yr %}
-    <div class="pub-year-block">
-      <div class="pub-year-title">{{ yr }}</div>
-      <ul class="compact-list">
-        {% for paper in yr_conferences %}
-          {% for global_paper in page.conference_proceedings %}
-            {% if global_paper.title == paper.title %}
-              {% assign c_idx = forloop.rindex %}
-            {% endif %}
-          {% endfor %}
-          <li>
-            <span class="pub-tag">[C{{ c_idx }}]</span> {{ paper.authors }}. "{{ paper.title }}," <i>{{ paper.venue }}</i>.
-            {% if paper.link_url != "" and paper.link_url != nil %}
-              <a href="{{ paper.link_url }}" target="_blank">[{{ paper.link_text }}]</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
+{% include pub-timeline.html items=page.conference_proceedings prefix="C" %}

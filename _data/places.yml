@@ -1,0 +1,60 @@
+# Coordinates used by the location map (/map/).
+# Referenced by key from _data/talks.yml and _data/map.yml.
+ancona:
+  name: "Ancona, Italy"
+  org: "Università Politecnica delle Marche"
+  lat: 43.5868
+  lng: 13.5148
+eindhoven:
+  name: "Eindhoven, the Netherlands"
+  org: "Eindhoven University of Technology"
+  lat: 51.4486
+  lng: 5.4907
+utrecht:
+  name: "Utrecht, the Netherlands"
+  org: "Stedin"
+  lat: 52.0907
+  lng: 5.1214
+brussels:
+  name: "Brussels, Belgium"
+  lat: 50.8467
+  lng: 4.3525
+lyngby:
+  name: "Kgs. Lyngby, Denmark"
+  org: "Technical University of Denmark (DTU)"
+  lat: 55.7858
+  lng: 12.5216
+riso:
+  name: "Risø, Roskilde, Denmark"
+  org: "DTU Risø Campus"
+  lat: 55.6941
+  lng: 12.1021
+reykjavik:
+  name: "Reykjavik, Iceland"
+  org: "University of Iceland"
+  lat: 64.1394
+  lng: -21.9505
+valletta:
+  name: "Valletta, Malta"
+  lat: 35.8989
+  lng: 14.5146
+kiel:
+  name: "Kiel, Germany"
+  lat: 54.3233
+  lng: 10.1228
+turin:
+  name: "Turin, Italy"
+  lat: 45.0625
+  lng: 7.6624
+carpi:
+  name: "Carpi, Italy"
+  lat: 44.7837
+  lng: 10.8850
+paphos:
+  name: "Paphos, Cyprus"
+  lat: 34.7720
+  lng: 32.4297
+dubrovnik:
+  name: "Dubrovnik, Croatia"
+  lat: 42.6507
+  lng: 18.0944

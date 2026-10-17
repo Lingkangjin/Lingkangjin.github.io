@@ -1,0 +1,38 @@
+{% comment %}
+  Year-grouped list of events or talks from _data/talks.yml.
+  Params:
+    items  - list ordered newest first
+    prefix - label prefix, e.g. "E" or "K"
+  Items dated after the site build get an "Upcoming" badge and an amber dot.
+{% endcomment %}
+{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
+{%- assign prev_year = "" -%}
+<div class="timeline">
+{%- for t in include.items -%}
+  {%- assign t_year = t.date | date: "%Y" -%}
+  {%- assign t_s = t.date | date: "%s" | plus: 0 -%}
+  {%- if t_year != prev_year -%}
+    {%- unless forloop.first %}</ul></div>{% endunless %}
+    {%- assign year_upcoming = false -%}
+    {%- if t_s > now_s %}{% assign year_upcoming = true %}{% endif %}
+  <div class="timeline__block{% if year_upcoming %} timeline__block--upcoming{% endif %}">
+    <div class="timeline__year">{{ t_year }}</div>
+    <ul class="entry-list">
+    {%- assign prev_year = t_year -%}
+  {%- endif %}
+      <li>
+        <span class="entry-tag">[{{ include.prefix }}{{ forloop.rindex }}]</span>
+        <span class="entry-date">{% if t.label %}{{ t.label }}{% else %}{{ t.date | date: "%d %b" }}{% endif %}:</span>
+        {% if t.kind %}{{ t.kind }}: {% endif %}<i>{{ t.title }}</i>
+        {%- if t.speakers %}, presented by {{ t.speakers }}{% endif %}
+        {%- if t.venue %}, {% if t.venue_url %}<a href="{{ t.venue_url }}" target="_blank" rel="noopener noreferrer">{{ t.venue }}</a>{% else %}{{ t.venue }}{% endif %}{% endif %}
+        {%- if t.host %}, hosted by {{ t.host }}{% endif %}
+        {%- if t.note %}, {{ t.note }}{% endif %}
+        {%- if t.place and site.data.places[t.place] %}, {{ site.data.places[t.place].name }}{% endif %}.
+        {%- if t.url %} <span class="entry-links"><a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">[More information]</a></span>{% endif %}
+        {%- if t_s > now_s %} <span class="badge badge--upcoming">Upcoming</span>{% endif %}
+      </li>
+{%- endfor %}
+    </ul>
+  </div>
+</div>

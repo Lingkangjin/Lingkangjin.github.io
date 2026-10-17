@@ -1,0 +1,32 @@
+{% comment %}
+  Year-grouped publication list.
+  Params:
+    items  - list of entries, already ordered newest first
+    prefix - label prefix, e.g. "J" or "C" (numbering counts down so the oldest is 1)
+  Entry fields: authors, title, venue, year, link_url, quartile (Q1-Q4), status
+  The link label is "DOI" for doi.org links and "Link" otherwise.
+{% endcomment %}
+{%- assign prev_year = "" -%}
+<div class="timeline">
+{%- for p in include.items -%}
+  {%- if p.year != prev_year -%}
+    {%- unless forloop.first %}</ul></div>{% endunless %}
+  <div class="timeline__block">
+    <div class="timeline__year">{{ p.year }}</div>
+    <ul class="entry-list">
+    {%- assign prev_year = p.year -%}
+  {%- endif %}
+      <li>
+        <span class="entry-tag">[{{ include.prefix }}{{ forloop.rindex }}]</span>
+        {{ p.authors }}. &ldquo;{{ p.title }},&rdquo; <i>{{ p.venue }}</i>, {{ p.year }}.
+        {%- if p.quartile and p.quartile != "" %} <span class="badge badge--{{ p.quartile | downcase }}" title="SCImago Journal Rank, best quartile">{{ p.quartile }}</span>{% endif %}
+        {%- if p.status and p.status != "" %} <span class="badge badge--upcoming">{{ p.status }}</span>{% endif %}
+        {%- if p.link_url and p.link_url != "" %}
+          {%- if p.link_url contains "doi.org" %}{% assign link_label = "DOI" %}{% else %}{% assign link_label = "Link" %}{% endif %}
+          <span class="entry-links"><a href="{{ p.link_url }}" target="_blank" rel="noopener noreferrer">[{{ link_label }}]</a></span>
+        {%- endif %}
+      </li>
+{%- endfor %}
+    </ul>
+  </div>
+</div>

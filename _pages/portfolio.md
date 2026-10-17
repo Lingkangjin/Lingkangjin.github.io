@@ -5,7 +5,7 @@ permalink: /portfolio/
 author_profile: true
 
 # Projects are listed in the order below (most recent first).
-# Fields: title, acronym, period, funding, excerpt, link, role, partners (list), image
+# Fields: title, subtitle, period, funding, excerpt, link, role, partners (list), image
 projects:
   - title: "SG-SKILL"
     subtitle: "Skill-based education for smart-grid job profiles"
@@ -99,12 +99,12 @@ projects:
 
 <style>
   .portfolio {
-    --card-gap: 2.5rem;
+    --card-gap: 1.75rem;
     --img-width: 260px;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --badge-bg: #eef2ff;
-    --badge-fg: #3730a3;
+    --muted: var(--ac-muted);
+    --border: var(--ac-line);
+    --badge-bg: var(--ac-info-bg);
+    --badge-fg: var(--ac-info-fg);
     display: flex;
     flex-direction: column;
     gap: var(--card-gap);
@@ -167,7 +167,7 @@ projects:
     color: var(--badge-fg);
     white-space: nowrap;
   }
-  .project__tag--period { background: #f3f4f6; color: #374151; }
+  .project__tag--period { background: var(--ac-neutral-bg); color: var(--ac-neutral-fg); }
 
   .project__excerpt { font-size: 0.9em; }
   .project__excerpt p { margin: 0 0 0.75rem; }

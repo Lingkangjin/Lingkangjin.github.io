@@ -74,91 +74,21 @@ papers:
 ---
 
 <style>
-  /* ───────── Shared tokens ───────── */
-  .home-scope, .news, .arch, .papers {
-    --accent: #2563eb;
-    --ink: #1e293b;
-    --muted: #64748b;
-    --line: #e2e8f0;
-  }
+  /* Timeline, badges and tagline come from _sass/layout/_academic.scss */
 
   /* Widen the content column on this page so the paper previews fit.
      Remove these two rules to keep the theme's default width. */
   .page { padding-right: 0 !important; }
   .page__inner-wrap { max-width: 100% !important; }
 
-  /* ───────── Intro ───────── */
-  .tagline {
-    font-weight: 700;
-    color: var(--accent, #2563eb);
-    letter-spacing: 0.01em;
-    margin-bottom: 0.4rem;
-  }
-
-  /* ───────── News timeline ───────── */
-  .news {
-    position: relative;
-    padding: 0.6rem 0 0.6rem 1.5rem;
-    margin: 1.2rem 0 2rem;
-    border-left: 2px solid var(--line);
-  }
-  .news__block { position: relative; margin-bottom: 1.8rem; }
-  .news__block:last-child { margin-bottom: 0; }
-  .news__block::before {
-    content: "";
-    position: absolute;
-    left: calc(-1.5rem - 7px);
-    top: 4px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 1px #cbd5e1;
-  }
-  .news__block--upcoming::before { background: #f59e0b; }
-  .news__heading {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--ink);
-    margin: 0 0 0.7rem;
-    line-height: 1;
-  }
-  .news__list { list-style: none; margin: 0; padding: 0; }
-  .news__list li { margin-bottom: 0.6rem; line-height: 1.45; font-size: 0.92rem; }
-  .news__date { font-weight: 700; }
-
-  .badge {
-    display: inline-block;
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 0.1rem 0.45rem;
-    border-radius: 999px;
-    margin-right: 0.35rem;
-    vertical-align: 0.1em;
-  }
-  .badge--new { background: #dcfce7; color: #166534; }
-  .badge--upcoming { background: #fef3c7; color: #92400e; }
-
-  .news__older { margin-top: 1.4rem; }
-  .news__older summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 1.4rem;
-  }
-  .news__older summary:hover { text-decoration: underline; }
-
   /* ───────── Research framework diagram ───────── */
   .arch {
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
   }
   .arch__row, .arch__branch {
     display: flex;
@@ -171,14 +101,14 @@ papers:
   .arch__box {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 12px;
     border: 1px solid #333;
     border-radius: 4px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
     color: #111;
   }
-  .arch__box h4 { margin: 0 0 15px; font-size: 0.95rem; }
+  .arch__box h4 { margin: 0 0 10px; font-size: 0.95rem; }
   .arch__box--physics { background: #f3dfdf; }
   .arch__box--ai      { background: #e4eff5; }
   .arch__box--center  { background: #fbeaba; width: 200px; justify-content: center; }
@@ -202,12 +132,12 @@ papers:
     justify-content: center;
     font-size: 2rem;
     font-weight: bold;
-    color: #555;
+    color: var(--ac-muted);
   }
-  .arch__arrow--down { font-size: 3rem; margin: -10px 0; }
+  .arch__arrow--down { font-size: 2.4rem; margin: -14px 0; line-height: 1; }
 
   .arch__grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-  .arch__stack { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; }
+  .arch__stack { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 
   .arch__item {
     display: flex;
@@ -227,11 +157,11 @@ papers:
   }
   .arch__item--lg img { width: 80px; height: 80px; }
 
-  .arch__etc { margin-top: auto; padding-top: 15px; text-align: right; font-size: 0.9em; font-weight: bold; }
+  .arch__etc { margin-top: auto; padding-top: 8px; text-align: right; font-size: 0.9em; font-weight: bold; }
 
   @media (max-width: 950px) {
     .arch__row, .arch__branch { flex-direction: column; align-items: center; width: 100%; }
-    .arch__arrow { transform: rotate(90deg); padding: 10px 0; }
+    .arch__arrow { transform: rotate(90deg); padding: 0; line-height: 1; }
     .arch__box--center { width: 100%; max-width: 350px; }
     .arch__final { width: 100%; }
   }
@@ -251,7 +181,7 @@ papers:
   .paper__frame {
     width: 100%;
     height: 350px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--ac-line);
     background: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -275,7 +205,7 @@ papers:
   /* Mobile browsers rarely render PDFs inside iframes: show the buttons only */
   @media (max-width: 768px), (hover: none) {
     .paper__frame, .paper__btn--fs { display: none; }
-    .paper { text-align: left; padding: 0.8rem; border: 1px solid #e5e7eb; border-radius: 6px; }
+    .paper { text-align: left; padding: 0.8rem; border: 1px solid var(--ac-line); border-radius: 6px; }
     .paper__title { margin-top: 0; }
     .paper__actions { justify-content: flex-start; order: 2; }
   }
@@ -293,11 +223,11 @@ Lingkang is a postdoctoral researcher in the Electrical Energy Systems group, De
 
 His research brings **detailed multi-physics models of energy assets into system-level decision making**, using mathematical programming supported by AI and machine learning to cut computational cost and improve scenario generation. He works closely with grid operators on congestion management and teaches in the MSc course *5LEP0 Electricity Markets: Modeling and Optimization*.
 
-## News and updates 📈
+## News and updates
 
 {% assign news_sorted = page.news | sort: "date" | reverse %}
 
-<div class="news">
+<div class="timeline">
 
 {% comment %} ── Upcoming (oldest first, so the next event is on top) ── {% endcomment %}
 {% assign upcoming = "" | split: "" %}
@@ -307,14 +237,14 @@ His research brings **detailed multi-physics models of energy assets into system
 {% endfor %}
 
 {% if upcoming.size > 0 %}
-<div class="news__block news__block--upcoming">
-  <div class="news__heading">Upcoming</div>
-  <ul class="news__list">
+<div class="timeline__block timeline__block--upcoming">
+  <div class="timeline__year">Upcoming</div>
+  <ul class="entry-list">
   {% assign upcoming_asc = upcoming | reverse %}
   {% for n in upcoming_asc %}
     <li>
       <span class="badge badge--upcoming">Upcoming</span>
-      <span class="news__date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
+      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
       {{ n.text }}
     </li>
   {% endfor %}
@@ -338,19 +268,19 @@ His research brings **detailed multi-physics models of energy assets into system
 
   {% if y_num < last_year and opened_older == false %}
     {% assign opened_older = true %}
-<details class="news__older">
+<details class="timeline__older">
   <summary>Show older news and updates…</summary>
   {% endif %}
 
-<div class="news__block">
-  <div class="news__heading">{{ y.name }}</div>
-  <ul class="news__list">
+<div class="timeline__block">
+  <div class="timeline__year">{{ y.name }}</div>
+  <ul class="entry-list">
   {% for n in past_items %}
     {% assign n_s = n.date | date: "%s" | plus: 0 %}
     {% assign age = now_s | minus: n_s %}
     <li>
       {% if age < new_s %}<span class="badge badge--new">New</span>{% endif %}
-      <span class="news__date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
+      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
       {{ n.text }}
     </li>
   {% endfor %}
@@ -364,7 +294,7 @@ His research brings **detailed multi-physics models of energy assets into system
 
 </div>
 
-## Research framework 🧩
+## Research framework
 
 <div class="arch" role="img" aria-label="Research framework: component models and physics-based layers feed system-level decisions, supported by an AI layer built on ML tools, together forming multi-physics, AI-supported system-level energy modeling.">
 
@@ -466,7 +396,7 @@ His research brings **detailed multi-physics models of energy assets into system
       if (req) {
         req.call(el);
       } else {
-        // e.g. iOS Safari: no element fullscreen, open the PDF instead
+        /* e.g. iOS Safari: no element fullscreen, open the PDF instead */
         window.open(btn.dataset.fallback, "_blank", "noopener");
       }
     });

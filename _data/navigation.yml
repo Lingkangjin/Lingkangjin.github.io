@@ -14,7 +14,10 @@ main:
   - title: "Events"
     url: /talks/
 
-  - title: "Teaching and supervision"
+  - title: "Map"
+    url: /map/
+
+  - title: "Teaching"
     url: /teaching/
     
   - title: "Projects"

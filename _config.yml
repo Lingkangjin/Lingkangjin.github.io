@@ -12,7 +12,7 @@ site_theme               : "air" # Currently available options are "default", "a
 title                    : "Lingkang Jin"  # Update this with your site title
 title_separator          : "-"
 name                     : &name "Lingkang Jin"  # Update this with your name
-description              : &description "Lingkang Jin's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Lingkang Jin, postdoctoral researcher in electrical energy systems at Eindhoven University of Technology (TU/e): optimization, multi-physics modeling and AI for power and energy systems."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://Lingkangjin.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,11 +24,11 @@ repository               : "https://github.com/Lingkangjin/Lingkangjin.github.io
 author:
   # Biographic information
   avatar           : "Jin_Lingkang_EE_PD_PO_AS_6429.jpg"
-  name             : #
+  name             : *name
   pronouns         : # example: "she/her"  
-  bio              : #
+  bio              : "Postdoctoral researcher, Electrical Energy Systems"
   location         : "Rotterdam, The Netherlands"
-  employer         : "Technical University of Eindhoven"
+  employer         : "Eindhoven University of Technology"
   uri              : # URL
   email            : "l.jin@tue.nl"
 
@@ -152,7 +152,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  false # set to "google-analytics-4" once tracking_id below holds a real GA4 ID
   google:
     tracking_id          : "G-XXXXXXXXXX" # replace with your real GA4 Measurement ID
 

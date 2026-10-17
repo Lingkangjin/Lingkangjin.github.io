@@ -52,7 +52,7 @@ work_experience:
         url: "https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI"
   - period: "Dec 2019 – Oct 2020"
     role: "Engineering Consultant"
-    institution: "Whirlpool"
+    institution: "Whirlpool Corporation"
     supervisor_label: "Supervisor"
     supervisors:
       - name: "Piotr Rosiak"
@@ -143,10 +143,11 @@ languages:
 <style>
   /* All rules are scoped to .cv so they don't affect other pages */
   .cv {
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --accent: #0366d6;
-    --panel: rgba(127, 127, 127, 0.06);
+    /* Colors follow the shared tokens in _sass/layout/_academic.scss */
+    --muted: var(--ac-muted);
+    --border: var(--ac-line);
+    --accent: var(--ac-accent);
+    --panel: var(--ac-panel);
   }
 
   .cv__download { margin: 0.5rem 0 1.5rem; }

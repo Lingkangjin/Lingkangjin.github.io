@@ -1,0 +1,279 @@
+/* ==========================================================================
+   ACADEMIC COMPONENTS
+   Shared look for the content pages (news, publications, events, teaching,
+   awards, map). Colors are CSS variables so they follow the light/dark toggle.
+   ========================================================================== */
+
+:root {
+  --ac-accent        : #2563eb;
+  --ac-ink           : #1e293b;
+  --ac-muted         : #64748b;
+  --ac-line          : #d6dde6;
+  --ac-panel         : rgba(100, 116, 139, 0.07);
+
+  --ac-new-bg        : #dcfce7;  --ac-new-fg        : #166534;
+  --ac-upcoming-bg   : #fef3c7;  --ac-upcoming-fg   : #92400e;  --ac-upcoming-dot : #f59e0b;
+  --ac-info-bg       : #dbeafe;  --ac-info-fg       : #1e3a8a;
+  --ac-neutral-bg    : #e2e8f0;  --ac-neutral-fg    : #334155;
+
+  /* Journal quartiles (SJR) */
+  --ac-q1-bg         : #dcfce7;  --ac-q1-fg         : #166534;
+  --ac-q2-bg         : #dbeafe;  --ac-q2-fg         : #1e3a8a;
+  --ac-q3-bg         : #fef3c7;  --ac-q3-fg         : #92400e;
+  --ac-q4-bg         : #e2e8f0;  --ac-q4-fg         : #334155;
+
+  /* Map categories */
+  --ac-map-talk      : #2563eb;
+  --ac-map-visit     : #d97706;
+  --ac-map-career    : #059669;
+}
+
+html[data-theme="dark"] {
+  --ac-accent        : #60a5fa;
+  --ac-ink           : #e2e8f0;
+  --ac-muted         : #94a3b8;
+  --ac-line          : #3f4756;
+  --ac-panel         : rgba(148, 163, 184, 0.08);
+
+  --ac-new-bg        : rgba(34, 197, 94, 0.18);   --ac-new-fg      : #86efac;
+  --ac-upcoming-bg   : rgba(245, 158, 11, 0.18);  --ac-upcoming-fg : #fcd34d;
+  --ac-info-bg       : rgba(59, 130, 246, 0.2);   --ac-info-fg     : #93c5fd;
+  --ac-neutral-bg    : rgba(148, 163, 184, 0.18); --ac-neutral-fg  : #cbd5e1;
+
+  --ac-q1-bg         : rgba(34, 197, 94, 0.18);   --ac-q1-fg       : #86efac;
+  --ac-q2-bg         : rgba(59, 130, 246, 0.2);   --ac-q2-fg       : #93c5fd;
+  --ac-q3-bg         : rgba(245, 158, 11, 0.18);  --ac-q3-fg       : #fcd34d;
+  --ac-q4-bg         : rgba(148, 163, 184, 0.18); --ac-q4-fg       : #cbd5e1;
+
+  --ac-map-talk      : #60a5fa;
+  --ac-map-visit     : #fbbf24;
+  --ac-map-career    : #34d399;
+}
+
+/* ---------- Tighter section headings on content pages ----------
+   The theme gives every heading a 2em top margin; on list-heavy pages
+   that leaves large gaps between sections. */
+
+.page__content h2,
+.archive h2 {
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.page__title + .section-intro,
+.page__title + .tagline { margin-top: -0.25rem; }
+
+/* ---------- Intro line under a page title ---------- */
+
+.section-intro {
+  color: var(--ac-muted);
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+}
+
+.tagline {
+  font-weight: 700;
+  color: var(--ac-accent);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Vertical timeline grouped by year ---------- */
+
+.timeline {
+  position: relative;
+  padding: 0.3rem 0 0.3rem 1.5rem;
+  margin: 0.6rem 0 1.25rem;
+  border-left: 2px solid var(--ac-line);
+}
+
+.timeline__block {
+  position: relative;
+  margin-bottom: 1.1rem;
+
+  &:last-child { margin-bottom: 0; }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.5rem - 7px);
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--ac-accent);
+    border: 3px solid var(--global-bg-color);
+    box-shadow: 0 0 0 1px var(--ac-line);
+  }
+}
+
+.timeline__block--upcoming::before { background: var(--ac-upcoming-dot); }
+
+.timeline__year {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ac-ink);
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+
+.timeline__older {
+  margin-top: 0.8rem;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ac-accent);
+    margin-bottom: 0.8rem;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+/* ---------- Entry list inside a timeline ---------- */
+
+.entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.45rem;
+    line-height: 1.45;
+    font-size: 0.93rem;
+  }
+}
+
+.entry-tag {
+  font-weight: 700;
+  color: var(--ac-accent);
+  margin-right: 0.15rem;
+}
+
+.entry-date { font-weight: 700; }
+
+.entry-meta {
+  color: var(--ac-muted);
+  font-size: 0.85em;
+}
+
+.entry-links a {
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- Pill badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  margin: 0 0.25rem;
+  vertical-align: 0.12em;
+  line-height: 1.4;
+  white-space: nowrap;
+  background: var(--ac-neutral-bg);
+  color: var(--ac-neutral-fg);
+}
+
+.badge--new      { background: var(--ac-new-bg);      color: var(--ac-new-fg); }
+.badge--upcoming { background: var(--ac-upcoming-bg); color: var(--ac-upcoming-fg); }
+.badge--info     { background: var(--ac-info-bg);     color: var(--ac-info-fg); }
+.badge--q1       { background: var(--ac-q1-bg);       color: var(--ac-q1-fg); }
+.badge--q2       { background: var(--ac-q2-bg);       color: var(--ac-q2-fg); }
+.badge--q3       { background: var(--ac-q3-bg);       color: var(--ac-q3-fg); }
+.badge--q4       { background: var(--ac-q4-bg);       color: var(--ac-q4-fg); }
+
+/* ---------- Summary stats row ---------- */
+
+.stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0.5rem 0 1rem;
+  padding: 0;
+
+  li {
+    flex: 1 1 8rem;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--ac-line);
+    border-radius: 8px;
+    background: var(--ac-panel);
+    font-size: 0.8rem;
+    color: var(--ac-muted);
+    line-height: 1.3;
+  }
+
+  strong {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--ac-ink);
+  }
+}
+
+/* ---------- Location map ---------- */
+
+.site-map {
+  height: 520px;
+  width: 100%;
+  border: 1px solid var(--ac-line);
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem;
+  z-index: 0;
+
+  @media (max-width: 600px) { height: 380px; }
+}
+
+.site-map--dark .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+
+.map-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+
+  label { cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; }
+}
+
+.map-swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--global-bg-color);
+  box-shadow: 0 0 0 1px var(--ac-line);
+}
+
+.map-swatch--talk   { background: var(--ac-map-talk); }
+.map-swatch--visit  { background: var(--ac-map-visit); }
+.map-swatch--career { background: var(--ac-map-career); }
+
+.map-popup {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  max-width: 260px;
+
+  h4 { margin: 0 0 0.3rem; font-size: 0.9rem; }
+  ul { margin: 0; padding-left: 1rem; }
+  li { margin-bottom: 0.25rem; }
+}
+
+.place-list {
+  columns: 2 16rem;
+  column-gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+
+  li { break-inside: avoid; margin-bottom: 0.5rem; }
+}
