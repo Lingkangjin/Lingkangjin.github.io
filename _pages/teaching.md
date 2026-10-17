@@ -163,6 +163,7 @@ msc_supervision:
 
 {% assign msc_years = page.msc_supervision | map: "year" | uniq | sort | reverse %}
 
+
 <div class="timeline">
   {% for yr in msc_years %}
     {% assign yr_mscs = page.msc_supervision | where: "year", yr %}
