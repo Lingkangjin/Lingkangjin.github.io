@@ -71,6 +71,19 @@ papers:
     title: "Real-time measurement-based optimization for distribution system operation considering battery voltage and thermal constraints"
     preview: "/files/OFO.pdf"
     pdf: "/files/paper3.pdf"
+
+# Open-source repositories and PyPI releases.
+software:
+  - name: "liander-open-data"
+    description: "Lightweight SQLite database, Python API and CLI for Liander's open 15-minute electricity load profiles per SBI code, including the dictionary of 1,427 SBI codes. Returns pandas DataFrames."
+    github: "https://github.com/lingkang95/Liander_open_data"
+    pypi: "https://pypi.org/project/liander-open-data/"
+    install: "pip install liander-open-data"
+  - name: "aec-modelling"
+    description: "Alkaline water electrolysis modelling, developed with DTU: a four-parameter electrochemical polarisation model with fitting tools, 0D transient and 1D thermal stack models, and bundled literature and field datasets for power-to-hydrogen system studies."
+    github: "https://github.com/Lingkangjin/AEC-Modelling"
+    pypi: "https://pypi.org/project/aec-modelling/"
+    install: "pip install aec-modelling"
 ---
 
 <style>
@@ -201,6 +214,32 @@ papers:
   .paper__btn:hover { background: #2a2d2f; }
   .paper__title { font-size: 0.9em; line-height: 1.3; margin: 0.7rem 0 0; font-weight: bold; }
   .paper__title a { text-decoration: none; }
+
+  /* ───────── Software ───────── */
+  .software {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  .software__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid var(--ac-line);
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  .software__name { margin: 0 0 0.4rem; font-size: 1rem; font-family: monospace; }
+  .software__desc { margin: 0 0 0.7rem; font-size: 0.85em; line-height: 1.4; }
+  .software__install {
+    margin: 0 0 0.8rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    background: rgba(127, 127, 127, 0.12);
+    font-size: 0.8em;
+    overflow-x: auto;
+  }
+  .software__card .paper__actions { justify-content: flex-start; margin-top: auto; }
 
   /* Mobile browsers rarely render PDFs inside iframes: show the buttons only */
   @media (max-width: 768px), (hover: none) {
@@ -402,3 +441,19 @@ His research brings **detailed multi-physics models of energy assets into system
     });
   });
 </script>
+
+## Open-source software
+
+<div class="software">
+{% for s in page.software %}
+  <div class="software__card">
+    <h3 class="software__name">{{ s.name }}</h3>
+    <p class="software__desc">{{ s.description }}</p>
+    <code class="software__install">{{ s.install }}</code>
+    <div class="paper__actions">
+      <a class="paper__btn" href="{{ s.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="paper__btn" href="{{ s.pypi }}" target="_blank" rel="noopener noreferrer">PyPI</a>
+    </div>
+  </div>
+{% endfor %}
+</div>
