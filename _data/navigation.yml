@@ -24,7 +24,7 @@ main:
     url: /portfolio/
         
   - title: "Awards"
-    url: /year-archive/
+    url: /awards/
     
   - title: "CV"
     url: /cv/

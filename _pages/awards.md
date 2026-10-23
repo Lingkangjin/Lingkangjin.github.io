@@ -1,8 +1,10 @@
 ---
 layout: archive
-permalink: /year-archive/
+permalink: /awards/
 title: "Awards and recognition"
 author_profile: true
+redirect_from:
+  - /year-archive/
 
 # Keep the list ordered newest first: numbering counts down from the top.
 # kind: award | grant | finalist (shown as a badge)
@@ -27,7 +29,7 @@ awards:
     text: "Erasmus+ grant for a research visit to DTU Energy, Denmark"
   - year: "2018"
     kind: "award"
-    text: "3rd place, Formula SAE (Class 3), team design competition"
+    text: "1st place, Formula SAE (Class 3), team design competition"
   - year: "2014"
     kind: "award"
     text: "<i>In Studiis Laus</i> award, Rotary Club, for excellence in high school"
