@@ -30,6 +30,7 @@
         {%- if t.note %}, {{ t.note }}{% endif %}
         {%- if t.place and site.data.places[t.place] %}, {{ site.data.places[t.place].name }}{% endif %}.
         {%- if t.url %} <span class="entry-links"><a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">[More information]</a></span>{% endif %}
+        {%- if t.details %} <span class="entry-links"><a href="{{ '/talks/seminars/' | relative_url }}#{{ t.details.id }}">[Abstract and speakers]</a></span>{% endif %}
         {%- if t_s > now_s %} <span class="badge badge--upcoming">Upcoming</span>{% endif %}
       </li>
 {%- endfor %}

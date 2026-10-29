@@ -3,6 +3,11 @@
 #   date  - YYYY-MM-DD, drives the year grouping and the "Upcoming" badge
 #   label - optional text replacing the displayed date (ranges, month only)
 #   place - key in _data/places.yml (leave empty to keep it off the map)
+#   details - optional; adds the talk to /talks/seminars/ with abstract and
+#             speaker bios. Empty fields are left out.
+#     id       - anchor on the seminars page (lowercase, dashes)
+#     abstract - plain text or HTML
+#     speakers - list of { name, url, affiliation, photo, bio }
 
 organized:
   - date: 2026-12-16
@@ -10,16 +15,37 @@ organized:
     kind: "Research day"
     place: eindhoven
   - date: 2026-10-28
-    title: "Bilevel optimization: modeling, algorithmic challenges and applications"
+    title: "A Brief Introduction to Bilevel Optimization and Its Applications in Energy Systems"
     kind: "Cross-sectoral talk"
     speakers: "Dr. <a href='https://www.tue.nl/en/research/researchers/yasmine-beck' target='_blank' rel='noopener noreferrer'>Yasmine Beck</a>"
     place: eindhoven
+    details:
+      id: bilevel-optimization
+      abstract: "Bilevel optimization models hierarchical decision-making, where one decision-maker anticipates the response of another, as in infrastructure defense, transportation and energy systems. Its nested structure makes these problems hard to solve. The talk introduces the problem structure, its main properties and common reformulations and solution approaches, then shows how bilevel models capture hierarchical interactions in energy systems."
+      speakers:
+        - name: "Dr. Yasmine Beck"
+          url: "https://www.tue.nl/en/research/researchers/yasmine-beck"
+          affiliation: "Eindhoven University of Technology, Department of Industrial Engineering & Innovation Sciences, OPAC research group"
+          bio: "Assistant Professor of Operations Management in the OPAC group at TU/e. After a PhD in Mathematical Optimization at Trier University (2024) and a postdoc at ESSEC Business School, Paris, she joined TU/e in 2026. She works on bilevel optimization and optimization under uncertainty, co-authored the book <em>Linear and Mixed-Integer Bilevel Optimization</em> and hosts the Bilevel Optimization Society Webinar Series. Her thesis received the EURO Doctoral Dissertation Award, the GOR Dissertation Award and the Helmut Kraaz-Förderpreis (all 2025)."
   - date: 2026-10-14
     title: "Asset management from the Stedin engineering perspective"
     kind: "Industry perspective talk"
     speakers: "Daniël Booman, Torben Fricke and Deniz Sahin (Stedin)"
     note: "Flux 2.251, TU/e"
     place: eindhoven
+    details:
+      id: stedin-asset-management
+      abstract: ""
+      speakers:
+        - name: "Daniël Booman"
+          affiliation: "Stedin"
+          bio: "Data Scientist in Asset Performance Management. Previously project coordinator, project leader and risk analyst at Stedin. BSc in Aerospace Engineering and MSc in Applied Sciences, TU Delft."
+        - name: "Torben Fricke"
+          affiliation: "Stedin"
+          bio: "Grid Strategist in Asset Management, developing design guidelines and investment strategies for low-voltage capacity expansion. PhD on large salient-pole synchronous machines (Germany), then two IT scale-ups before Stedin."
+        - name: "Deniz Sahin"
+          affiliation: "Stedin"
+          bio: "Data Scientist in Asset &amp; System Performance Management, supporting investment decisions on grid quality and reliability through data analysis and statistical modeling. Background in Econometrics."
   - date: 2025-12-01
     label: "Dec"
     title: "EES research day and Christmas gathering"

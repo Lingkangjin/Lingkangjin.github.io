@@ -11,6 +11,8 @@ author_profile: true
 
 ## Organized events
 
+<p class="section-intro">Abstracts and speaker bios of the cross-sectoral and industry talks are on the <a href="{{ '/talks/seminars/' | relative_url }}">seminar series page</a>.</p>
+
 {% include event-timeline.html items=site.data.talks.organized prefix="E" %}
 
 ## Talks
