@@ -32,6 +32,18 @@
         {%- if t.url %} <span class="entry-links"><a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">[More information]</a></span>{% endif %}
         {%- if t.details %} <span class="entry-links"><a href="{{ '/talks/seminars/' | relative_url }}#{{ t.details.id }}">[Abstract and speakers]</a></span>{% endif %}
         {%- if t_s > now_s %} <span class="badge badge--upcoming">Upcoming</span>{% endif %}
+        {%- if t.info %}
+        <details class="entry-details">
+          <summary>Event details</summary>
+          {% if t.info.summary %}<p>{{ t.info.summary }}</p>{% endif %}
+          {% if t.info.programme %}
+          <table class="entry-programme">
+            {% for p in t.info.programme %}<tr><td>{{ p.time }}</td><td>{{ p.item }}</td></tr>{% endfor %}
+          </table>
+          {% endif %}
+          {% if t.info.organizers %}<p><strong>Organizers:</strong> {{ t.info.organizers }}</p>{% endif %}
+        </details>
+        {%- endif %}
       </li>
 {%- endfor %}
     </ul>

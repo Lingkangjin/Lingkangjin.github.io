@@ -163,6 +163,46 @@ html[data-theme="dark"] {
   white-space: nowrap;
 }
 
+/* Collapsible event details under an entry (closed by default) */
+.entry-details {
+  margin: 0.35rem 0 0.6rem;
+  font-size: 0.9em;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--ac-accent);
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &[open] {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--ac-line);
+    border-radius: 6px;
+    background: var(--ac-panel);
+  }
+
+  p { margin: 0.5rem 0; font-size: 1em; }
+}
+
+.entry-programme {
+  width: 100%;
+  margin: 0.4rem 0;
+  border-collapse: collapse;
+  font-size: 1em;
+  display: table;
+
+  td {
+    padding: 0.2rem 0.5rem 0.2rem 0;
+    border: none;
+    border-bottom: 1px solid var(--ac-line);
+    vertical-align: top;
+  }
+  td:first-child { width: 3.5rem; font-weight: 700; white-space: nowrap; }
+}
+
 /* ---------- Pill badges ---------- */
 
 .badge {

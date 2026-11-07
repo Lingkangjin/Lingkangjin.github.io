@@ -8,12 +8,35 @@
 #     id       - anchor on the seminars page (lowercase, dashes)
 #     abstract - plain text or HTML
 #     speakers - list of { name, url, affiliation, photo, bio }
+#   info - optional; collapsible "Event details" under the entry on /talks/
+#     summary   - short HTML paragraph (time, venue, aim)
+#     programme - list of { time, item }
+#     organizers - HTML line
 
 organized:
   - date: 2026-12-16
     title: "EES research day 2026"
-    kind: "Research day"
+    url: https://ees-tue.github.io/EES-research-day/2026/
+    kind: "Annual Research group day"
     place: eindhoven
+    info:
+      summary: "Wednesday 16 December 2026, 10:00–17:00, <a href='https://www.aristo.nl/vergaderlocatie-eindhoven' target='_blank' rel='noopener noreferrer'>Aristo Meeting Center</a>, Vestdijk 30, Eindhoven. The second EES Research Day: research talks, guest speakers, alumni stories and group activities, with a shared lunch to reconnect with former EES members. <a href='https://ees-tue.github.io/EES-research-day/2026/register/' target='_blank' rel='noopener noreferrer'>How to register</a>."
+      programme:
+        - time: "10:00"
+          item: "Walk-in and coffee"
+        - time: "10:30"
+          item: "<i>EES: past, present and the future</i>, Guus Pemen (EES group chair, TU/e)"
+        - time: "11:00"
+          item: "<i>Power system computations: from EES to industrial practice</i>, Dr. Anton Ishchenko (Phase to Phase)"
+        - time: "11:45"
+          item: "<i>AI in grid operations projects (AI.Grids, SG-SKILL and FAIR4Communities)</i>, Nika Khosravi (RWTH Aachen University)"
+        - time: "12:30"
+          item: "Lunch"
+        - time: "14:00"
+          item: "EES researcher presentations (5 × 15 min + Q&amp;A)"
+        - time: "15:50"
+          item: "Group activities, including an alumni and trivia quiz"
+      organizers: "Dr. Lingkang Jin (main organizer) and Dr. Nikolaos Paterakis (co-organizer), with Annemarie van de Moosdijk, Jolanda Levering, Xin Li, Stefan De Lange and Anna Shuvarina"
   - date: 2026-10-28
     title: "A Brief Introduction to Bilevel Optimization and Its Applications in Energy Systems"
     kind: "Cross-sectoral talk"
@@ -46,11 +69,36 @@ organized:
         - name: "Deniz Sahin"
           affiliation: "Stedin"
           bio: "Data Scientist in Asset &amp; System Performance Management, supporting investment decisions on grid quality and reliability through data analysis and statistical modeling. Background in Econometrics."
-  - date: 2025-12-01
-    label: "Dec"
+  - date: 2025-12-11
     title: "EES research day and Christmas gathering"
     kind: "Research day"
     place: eindhoven
+    info:
+      summary: "The first EES Research Day, 9:00–17:00, combining talks by three guest researchers from industry and academia, 12 research pitches by EES members, alumni presentations and a Christmas lunch."
+      programme:
+        - time: "9:00"
+          item: "Walk-in"
+        - time: "9:30"
+          item: "Welcome and introduction to the program"
+        - time: "9:45"
+          item: "Guest talk: Thomas Gerrits (Heliox)"
+        - time: "10:30"
+          item: "Guest talk: Astrid Nieße (Carl von Ossietzky University of Oldenburg)"
+        - time: "11:15"
+          item: "Coffee break"
+        - time: "11:30"
+          item: "Guest talk: Anibal Sanjab (VITO/EnergyVille)"
+        - time: "12:15"
+          item: "EES research pitches I"
+        - time: "13:00"
+          item: "Christmas lunch"
+        - time: "14:30"
+          item: "EES research pitches II"
+        - time: "16:00"
+          item: "Coffee break"
+        - time: "16:15"
+          item: "EES alumni presentations"
+      organizers: "Nikolaos Paterakis. <em>Logistics:</em> Annemarie van de Moosdijk, Jolanda Levering. <em>Organization support:</em> Guus Pemen, Leo van Schooten, Jeroen Markus, <strong>Lingkang Jin</strong> (co-chair and moderator), Yasir Yaqoob."
   - date: 2025-10-01
     label: "Oct"
     title: "EE-NL workshop on congestion management"

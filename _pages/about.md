@@ -15,11 +15,11 @@ news_new_days: 30
 # `label` is optional and replaces the displayed date (for ranges).
 news:
   - date: 2026-12-16
-    text: "Co-organizing the 2026 annual EES research group meeting, Eindhoven, the Netherlands"
+    text: "Main organizer of the <a href='https://ees-tue.github.io/EES-research-day/2026/' target='_blank' rel='noopener noreferrer'>EES Research Day 2026</a>, Aristo Meeting Center, Eindhoven"
   - date: 2026-10-28
-    text: "Chairing the research meeting on bilevel optimization with Dr. Yasmine Beck, TU/e, Eindhoven"
+    text: "Chaired the <a href='/talks/seminars/#bilevel-optimization'>cross-sectoral talk on bilevel optimization</a> by Dr. Yasmine Beck, TU/e, Eindhoven"
   - date: 2026-10-14
-    text: "Chairing the research meeting with the Stedin asset management team, TU/e, Eindhoven"
+    text: "Chaired the <a href='/talks/seminars/#stedin-asset-management'>industry perspective talk</a> by the Stedin asset management team, TU/e, Eindhoven"
   - date: 2026-10-09
     text: "<a href='/portfolio/'>ORKEST</a> Q3 2026 demo event for results dissemination, Stedin office, Utrecht"
   - date: 2026-10-05
