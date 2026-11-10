@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Clean skin (dark): deep navy background, light-blue accents
+   ========================================================================== */
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #111827;
+    --global-bg-color                   : #111827;
+    --global-footer-bg-color            : #0B1220;
+    --global-border-color               : #2A3546;
+    --global-dark-border-color          : #3A4A60;
+    --global-code-background-color      : #1A2333;
+    --global-code-text-color            : #E5E7EB;
+    --global-fig-caption-color          : #9CA3AF;
+    --global-link-color                 : #7FB2E5;
+    --global-link-color-hover           : #A9CCEF;
+    --global-link-color-visited         : #8FBBE8;
+    --global-masthead-link-color        : #E5E7EB;
+    --global-masthead-link-color-hover  : #7FB2E5;
+    --global-text-color                 : #E5E7EB;
+    --global-text-color-light           : #9CA3AF;
+    --global-thead-color                : #1A2333;
+}

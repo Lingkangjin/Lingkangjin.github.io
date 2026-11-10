@@ -5,49 +5,59 @@
    ========================================================================== */
 
 :root {
-  --ac-accent        : #2563eb;
-  --ac-ink           : #1e293b;
-  --ac-muted         : #64748b;
-  --ac-line          : #d6dde6;
-  --ac-panel         : rgba(100, 116, 139, 0.07);
+  /* Palette shared with the slide template:
+     main blue #1F5FA8, light blue #7FB2E5, pale blue #DCE9F7,
+     navy-black text #1F2937, grey text #6B7280 */
+  --ac-accent        : #1F5FA8;
+  --ac-accent-2      : #7FB2E5;
+  --ac-ink           : #1F2937;
+  --ac-muted         : #6B7280;
+  --ac-line          : #DCE9F7;
+  --ac-panel         : rgba(220, 233, 247, 0.35);
+  --ac-btn-bg        : #1F5FA8;
+  --ac-btn-bg-hover  : #174A84;
 
-  --ac-new-bg        : #dcfce7;  --ac-new-fg        : #166534;
-  --ac-upcoming-bg   : #fef3c7;  --ac-upcoming-fg   : #92400e;  --ac-upcoming-dot : #f59e0b;
-  --ac-info-bg       : #dbeafe;  --ac-info-fg       : #1e3a8a;
-  --ac-neutral-bg    : #e2e8f0;  --ac-neutral-fg    : #334155;
+  /* Badges: solid blue = strongest, pale blue = secondary, grey = neutral */
+  --ac-new-bg        : #1F5FA8;  --ac-new-fg        : #fff;
+  --ac-upcoming-bg   : #DCE9F7;  --ac-upcoming-fg   : #1F5FA8;  --ac-upcoming-dot : #7FB2E5;
+  --ac-info-bg       : #DCE9F7;  --ac-info-fg       : #1F5FA8;
+  --ac-neutral-bg    : #EEF2F6;  --ac-neutral-fg    : #374151;
 
-  /* Journal quartiles (SJR) */
-  --ac-q1-bg         : #dcfce7;  --ac-q1-fg         : #166534;
-  --ac-q2-bg         : #dbeafe;  --ac-q2-fg         : #1e3a8a;
-  --ac-q3-bg         : #fef3c7;  --ac-q3-fg         : #92400e;
-  --ac-q4-bg         : #e2e8f0;  --ac-q4-fg         : #334155;
+  /* Journal quartiles (SJR): blue scale, darkest = Q1 */
+  --ac-q1-bg         : #1F5FA8;  --ac-q1-fg         : #fff;
+  --ac-q2-bg         : #7FB2E5;  --ac-q2-fg         : #10325A;
+  --ac-q3-bg         : #DCE9F7;  --ac-q3-fg         : #1F5FA8;
+  --ac-q4-bg         : #EEF2F6;  --ac-q4-fg         : #374151;
 
   /* Map categories */
-  --ac-map-talk      : #2563eb;
-  --ac-map-visit     : #d97706;
-  --ac-map-career    : #059669;
+  --ac-map-talk      : #1F5FA8;
+  --ac-map-visit     : #7FB2E5;
+  --ac-map-career    : #10325A;
 }
 
 html[data-theme="dark"] {
-  --ac-accent        : #60a5fa;
-  --ac-ink           : #e2e8f0;
-  --ac-muted         : #94a3b8;
-  --ac-line          : #3f4756;
-  --ac-panel         : rgba(148, 163, 184, 0.08);
+  --ac-accent        : #7FB2E5;
+  --ac-accent-2      : #4F8BCB;
+  --ac-ink           : #E5E7EB;
+  --ac-muted         : #9CA3AF;
+  --ac-line          : #2A3546;
+  --ac-panel         : rgba(127, 178, 229, 0.06);
+  --ac-btn-bg        : #2D6CB3;
+  --ac-btn-bg-hover  : #3B7CC4;
 
-  --ac-new-bg        : rgba(34, 197, 94, 0.18);   --ac-new-fg      : #86efac;
-  --ac-upcoming-bg   : rgba(245, 158, 11, 0.18);  --ac-upcoming-fg : #fcd34d;
-  --ac-info-bg       : rgba(59, 130, 246, 0.2);   --ac-info-fg     : #93c5fd;
+  --ac-new-bg        : #7FB2E5;                   --ac-new-fg      : #0B1220;
+  --ac-upcoming-bg   : rgba(127, 178, 229, 0.18); --ac-upcoming-fg : #A9CCEF;  --ac-upcoming-dot : #7FB2E5;
+  --ac-info-bg       : rgba(127, 178, 229, 0.18); --ac-info-fg     : #A9CCEF;
   --ac-neutral-bg    : rgba(148, 163, 184, 0.18); --ac-neutral-fg  : #cbd5e1;
 
-  --ac-q1-bg         : rgba(34, 197, 94, 0.18);   --ac-q1-fg       : #86efac;
-  --ac-q2-bg         : rgba(59, 130, 246, 0.2);   --ac-q2-fg       : #93c5fd;
-  --ac-q3-bg         : rgba(245, 158, 11, 0.18);  --ac-q3-fg       : #fcd34d;
+  --ac-q1-bg         : #7FB2E5;                   --ac-q1-fg       : #0B1220;
+  --ac-q2-bg         : rgba(127, 178, 229, 0.35); --ac-q2-fg       : #E5E7EB;
+  --ac-q3-bg         : rgba(127, 178, 229, 0.15); --ac-q3-fg       : #A9CCEF;
   --ac-q4-bg         : rgba(148, 163, 184, 0.18); --ac-q4-fg       : #cbd5e1;
 
-  --ac-map-talk      : #60a5fa;
-  --ac-map-visit     : #fbbf24;
-  --ac-map-career    : #34d399;
+  --ac-map-talk      : #7FB2E5;
+  --ac-map-visit     : #C9DFF4;
+  --ac-map-career    : #2D6CB3;
 }
 
 /* ---------- Tighter section headings on content pages ----------
@@ -58,6 +68,84 @@ html[data-theme="dark"] {
 .archive h2 {
   margin-top: 1.4em;
   margin-bottom: 0.4em;
+}
+
+/* ---------- Slide-style headings ----------
+   Blue titles with a short light-blue rule underneath, as in the
+   Beamer template (frame title + 2.2 cm accent line). */
+
+.page__title,
+.page__content h2,
+.archive h2 {
+  color: var(--ac-accent);
+}
+
+.page__content h2,
+.archive h2 {
+  padding-bottom: 0.35em;
+  border-bottom: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 2px;
+    margin-top: 0.35em;
+    background: var(--ac-accent-2);
+  }
+}
+
+/* ---------- Justified body text on every page ----------
+   Paragraphs and list items line up on both edges, as on the
+   publications page. Hyphenation keeps word gaps small. */
+
+.page__content p,
+.page__content li,
+.archive p,
+.archive li {
+  text-align: justify;
+  text-wrap: pretty;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Centered components keep their alignment */
+.page__content .paper p,
+.page__content .stat-row li,
+.archive .stat-row li,
+.page__content .arch p,
+.archive .map-popup p {
+  text-align: inherit;
+}
+
+/* Profile photo: rectangle with rounded corners on one diagonal
+   (top-left / bottom-right) and a light-blue offset frame behind it */
+.author__avatar img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 28px 4px 28px 4px !important;
+  box-shadow: 8px 8px 0 0 var(--ac-accent-2);
+}
+
+@media (min-width: 925px) {
+  .author__avatar { margin-bottom: 1.25rem; }
+}
+
+@media (max-width: 925px) {
+  .author__avatar img {
+    border-radius: 10px 2px 10px 2px !important;
+    box-shadow: 3px 3px 0 0 var(--ac-accent-2);
+  }
+}
+
+/* Thin accent line under the fixed top bar */
+.masthead { border-bottom: 1px solid var(--ac-line); }
+
+/* Sidebar profile icons: one theme color instead of brand colors */
+.author__urls {
+  .fas, .fab, .ai { color: var(--ac-accent) !important; }
 }
 
 .page__title + .section-intro,
@@ -142,6 +230,52 @@ html[data-theme="dark"] {
     line-height: 1.45;
     font-size: 0.93rem;
   }
+}
+
+/* Publication lists: label in a fixed column with a hanging indent,
+   justified text so both edges line up */
+.entry-list--pubs li {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.entry-list--pubs .entry-tag { margin-right: 0; }
+
+.entry-list--pubs .entry-body {
+  text-align: justify;
+  text-wrap: pretty;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+/* News list: dates in a fixed column, one line per item where possible */
+.entry-list--news li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  column-gap: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.entry-list--news .entry-date {
+  color: var(--ac-accent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .entry-list--news li { grid-template-columns: 1fr; row-gap: 0; }
+}
+
+@media (max-width: 600px) {
+  .entry-list--pubs li { grid-template-columns: 2.6rem 1fr; }
 }
 
 .entry-tag {
@@ -234,26 +368,43 @@ html[data-theme="dark"] {
 .stat-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: flex-start;
+  gap: 1.25rem;
   list-style: none;
-  margin: 0.5rem 0 1rem;
+  margin: 0.75rem 0 1.25rem;
   padding: 0;
 
+  /* Each figure sits in a circle with a light-blue ring */
   li {
-    flex: 1 1 8rem;
-    padding: 0.6rem 0.9rem;
-    border: 1px solid var(--ac-line);
-    border-radius: 8px;
+    width: 8rem;
+    height: 8rem;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 2px solid var(--ac-accent-2);
+    border-radius: 50%;
     background: var(--ac-panel);
-    font-size: 0.8rem;
+    text-align: center;
+    font-size: 0.75rem;
     color: var(--ac-muted);
-    line-height: 1.3;
+    line-height: 1.2;
   }
 
   strong {
     display: block;
-    font-size: 1.4rem;
-    color: var(--ac-ink);
+    margin-bottom: 0.15rem;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: var(--ac-accent);
+  }
+
+  @media (max-width: 600px) {
+    gap: 0.75rem;
+    li { width: 6.25rem; height: 6.25rem; font-size: 0.7rem; }
+    strong { font-size: 1.4rem; }
   }
 }
 
@@ -282,6 +433,7 @@ html[data-theme="dark"] {
   font-size: 0.85rem;
 
   label { cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; }
+  input { accent-color: var(--ac-accent); }
 }
 
 .map-swatch {

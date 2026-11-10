@@ -15,46 +15,46 @@ news_new_days: 30
 # `label` is optional and replaces the displayed date (for ranges).
 news:
   - date: 2026-12-16
-    text: "Main organizer of the <a href='https://ees-tue.github.io/EES-research-day/2026/' target='_blank' rel='noopener noreferrer'>EES Research Day 2026</a>, Aristo Meeting Center, Eindhoven"
+    text: "Main organizer, <a href='https://ees-tue.github.io/EES-research-day/2026/' target='_blank' rel='noopener noreferrer'>EES Research Day 2026</a>, Eindhoven"
   - date: 2026-10-28
-    text: "Chaired the <a href='/talks/seminars/#bilevel-optimization'>cross-sectoral talk on bilevel optimization</a> by Dr. Yasmine Beck, TU/e, Eindhoven"
+    text: "Chair, <a href='/talks/seminars/#bilevel-optimization'>cross-sectoral talk on bilevel optimization</a>, TU/e (Dr. Yasmine Beck)"
   - date: 2026-10-14
-    text: "Chaired the <a href='/talks/seminars/#stedin-asset-management'>industry perspective talk</a> by the Stedin asset management team, TU/e, Eindhoven"
+    text: "Chair, <a href='/talks/seminars/#stedin-asset-management'>industry perspective talk on asset management</a>, TU/e (Stedin)"
   - date: 2026-10-09
-    text: "<a href='/portfolio/'>ORKEST</a> Q3 2026 demo event for results dissemination, Stedin office, Utrecht"
+    text: "<a href='/portfolio/'>ORKEST</a> Q3 2026 demo event on project results, Stedin, Utrecht"
   - date: 2026-10-05
-    text: "Research-career panelist in the MSc professional development course, TU/e, Eindhoven"
+    text: "Research-career panelist, MSc professional development course, TU/e"
   - date: 2026-09-02
-    label: "02–04 September"
-    text: "Speaker at the <a href='https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026' target='_blank' rel='noopener noreferrer'>EIA Nordic Energy Informatics Conference 2026</a>, Reykjavik, Iceland"
+    label: "2–4 Sep"
+    text: "Speaker, <a href='https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026' target='_blank' rel='noopener noreferrer'>EIA Nordic Energy Informatics Conference 2026</a>, Reykjavik"
   - date: 2026-07-03
-    text: "ORKEST Q2 2026 demo event for results dissemination, Stedin office, Utrecht"
+    text: "<a href='/portfolio/'>ORKEST</a> Q2 2026 demo event on project results, Stedin, Utrecht"
   - date: 2026-06-15
-    text: "Best-paper award finalist with a 3-minute pitch at the <a href='https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026' target='_blank' rel='noopener noreferrer'>TU/e Postdoc Association</a>"
+    text: "Best-paper award finalist (3-minute pitch), <a href='https://www.tue.nl/en/our-university/calendar-and-events/15-06-2026-pda-best-paper-award-2026' target='_blank' rel='noopener noreferrer'>TU/e Postdoc Association</a>"
   - date: 2026-06-10
-    text: "Presenter at the EuroTech stand (no. 18) at the <a href='https://interactive.eusew.eu/platform/eusew-2026/fair' target='_blank' rel='noopener noreferrer'>EUSEW 2026 Energy Fair</a>"
+    text: "Presenter, EuroTech stand at the <a href='https://interactive.eusew.eu/platform/eusew-2026/fair' target='_blank' rel='noopener noreferrer'>EUSEW 2026 Energy Fair</a>"
   - date: 2026-05-22
-    text: "Invited talk on surrogate modeling in power systems at the <a href='https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/' target='_blank' rel='noopener noreferrer'>Information Systems group (IE&amp;IS)</a>, TU/e, hosted by Dr. <a href='https://www.tue.nl/en/research/researchers/laurens-bliek' target='_blank' rel='noopener noreferrer'>Laurens Bliek</a>"
+    text: "Invited talk on surrogate modeling, <a href='https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/' target='_blank' rel='noopener noreferrer'>IE&amp;IS group</a>, TU/e (Dr. <a href='https://www.tue.nl/en/research/researchers/laurens-bliek' target='_blank' rel='noopener noreferrer'>Laurens Bliek</a>)"
   - date: 2026-04-26
-    label: "26 April – 10 May"
-    text: "EuroTech research visit at <a href='https://wind.dtu.dk/' target='_blank' rel='noopener noreferrer'>DTU Wind and Energy Systems</a>, Denmark, hosted by Dr. <a href='https://orbit.dtu.dk/en/persons/haris-ziras/' target='_blank' rel='noopener noreferrer'>Haris Ziras</a>"
+    label: "26 Apr – 10 May"
+    text: "EuroTech research visit, <a href='https://wind.dtu.dk/' target='_blank' rel='noopener noreferrer'>DTU Wind and Energy Systems</a>, Denmark (Dr. <a href='https://orbit.dtu.dk/en/persons/haris-ziras/' target='_blank' rel='noopener noreferrer'>Haris Ziras</a>)"
   - date: 2026-04-01
-    text: "Joined the Erasmus+ Blueprint project <a href='https://sgskill.eddie-skills.eu/' target='_blank' rel='noopener noreferrer'>SG-SKILL</a> as TU/e representative (WP2 and WP3)"
+    text: "Joined Erasmus+ project <a href='https://sgskill.eddie-skills.eu/' target='_blank' rel='noopener noreferrer'>SG-SKILL</a> as TU/e representative (WP2 and WP3)"
   - date: 2025-06-15
     text: "Joined the <a href='https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711' target='_blank' rel='noopener noreferrer'>ORKEST</a> project as Result 4 leader"
   - date: 2024-03-30
-    text: "PhD defense, thesis: <a href='https://tesidottorato.depositolegale.it/handle/20.500.14242/307237' target='_blank' rel='noopener noreferrer'><em>Energy storage in multi-energy carrier communities: Li-ion batteries and hydrogen multi-physical details for integration into the planning stage</em></a>"
+    text: "PhD defense, <a href='https://tesidottorato.depositolegale.it/handle/20.500.14242/307237' target='_blank' rel='noopener noreferrer'>thesis on energy storage in multi-energy carrier communities</a>"
   - date: 2024-01-15
-    text: "Started as postdoctoral researcher at TU/e, leading TU/e's research in the NO-GIZMOS project"
+    text: "Started as postdoctoral researcher at TU/e, leading TU/e's work in NO-GIZMOS"
   - date: 2023-03-01
-    label: "March – May"
-    text: "Visiting PhD at the TU/e Electrical Energy Systems group, supervised by Dr. <a href='https://www.tue.nl/en/research/researchers/christina-papadimitriou' target='_blank' rel='noopener noreferrer'>Christina Papadimitriou</a>"
+    label: "Mar – May"
+    text: "Visiting PhD, TU/e Electrical Energy Systems group (Dr. <a href='https://www.tue.nl/en/research/researchers/christina-papadimitriou' target='_blank' rel='noopener noreferrer'>Christina Papadimitriou</a>)"
   - date: 2022-03-01
-    label: "March – September"
-    text: "Visiting PhD at DTU Energy (CMT section), Technical University of Denmark, supervised by Prof. <a href='https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/' target='_blank' rel='noopener noreferrer'>Henrik Lund Frandsen</a>, in collaboration with <a href='https://orbit.dtu.dk/en/persons/rafael-nogueira-nakashima/' target='_blank' rel='noopener noreferrer'>Rafael Nogueira Nakashima</a>"
+    label: "Mar – Sep"
+    text: "Visiting PhD, DTU Energy, Denmark (Prof. <a href='https://orbit.dtu.dk/en/persons/henrik-lund-frandsen/' target='_blank' rel='noopener noreferrer'>Henrik Lund Frandsen</a>)"
   - date: 2020-10-01
-    label: "October"
-    text: "Started PhD in Industrial Engineering (Energy Systems) at Università Politecnica delle Marche, supervised by Prof. <a href='https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI' target='_blank' rel='noopener noreferrer'>Gabriele Comodi</a>"
+    label: "Oct"
+    text: "Started PhD in Industrial Engineering, UNIVPM, Italy (Prof. <a href='https://www.univpm.it/Entra/Engine/RAServePG.php/P/320710010421/idsel/590/docname/GABRIELE%20COMODI' target='_blank' rel='noopener noreferrer'>Gabriele Comodi</a>)"
 
 # Selected open-access papers.
 # `preview` is shown in the embedded viewer; `pdf` is the full paper link.
@@ -115,28 +115,27 @@ software:
     display: flex;
     flex-direction: column;
     padding: 12px;
-    border: 1px solid #333;
-    border-radius: 4px;
+    border: 1px solid #C9DBEF;
+    border-radius: 6px;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-    color: #111;
+    box-shadow: 0 1px 3px rgba(31, 41, 55, 0.06);
+    color: #1F2937;
   }
-  .arch__box h4 { margin: 0 0 10px; font-size: 0.95rem; }
-  .arch__box--physics { background: #f3dfdf; }
-  .arch__box--ai      { background: #e4eff5; }
-  .arch__box--center  { background: #fbeaba; width: 200px; justify-content: center; }
+  .arch__box h4 { margin: 0 0 10px; font-size: 0.95rem; color: #1F5FA8; }
+  .arch__box--physics { background: #F5F8FC; }
+  .arch__box--ai      { background: #DCE9F7; }
+  .arch__box--center  { background: #fff; border: 2px solid #7FB2E5; width: 200px; justify-content: center; }
 
   .arch__final {
     width: 80%;
     padding: 15px 30px;
-    background: #fcd55c;
-    border: 2px solid #333;
-    border-radius: 4px;
+    background: #1F5FA8;
+    border-radius: 6px;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
-    color: #111;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(31, 95, 168, 0.25);
   }
 
   .arch__arrow {
@@ -203,7 +202,7 @@ software:
     padding: 0.45rem 0.8rem;
     border: none;
     border-radius: 4px;
-    background: #494e52;
+    background: var(--ac-btn-bg);
     color: #fff !important;
     font-size: 0.8em;
     font-weight: bold;
@@ -211,7 +210,7 @@ software:
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  .paper__btn:hover { background: #2a2d2f; }
+  .paper__btn:hover { background: var(--ac-btn-bg-hover); }
   .paper__title { font-size: 0.9em; line-height: 1.3; margin: 0.7rem 0 0; font-weight: bold; }
   .paper__title a { text-decoration: none; }
 
@@ -278,13 +277,12 @@ His research brings **detailed multi-physics models of energy assets into system
 {% if upcoming.size > 0 %}
 <div class="timeline__block timeline__block--upcoming">
   <div class="timeline__year">Upcoming</div>
-  <ul class="entry-list">
+  <ul class="entry-list entry-list--news">
   {% assign upcoming_asc = upcoming | reverse %}
   {% for n in upcoming_asc %}
     <li>
-      <span class="badge badge--upcoming">Upcoming</span>
-      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
-      {{ n.text }}
+      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %b" }}{% endif %}</span>
+      <span class="entry-body">{{ n.text }} <span class="badge badge--upcoming">Upcoming</span></span>
     </li>
   {% endfor %}
   </ul>
@@ -313,14 +311,13 @@ His research brings **detailed multi-physics models of energy assets into system
 
 <div class="timeline__block">
   <div class="timeline__year">{{ y.name }}</div>
-  <ul class="entry-list">
+  <ul class="entry-list entry-list--news">
   {% for n in past_items %}
     {% assign n_s = n.date | date: "%s" | plus: 0 %}
     {% assign age = now_s | minus: n_s %}
     <li>
-      {% if age < new_s %}<span class="badge badge--new">New</span>{% endif %}
-      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %B" }}{% endif %}:</span>
-      {{ n.text }}
+      <span class="entry-date">{% if n.label %}{{ n.label }}{% else %}{{ n.date | date: "%-d %b" }}{% endif %}</span>
+      <span class="entry-body">{{ n.text }}{% if age < new_s %} <span class="badge badge--new">New</span>{% endif %}</span>
     </li>
   {% endfor %}
   </ul>

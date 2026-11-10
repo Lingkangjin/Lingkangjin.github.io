@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Clean skin (light), matching the minimal Beamer slide template:
+   white background, navy-black text, blue / light-blue accents
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$text-dark                  : #1F2937;  // body text
+$main-blue                  : #1F5FA8;  // titles, links, accents
+$light-blue                 : #7FB2E5;  // secondary accents
+$pale-blue                  : #DCE9F7;  // tracks, panels
+$grey-text                  : #6B7280;  // small / muted text
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : $main-blue;
+$notice-color               : $grey-text;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+    --global-base-color                 : #fff;
+    --global-bg-color                   : #fff;
+    --global-footer-bg-color            : #F5F8FC;
+    --global-border-color               : #E5EBF2;
+    --global-dark-border-color          : #{$pale-blue};
+    --global-code-background-color      : #F5F8FC;
+    --global-code-text-color            : #{$text-dark};
+    --global-fig-caption-color          : #{$grey-text};
+    --global-link-color                 : #{$main-blue};
+    --global-link-color-hover           : #{mix(#000, $main-blue, 25%)};
+    --global-link-color-visited         : #{mix(#000, $main-blue, 10%)};
+    --global-masthead-link-color        : #{$text-dark};
+    --global-masthead-link-color-hover  : #{$main-blue};
+    --global-text-color                 : #{$text-dark};
+    --global-text-color-light           : #{$grey-text};
+    --global-thead-color                : #F5F8FC;
+}
