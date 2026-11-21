@@ -11,7 +11,7 @@ author_profile: true
 #   quartile - SCImago Journal Rank (SJR) best quartile, see https://www.scimagojr.com
 #              (leave empty if the journal is not ranked yet)
 #   status   - optional badge, e.g. "Early access" or "Accepted"
-# The link label is "DOI" for doi.org links and "Link" otherwise.
+# The link label is "DOI" for doi.org links and "Link" otherwise. k
 journal_articles:
   - authors: "<strong>Lingkang Jin</strong>, Laurens Bliek, Nikolaos G. Paterakis"
     title: "Surrogate Models in Power System Scheduling Problems: Learning Active Constraints via Graph Neural Networks"
