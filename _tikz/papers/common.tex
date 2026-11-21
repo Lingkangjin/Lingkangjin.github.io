@@ -1,0 +1,34 @@
+% Shared preamble for the graphical abstracts (homepage "Latest journal articles").
+% Build: bash _tikz/papers/build.sh  (writes images/papers/Jxx.svg)
+% Classic TikZ look: white background, black text and arrows, standard xcolor
+% colors for the elements (independent of the website theme).
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usetikzlibrary{arrows.meta,calc,positioning,patterns,decorations.pathreplacing}
+% ---- classic colors (xcolor names) ----
+\colorlet{main}{blue!70!black}   % primary elements
+\colorlet{lite}{blue!35}         % connections
+\colorlet{pale}{blue!8}          % light fills
+\colorlet{acc}{red!75!black}     % highlights / outputs
+\colorlet{good}{green!55!black}  % storage, positive
+\colorlet{warn}{orange!85!black} % uncertain
+\colorlet{sun}{orange}
+\colorlet{rule}{black!35}
+\colorlet{ink}{black}
+\colorlet{muted}{black!60}
+\colorlet{bg}{white}
+\tikzset{
+  every picture/.style={line cap=round, line join=round},
+  head/.style={font=\fontsize{8.5}{10}\selectfont\bfseries, text=ink},
+  sub/.style={font=\fontsize{6.6}{8}\selectfont, text=muted},
+  lab/.style={font=\fontsize{7.2}{8.6}\selectfont, text=ink},
+  flow/.style={-{Stealth[length=2.2mm,width=2mm]}, draw=black, line width=0.9pt},
+  card/.style={draw=black!60, line width=0.6pt, fill=white, rounded corners=1mm},
+  banner/.style={draw=black, line width=0.6pt, fill=black!4, text=black,
+                 font=\fontsize{7.4}{9}\selectfont\bfseries\boldmath, inner sep=1.6mm},
+}
+% canvas 8 x 6 cm (4:3), white
+\newcommand\canvas{\fill[bg] (0,0) rectangle (8,6);}

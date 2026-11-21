@@ -1,3 +1,12 @@
+<!-- Favicon: "LJ" monogram in the accent color (_config.yml → accent_color) -->
+{% if site.accent_color == "red" %}{% assign fav = "-red" %}{% assign theme_hex = "#B81B24" %}{% else %}{% assign fav = "" %}{% assign theme_hex = "#1F5FA8" %}{% endif %}
+<link rel="icon" type="image/svg+xml" href="{{ '/images/favicon' | append: fav | append: '.svg' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon' | append: fav | append: '-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ '/images/favicon' | append: fav | append: '-192x192.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon' | append: fav | append: '-180x180.png' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/images/favicon' | append: fav | append: '.ico' | relative_url }}">
+<meta name="theme-color" content="{{ theme_hex }}">
+
 <style>
 /* Force Mermaid diagrams to render text in Arial */
 .mermaid svg {

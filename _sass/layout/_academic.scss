@@ -96,17 +96,20 @@ html[data-theme="dark"] {
 }
 
 /* ---------- Justified body text on every page ----------
-   Paragraphs and list items line up on both edges, as on the
-   publications page. Hyphenation keeps word gaps small. */
+   Paragraphs and list items line up on both edges on wide screens.
+   Below 700px columns are too narrow for even word gaps, so text
+   is left-aligned there. Hyphenation keeps word gaps small. */
 
 .page__content p,
 .page__content li,
 .archive p,
 .archive li {
-  text-align: justify;
+  text-align: left;
   text-wrap: pretty;
   hyphens: auto;
   -webkit-hyphens: auto;
+
+  @media (min-width: 700px) { text-align: justify; }
 }
 
 /* Centered components keep their alignment */
@@ -114,7 +117,8 @@ html[data-theme="dark"] {
 .page__content .stat-row li,
 .archive .stat-row li,
 .page__content .arch p,
-.archive .map-popup p {
+.archive .map-popup p,
+.archive .map-popup li {
   text-align: inherit;
 }
 
@@ -246,7 +250,8 @@ html[data-theme="dark"] {
 .entry-list--pubs .entry-tag { margin-right: 0; }
 
 .entry-list--pubs .entry-body {
-  text-align: justify;
+  text-align: left;
+  @media (min-width: 700px) { text-align: justify; }
   text-wrap: pretty;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -334,7 +339,7 @@ html[data-theme="dark"] {
     border-bottom: 1px solid var(--ac-line);
     vertical-align: top;
   }
-  td:first-child { width: 3.5rem; font-weight: 700; white-space: nowrap; }
+  td:first-child { width: 6.5rem; font-weight: 700; white-space: nowrap; }
 }
 
 /* ---------- Pill badges ---------- */
@@ -469,3 +474,545 @@ html[data-theme="dark"] {
 
   li { break-inside: avoid; margin-bottom: 0.5rem; }
 }
+
+/* ---------- Buttons in theme colors ----------
+   Default buttons (e.g. "Download full CV") are solid blue; the outline
+   "Follow" button on small screens uses blue text and border. */
+
+.btn:not(.btn--inverse):not(.btn--light-outline):hover {
+  background-color: var(--ac-btn-bg-hover);
+}
+
+.btn--inverse {
+  color: var(--ac-accent) !important;
+  border: 1px solid var(--ac-accent-2) !important;
+  background-color: var(--global-bg-color);
+
+  &:hover {
+    color: #fff !important;
+    background-color: var(--ac-btn-bg);
+    border-color: var(--ac-btn-bg) !important;
+  }
+}
+
+.page__content .btn,
+.archive .btn { text-decoration: none !important; }
+
+/* Mobile menu ("more") toggle: rounded blue button */
+.greedy-nav > button {
+  border-radius: 6px;
+  &:hover { background-color: var(--ac-btn-bg-hover); }
+}
+
+
+/* ==========================================================================
+   Homepage call-to-action
+   ========================================================================== */
+
+.hero-lead {
+  margin: 0.2rem 0 0.9rem;
+  font-size: 1.05rem;
+  color: var(--ac-ink);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+
+  .hero-btn {
+    padding: 0.55em 1.1em;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    i { margin-right: 0.35em; }
+  }
+}
+
+/* ==========================================================================
+   One entry pattern on every list page (events, teaching):
+   the [E5] / [T3] label sits in its own column with a hanging indent
+   ========================================================================== */
+
+.entry-list:not(.entry-list--pubs):not(.entry-list--news) > li:has(> .entry-tag) {
+  padding-left: 2.75rem;
+  text-indent: -2.75rem;
+
+  > * { text-indent: 0; }
+  > .entry-tag { display: inline-block; width: 2.6rem; margin-right: 0; text-indent: 0; }
+}
+
+/* Map pin after a place name, links to /map/#place */
+.entry-map {
+  font-size: 0.8em;
+  color: var(--ac-accent-2) !important;
+  text-decoration: none !important;
+  &:hover { color: var(--ac-accent) !important; }
+}
+
+/* Sidebar: let long lines (employer) wrap instead of being cut off */
+.author__urls li.author__desktop {
+  display: flex;
+  align-items: baseline;
+  white-space: normal;
+  line-height: 1.35;
+  margin-bottom: 0.35em;
+
+  i { flex: none; }
+}
+
+/* ==========================================================================
+   Publications: filters, search, cite, per-year chart
+   ========================================================================== */
+
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin: 1.25rem 0 0.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--ac-line);
+  border-bottom: 1px solid var(--ac-line);
+}
+
+.pub-filters__chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.chip {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--ac-accent-2);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ac-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover { background: var(--ac-panel); }
+  &.is-active { background: var(--ac-btn-bg); border-color: var(--ac-btn-bg); color: #fff; }
+}
+
+.pub-filters__search {
+  flex: 1 1 14rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--ac-line);
+  border-radius: 6px;
+  background: var(--global-bg-color);
+  color: var(--ac-ink);
+  font-size: 0.85rem;
+
+  &:focus { outline: none; border-color: var(--ac-accent); box-shadow: 0 0 0 3px var(--ac-panel); }
+}
+
+.pub-filters__year {
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--ac-line);
+  border-radius: 6px;
+  background: var(--global-bg-color);
+  color: var(--ac-ink);
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  &:focus { outline: none; border-color: var(--ac-accent); box-shadow: 0 0 0 3px var(--ac-panel); }
+}
+
+.pub-filters__count { color: var(--ac-muted); font-size: 0.8rem; white-space: nowrap; }
+
+.pub-empty { color: var(--ac-muted); font-style: italic; }
+
+.cite-btn {
+  margin-left: 0.2rem;
+  padding: 0 0.45rem;
+  border: 1px solid var(--ac-line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ac-accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.6;
+  cursor: pointer;
+  vertical-align: 0.05em;
+
+  &:hover, &[aria-expanded="true"] { border-color: var(--ac-accent-2); background: var(--ac-panel); }
+}
+
+.cite-box {
+  display: block;
+  margin: 0.4rem 0 0.2rem;
+  text-align: left;
+
+  &[hidden] { display: none; }
+
+  pre {
+    margin: 0 0 0.3rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--ac-line);
+    border-radius: 6px;
+    background: var(--ac-panel);
+    color: var(--ac-ink);
+    font-size: 0.72rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
+
+.cite-copy {
+  padding: 0.25rem 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--ac-btn-bg);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover { background: var(--ac-btn-bg-hover); }
+}
+
+/* Per-year chart. Colors validated with the dataviz palette checker:
+   light #1F5FA8 / #4A90E2 on white, dark #2A66B5 / #5596E3 on #111827. */
+:root {
+  --pub-journal    : #1F5FA8;
+  --pub-conference : #4A90E2;
+}
+html[data-theme="dark"] {
+  --pub-journal    : #2A66B5;
+  --pub-conference : #5596E3;
+}
+
+.pub-chart {
+  display: block;                 /* the theme makes <figure> a flex row */
+  margin: 1.25rem 0 0.5rem;
+  max-width: 34rem;
+}
+
+.pub-chart__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ac-ink);
+}
+
+.pub-chart__legend {
+  display: inline-flex;
+  gap: 0.9rem;
+  font-weight: 400;
+  color: var(--ac-muted);
+  font-size: 0.8rem;
+
+  span { display: inline-flex; align-items: center; gap: 0.35rem; }
+}
+
+.pub-chart__key {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 2px;
+  &--journal    { background: var(--pub-journal); }
+  &--conference { background: var(--pub-conference); }
+}
+
+.pub-chart__plot {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 9rem;
+  padding-top: 1.1rem;            /* room for the total above the tallest bar */
+  border-bottom: 1px solid var(--ac-line);
+}
+
+.pub-chart__col {
+  position: relative;
+  flex: 1 1 0;
+  max-width: 3.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  outline: none;
+
+  /* hover / focus tooltip */
+  &::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 0.2rem);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: var(--ac-ink);
+    color: var(--global-bg-color);
+    font-size: 0.7rem;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s ease;
+    z-index: 2;
+  }
+  &:hover::after, &:focus-visible::after { opacity: 1; }
+  &:hover .pub-chart__stack, &:focus-visible .pub-chart__stack { filter: brightness(1.1); }
+}
+
+.pub-chart__total {
+  font-size: 0.7rem;
+  color: var(--ac-muted);
+  line-height: 1.4;
+}
+
+.pub-chart__stack {
+  width: 70%;
+  max-width: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                        /* surface gap between segments */
+  min-height: 4px;
+}
+
+.pub-chart__seg {
+  display: block;
+  flex-basis: 0;
+  min-height: 3px;
+  &--journal    { background: var(--pub-journal); }
+  &--conference { background: var(--pub-conference); }
+  &:first-child { border-radius: 4px 4px 0 0; }
+}
+
+.pub-chart__year {
+  position: absolute;
+  top: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--ac-muted);
+}
+
+.pub-chart__table {
+  margin-top: 1.6rem;
+  font-size: 0.8rem;
+
+  summary { cursor: pointer; color: var(--ac-accent); font-weight: 600; }
+  table { margin-top: 0.5rem; max-width: 22rem; font-size: 0.8rem; }
+  th, td { padding: 0.2rem 0.6rem; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+}
+
+/* Filtered-out entries: [hidden] must win over the grid/flex display above */
+.pub-list[hidden],
+.pub-list [hidden],
+h2[hidden] { display: none !important; }
+
+/* ==========================================================================
+   Publications summary box: compact stat circles + per-year chart + topics
+   ========================================================================== */
+
+.pub-summary {
+  margin: 1rem 0 0.5rem;
+  padding: 1rem 1.1rem 0.6rem;
+  border: 1px solid var(--ac-line);
+  border-radius: 18px 4px 18px 4px;
+  background: var(--ac-panel);
+}
+
+.stat-row--compact {
+  gap: 0.6rem;
+  margin: 0 0 0.9rem;
+  justify-content: space-between;
+
+  li {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.3rem;
+    font-size: 0.64rem;
+    text-align: center !important;
+    white-space: nowrap;
+    border-width: 1.5px;
+    background: var(--global-bg-color);
+  }
+  strong { font-size: 1.35rem; }
+
+  /* OpenAlex figures: same circle, darker ring */
+  .stat-row__oa { border-color: var(--ac-accent); }
+}
+
+.pub-summary__panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 1.5rem;
+  align-items: start;
+
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
+
+  .pub-chart { margin: 0; max-width: none; }
+  .pub-chart__plot { height: 7rem; }
+  .pub-chart__table { margin-top: 1.4rem; }
+}
+
+.pub-topics {
+  display: block;
+  margin: 0;
+}
+
+.pub-topics__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 5.5rem 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.45rem;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-align: left;
+  }
+}
+
+.pub-topics__name { color: var(--ac-ink); }
+
+.pub-topics__bar {
+  display: block;
+  height: 0.55rem;
+  border-radius: 0 4px 4px 0;
+  background: var(--ac-line);
+
+  i {
+    display: block;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    background: var(--pub-journal);
+  }
+}
+
+.pub-topics__count {
+  text-align: right;
+  color: var(--ac-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-summary__source {
+  margin: 0.6rem 0 0 !important;
+  font-size: 0.7rem !important;
+  color: var(--ac-muted);
+  text-align: left !important;
+}
+
+/* ==========================================================================
+   ACCENT COLOR SWITCH
+   _config.yml → accent_color: "blue" (default) | "red" (TU/e red)
+   The layout sets <html data-accent="…">; everything above uses these
+   variables, so only this block changes per accent.
+   --brand-* are fixed light tints for figures (diagram boxes) that stay
+   light in dark mode.
+   ========================================================================== */
+
+:root {
+  --brand-main   : #1F5FA8;
+  --brand-light  : #7FB2E5;
+  --brand-pale   : #DCE9F7;
+  --brand-tint   : #F5F8FC;
+  --brand-border : #C9DBEF;
+  --brand-shadow : rgba(31, 95, 168, 0.25);
+}
+
+/* ---------- TU/e red, light mode ---------- */
+html[data-accent="red"] {
+  --brand-main   : #B81B24;
+  --brand-light  : #E58A90;
+  --brand-pale   : #F7DFE1;
+  --brand-tint   : #FCF5F5;
+  --brand-border : #EFC9CC;
+  --brand-shadow : rgba(184, 27, 36, 0.25);
+
+  --global-base-color                : #B81B24;
+  --global-link-color                : #B81B24;
+  --global-link-color-hover          : #8A141B;
+  --global-link-color-visited        : #9E1820;
+  --global-masthead-link-color-hover : #B81B24;
+  --global-dark-border-color         : #F7DFE1;
+  --global-thead-color               : #FCF5F5;
+  --global-footer-bg-color           : #FCF7F7;
+
+  --ac-accent        : #B81B24;
+  --ac-accent-2      : #E58A90;
+  --ac-line          : #F3D9DB;
+  --ac-panel         : rgba(247, 223, 225, 0.35);
+  --ac-btn-bg        : #B81B24;
+  --ac-btn-bg-hover  : #8A141B;
+
+  --ac-new-bg        : #B81B24;  --ac-new-fg        : #fff;
+  --ac-upcoming-bg   : #F7DFE1;  --ac-upcoming-fg   : #8A141B;  --ac-upcoming-dot : #E58A90;
+  --ac-info-bg       : #F7DFE1;  --ac-info-fg       : #8A141B;
+
+  --ac-q1-bg         : #B81B24;  --ac-q1-fg         : #fff;
+  --ac-q2-bg         : #E58A90;  --ac-q2-fg         : #4A0B0F;
+  --ac-q3-bg         : #F7DFE1;  --ac-q3-fg         : #8A141B;
+
+  --ac-map-talk      : #B81B24;
+  --ac-map-visit     : #E58A90;
+  --ac-map-career    : #5C0E13;
+
+  /* Chart pair validated with the dataviz palette checker (all checks pass) */
+  --pub-journal      : #B81B24;
+  --pub-conference   : #E5636A;
+}
+
+/* ---------- TU/e red, dark mode ---------- */
+html[data-accent="red"][data-theme="dark"] {
+  --global-base-color                : #C4303A;
+  --global-link-color                : #F08A91;
+  --global-link-color-hover          : #F6B3B7;
+  --global-link-color-visited        : #F29CA2;
+  --global-masthead-link-color-hover : #F08A91;
+  --global-dark-border-color         : #4A2A30;
+
+  --ac-accent        : #F08A91;
+  --ac-accent-2      : #C4303A;
+  --ac-line          : #3A2A31;
+  --ac-panel         : rgba(240, 138, 145, 0.06);
+  --ac-btn-bg        : #C4303A;
+  --ac-btn-bg-hover  : #D44A53;
+
+  --ac-new-bg        : #F08A91;                   --ac-new-fg      : #1A0A0C;
+  --ac-upcoming-bg   : rgba(240, 138, 145, 0.18); --ac-upcoming-fg : #F6B3B7;  --ac-upcoming-dot : #F08A91;
+  --ac-info-bg       : rgba(240, 138, 145, 0.18); --ac-info-fg     : #F6B3B7;
+
+  --ac-q1-bg         : #F08A91;                   --ac-q1-fg       : #1A0A0C;
+  --ac-q2-bg         : rgba(240, 138, 145, 0.35); --ac-q2-fg       : #E5E7EB;
+  --ac-q3-bg         : rgba(240, 138, 145, 0.15); --ac-q3-fg       : #F6B3B7;
+
+  --ac-map-talk      : #F08A91;
+  --ac-map-visit     : #F6C3C6;
+  --ac-map-career    : #C4303A;
+
+  /* Dark-mode pair: passes with a contrast WARN, relieved by the total labels
+     above each bar and the "Show as table" view */
+  --pub-journal      : #B81E23;
+  --pub-conference   : #EC556C;
+}
+
+/* Teaching page: course overview table */
+.course-table {
+  display: table;
+  width: 100%;
+  margin: 0.3rem 0 0.9rem;
+  font-size: 0.85em;
+  border-collapse: collapse;
+
+  th, td { padding: 0.35rem 0.5rem; text-align: left; vertical-align: top; border: none; border-bottom: 1px solid var(--ac-line); }
+  thead th { border-bottom: 2px solid var(--ac-accent); }
+}
+.course-table__years { white-space: nowrap; }
+.course-notes { margin: 0 0 1rem 1.1rem; padding: 0; font-size: 0.9em; li { margin-bottom: 0.35rem; } }

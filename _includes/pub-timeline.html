@@ -3,11 +3,14 @@
   Params:
     items  - list of entries, already ordered newest first
     prefix - label prefix, e.g. "J" or "C" (numbering counts down so the oldest is 1)
+    type   - "journal" or "conference" (used by the filters and the BibTeX entry type)
   Entry fields: authors, title, venue, year, link_url, quartile (Q1-Q4), status
   The link label is "DOI" for doi.org links and "Link" otherwise.
+  Each entry gets a "Cite" button that shows a BibTeX entry built from these fields.
 {% endcomment %}
 {%- assign prev_year = "" -%}
-<div class="timeline">
+{%- assign lb = "{" -%}{%- assign rb = "}" -%}
+<div class="timeline pub-list" data-type="{{ include.type }}">
 {%- for p in include.items -%}
   {%- if p.year != prev_year -%}
     {%- unless forloop.first %}</ul></div>{% endunless %}
@@ -16,7 +19,21 @@
     <ul class="entry-list entry-list--pubs">
     {%- assign prev_year = p.year -%}
   {%- endif %}
-      <li>
+    {%- assign head = p.authors | slice: 0, 8 -%}
+    {%- assign plain_authors = p.authors | strip_html -%}
+    {%- assign first_last = plain_authors | split: ", " | first | split: " " | last | downcase | replace: "è", "e" | replace: "é", "e" -%}
+    {%- assign first_word = p.title | split: " " | first | downcase | remove: ":" | remove: "," -%}
+    {%- capture bibtex -%}
+@{% if include.type == "journal" %}article{% else %}inproceedings{% endif %}{{ lb }}{{ first_last }}{{ p.year }}{{ first_word }},
+  author    = {{ lb }}{{ plain_authors | replace: ", ", " and " }}{{ rb }},
+  title     = {{ lb }}{{ lb }}{{ p.title }}{{ rb }}{{ rb }},
+  {% if include.type == "journal" %}journal  {% else %}booktitle{% endif %} = {{ lb }}{{ p.venue }}{{ rb }},
+  year      = {{ lb }}{{ p.year }}{{ rb }}{% if p.link_url contains "doi.org/" %},
+  doi       = {{ lb }}{{ p.link_url | split: "doi.org/" | last }}{{ rb }}{% elsif p.link_url != "" %},
+  url       = {{ lb }}{{ p.link_url }}{{ rb }}{% endif %}
+{{ rb }}
+    {%- endcapture %}
+      <li data-type="{{ include.type }}" data-year="{{ p.year }}" data-first="{% if head == '<strong>' %}1{% else %}0{% endif %}" data-q="{{ p.quartile | default: '' }}">
         <span class="entry-tag">[{{ include.prefix }}{{ forloop.rindex }}]</span>
         <span class="entry-body">{{ p.authors }}. &ldquo;{{ p.title }},&rdquo; <i>{{ p.venue }}</i>, {{ p.year }}.
         {%- if p.quartile and p.quartile != "" %} <span class="badge badge--{{ p.quartile | downcase }}" title="SCImago Journal Rank, best quartile">{{ p.quartile }}</span>{% endif %}
@@ -24,7 +41,9 @@
         {%- if p.link_url and p.link_url != "" %}
           {%- if p.link_url contains "doi.org" %}{% assign link_label = "DOI" %}{% else %}{% assign link_label = "Link" %}{% endif %}
           <span class="entry-links"><a href="{{ p.link_url }}" target="_blank" rel="noopener noreferrer">[{{ link_label }}]</a></span>
-        {%- endif %}</span>
+        {%- endif %}
+          <button type="button" class="cite-btn" aria-expanded="false">Cite</button>
+          <span class="cite-box" hidden><pre>{{ bibtex | strip | escape }}</pre><button type="button" class="cite-copy">Copy BibTeX</button></span></span>
       </li>
 {%- endfor %}
     </ul>

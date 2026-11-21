@@ -1,0 +1,26 @@
+{% comment %}
+  Year-grouped news items (homepage).
+  Params:
+    items - news items, newest first. Each has `date` and either `text`
+            (from the page's news list) or `news` (an entry in _data/talks.yml);
+            the optional `label` / `news_label` replaces the displayed date.
+    new_s - age in seconds below which an item gets a "New" badge
+{% endcomment %}
+{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
+{%- assign years = include.items | group_by_exp: "n", "n.date | date: '%Y'" -%}
+{%- for y in years %}
+<div class="timeline__block">
+  <div class="timeline__year">{{ y.name }}</div>
+  <ul class="entry-list entry-list--news">
+  {%- for n in y.items %}
+    {%- assign n_s = n.date | date: "%s" | plus: 0 -%}
+    {%- assign age = now_s | minus: n_s -%}
+    {%- if n.news %}{% assign n_text = n.news %}{% assign n_label = n.news_label %}{% else %}{% assign n_text = n.text %}{% assign n_label = n.label %}{% endif %}
+    <li>
+      <span class="entry-date">{% if n_label %}{{ n_label }}{% else %}{{ n.date | date: "%-d %b" }}{% endif %}</span>
+      <span class="entry-body">{{ n_text }}{% if age < include.new_s %} <span class="badge badge--new">New</span>{% endif %}</span>
+    </li>
+  {%- endfor %}
+  </ul>
+</div>
+{%- endfor %}

@@ -3,6 +3,8 @@
 #   date  - YYYY-MM-DD, drives the year grouping and the "Upcoming" badge
 #   label - optional text replacing the displayed date (ranges, month only)
 #   place - key in _data/places.yml (leave empty to keep it off the map)
+#   news  - optional one-line text; adds the entry to the homepage news
+#           (news_label optionally replaces the date shown there)
 #   details - optional; adds the talk to /talks/seminars/ with abstract and
 #             speaker bios. Empty fields are left out.
 #     id       - anchor on the seminars page (lowercase, dashes)
@@ -16,29 +18,33 @@
 organized:
   - date: 2026-12-16
     title: "EES research day 2026"
+    news: "Main organizer, <a href='https://ees-tue.github.io/EES-research-day/2026/' target='_blank' rel='noopener noreferrer'>EES Research Day 2026</a>, Eindhoven"
     url: https://ees-tue.github.io/EES-research-day/2026/
     kind: "Annual Research group day"
     place: eindhoven
     info:
       summary: "Wednesday 16 December 2026, 10:00–17:00, <a href='https://www.aristo.nl/vergaderlocatie-eindhoven' target='_blank' rel='noopener noreferrer'>Aristo Meeting Center</a>, Vestdijk 30, Eindhoven. The second EES Research Day: research talks, guest speakers, alumni stories and group activities, with a shared lunch to reconnect with former EES members. <a href='https://ees-tue.github.io/EES-research-day/2026/register/' target='_blank' rel='noopener noreferrer'>How to register</a>."
       programme:
-        - time: "10:00"
+        - time: "10:00–10:30"
           item: "Walk-in and coffee"
-        - time: "10:30"
-          item: "<i>EES: past, present and the future</i>, Guus Pemen (EES group chair, TU/e)"
-        - time: "11:00"
+        - time: "10:30–11:15"
+          item: "<i>EES: past, present and the future</i>, Guus Pemen and Siep Weiland (TU/e EES and Control Systems)"
+        - time: "11:15–12:00"
           item: "<i>Power system computations: from EES to industrial practice</i>, Dr. Anton Ishchenko (Phase to Phase)"
-        - time: "11:45"
-          item: "<i>AI in grid operations projects (AI.Grids, SG-SKILL and FAIR4Communities)</i>, Nika Khosravi (RWTH Aachen University)"
-        - time: "12:30"
+        - time: "12:00–12:45"
+          item: "<i>When can we trust a learned decision?</i>, Nika Khosravi (RWTH Aachen University)"
+        - time: "12:45–14:00"
           item: "Lunch"
-        - time: "14:00"
-          item: "EES researcher presentations (5 × 15 min + Q&amp;A)"
-        - time: "15:50"
-          item: "Group activities, including an alumni and trivia quiz"
+        - time: "14:00–15:30"
+          item: "EES researcher presentations (5 talks × 15 min + 3 min Q&amp;A)"
+        - time: "15:30–15:50"
+          item: "Break"
+        - time: "15:50–17:00"
+          item: "Group activities, Anna Shuvarina"
       organizers: "Dr. Lingkang Jin (main organizer) and Dr. Nikolaos Paterakis (co-organizer), with Annemarie van de Moosdijk, Jolanda Levering, Xin Li, Stefan De Lange and Anna Shuvarina"
   - date: 2026-10-28
     title: "A Brief Introduction to Bilevel Optimization and Its Applications in Energy Systems"
+    news: "Chair, <a href='/talks/seminars/#bilevel-optimization'>cross-sectoral talk on bilevel optimization</a>, TU/e (Dr. Yasmine Beck)"
     kind: "Cross-sectoral talk"
     speakers: "Dr. <a href='https://www.tue.nl/en/research/researchers/yasmine-beck' target='_blank' rel='noopener noreferrer'>Yasmine Beck</a>"
     place: eindhoven
@@ -52,6 +58,7 @@ organized:
           bio: "Assistant Professor of Operations Management in the OPAC group at TU/e. After a PhD in Mathematical Optimization at Trier University (2024) and a postdoc at ESSEC Business School, Paris, she joined TU/e in 2026. She works on bilevel optimization and optimization under uncertainty, co-authored the book <em>Linear and Mixed-Integer Bilevel Optimization</em> and hosts the Bilevel Optimization Society Webinar Series. Her thesis received the EURO Doctoral Dissertation Award, the GOR Dissertation Award and the Helmut Kraaz-Förderpreis (all 2025)."
   - date: 2026-10-14
     title: "Asset management from the Stedin engineering perspective"
+    news: "Chair, <a href='/talks/seminars/#stedin-asset-management'>industry perspective talk on asset management</a>, TU/e (Stedin)"
     kind: "Industry perspective talk"
     speakers: "Daniël Booman, Torben Fricke and Deniz Sahin (Stedin)"
     note: "Flux 2.251, TU/e"
@@ -110,11 +117,14 @@ talks:
   - date: 2026-09-02
     label: "02–04 Sep"
     title: "Operational Decision Map for Grid Operators: Orchestration of Grid and User Assets Through Scenario Based Multi-objective Optimization"
+    news: "Speaker, <a href='https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026' target='_blank' rel='noopener noreferrer'>EIA Nordic Energy Informatics Conference 2026</a>, Reykjavik"
+    news_label: "2–4 Sep"
     venue: "Nordic Energy Informatics Academy Conference 2026"
     venue_url: "https://www.nordicenergyinformatics.academy/eia-nordic-conference-2026"
     place: reykjavik
   - date: 2026-05-22
     title: "AI-driven surrogate models for power system applications"
+    news: "Invited talk on surrogate modeling, <a href='https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/' target='_blank' rel='noopener noreferrer'>IE&amp;IS group</a>, TU/e (Dr. <a href='https://www.tue.nl/en/research/researchers/laurens-bliek' target='_blank' rel='noopener noreferrer'>Laurens Bliek</a>)"
     venue: "TU/e Information Systems group (IE&IS)"
     venue_url: "https://www.tue.nl/en/research/research-groups/industrial-engineering/information-systems-ieis/"
     kind: "Invited talk"

@@ -4,8 +4,11 @@ title: "Projects"
 permalink: /portfolio/
 author_profile: true
 
-# Projects are listed in the order below (most recent first).
-# Fields: title, subtitle, period, funding, excerpt, link, role, partners (list), image
+# Projects are listed in the order below (most recent first). The CV links here.
+# Fields: title, subtitle, period, funding, excerpt, link, role, partners (list), image,
+#         outputs (list of { label, url }; papers, talks or software from the project)
+# show_images: true shows each project's `image` (logo/photo) next to the card.
+show_images: false
 projects:
   - title: "SG-SKILL"
     subtitle: "Skill-based education for smart-grid job profiles"
@@ -39,6 +42,9 @@ projects:
     excerpt: "Coordination and orchestration of grid and user assets to solve congestion caused by the growing share of renewables, while maintaining component reliability."
     link: "https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711"
     role: "Leader of Result 4: development and integration of the optimization module."
+    outputs:
+      - label: "Operational decision map for grid operators (EIA Nordic 2026)"
+        url: "/publications/"
     image: "/images/orkest.jpg"
     partners:
       - Stedin
@@ -54,7 +60,12 @@ projects:
     funding: "RVO-MOOI (Netherlands Enterprise Agency)"
     excerpt: "Demonstration of low-voltage congestion management using day-ahead steering profiles for home batteries."
     link: "https://projecten.topsectorenergie.nl/projecten/netoptimalisatie-voor-grootschalige-inpassing-zon-en-windstroom-middels-opslag-en-software-36476"
-    role: "Research, development and deployment of the day-ahead battery steering algorithm for congestion management."
+    role: "Research, development and deployment of the day-ahead home-battery steering algorithm for congestion management (5–6% grid relief in a low-voltage demonstrator)."
+    outputs:
+      - label: "Real-world home batteries for LV congestion management (IEEE PowerTech 2025)"
+        url: "https://doi.org/10.1109/PowerTech59965.2025.11180463"
+      - label: "Multi-objective LV congestion management with end-users and operators (ISGT Europe 2025)"
+        url: "https://doi.org/10.1109/ISGTEurope64741.2025.11305401"
     image: "/images/NOGIZMOS.jpg"
     partners:
       - Enexis Personeel B.V.
@@ -62,6 +73,11 @@ projects:
       - Coöperatie energieKansen U.A.
       - Hanze University of Applied Sciences Groningen
       - Eindhoven University of Technology
+
+  - title: "GRETHA"
+    subtitle: "A novel GReen Energy Technology based on fuel cells, Hydrogen And renewables"
+    period: "2023 – 2024"
+    funding: "Italian Ministry project"
 
   - title: "eNeuron"
     subtitle: "Greening the energy system through local energy communities"
@@ -90,6 +106,16 @@ projects:
       - ICONS
       - Portuguese Navy (Marinha Portuguesa)
       - Eindhoven University of Technology
+
+  - title: "Ricerca di Sistema Elettrico"
+    subtitle: "Methodology for the optimal energy-economic planning of a multi-energy system energy community in the medium to long term"
+    period: "2020 – 2022"
+    funding: "Italian Ministry project"
+
+  - title: "RECITY"
+    subtitle: "Resilient City: Everyday Revolution"
+    period: "2022"
+    funding: "Italian Ministry project"
 ---
 
 {% comment %}
@@ -188,6 +214,16 @@ projects:
     margin: 0.4rem 0 0;
     color: var(--muted);
   }
+  .project__partners summary { color: var(--ac-accent); }
+  .project__outputs {
+    margin: 0.4rem 0 0 1.1rem;
+    padding: 0;
+    list-style: disc;
+  }
+  .project__outputs li { margin-bottom: 0.2rem; }
+
+  /* Text-only cards (show_images: false) */
+  .project--text { grid-template-columns: 1fr; }
 
   @media (max-width: 768px) {
     .project { grid-template-columns: 1fr; }
@@ -197,14 +233,15 @@ projects:
 
 <div class="portfolio">
 {% for project in page.projects %}
-  {% assign img = project.image | default: "/images/placeholder.png" %}
-  <article class="project">
+  <article class="project{% unless page.show_images %} project--text{% endunless %}">
 
+    {% if page.show_images and project.image %}
     <div class="project__media">
-      <img src="{{ img | relative_url }}"
+      <img src="{{ project.image | relative_url }}"
            alt="{{ project.title }} logo"
            loading="lazy">
     </div>
+    {% endif %}
 
     <div class="project__body">
       <h2 class="project__title">
@@ -231,6 +268,22 @@ projects:
       <ul class="project__meta">
         {% if project.role %}
           <li><strong>Role:</strong> {{ project.role }}</li>
+        {% endif %}
+        {% if project.outputs %}
+          <li>
+            <details class="project__partners">
+              <summary>Outputs ({{ project.outputs | size }})</summary>
+              <ul class="project__outputs">
+                {% for o in project.outputs %}
+                  {% if o.url contains "http" %}
+                  <li><a href="{{ o.url }}" target="_blank" rel="noopener noreferrer">{{ o.label }}</a></li>
+                  {% else %}
+                  <li><a href="{{ o.url | relative_url }}">{{ o.label }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </details>
+          </li>
         {% endif %}
         {% if project.partners %}
           <li>

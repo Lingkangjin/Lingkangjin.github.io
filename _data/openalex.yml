@@ -1,0 +1,36 @@
+# Snapshot of the OpenAlex author profile, used on /publications/ when the live
+# request in the browser fails. Refresh: re-run the snippet in README section 5.
+author_id: "A5035990121"
+orcid: "0000-0002-2993-6844"
+updated: 2026-11-21
+works_count: 34
+cited_by_count: 398
+h_index: 12
+i10_index: 12
+topics:
+  - name: "Hybrid Renewable Energy Systems"
+    field: "Energy Engineering and Power Technology"
+    count: 20
+  - name: "Integrated Energy Systems Optimization"
+    field: "Electrical and Electronic Engineering"
+    count: 20
+  - name: "Smart Grid Energy Management"
+    field: "Electrical and Electronic Engineering"
+    count: 12
+  - name: "Optimal Power Flow Distribution"
+    field: "Electrical and Electronic Engineering"
+    count: 10
+  - name: "Electric Power System Optimization"
+    field: "Electrical and Electronic Engineering"
+    count: 7
+citations_by_year:
+  - year: 2022
+    citations: 7
+  - year: 2023
+    citations: 33
+  - year: 2024
+    citations: 75
+  - year: 2025
+    citations: 132
+  - year: 2026
+    citations: 151

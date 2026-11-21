@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "clean" # Currently available options are "default", "air", "clean"
+accent_color             : "red"   # "red" (TU/e red #B81B24) or "blue" (#1F5FA8); colors, favicon and figures follow
 title                    : "Lingkang Jin"  # Update this with your site title
 title_separator          : "-"
 name                     : &name "Lingkang Jin"  # Update this with your name

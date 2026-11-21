@@ -1,0 +1,20 @@
+{% comment %} Year-grouped awards list from _data/awards.yml (used in the CV). {% endcomment %}
+{%- assign prev_year = "" -%}
+<div class="timeline">
+{%- for a in site.data.awards -%}
+  {%- if a.year != prev_year -%}
+    {%- unless forloop.first %}</ul></div>{% endunless %}
+  <div class="timeline__block">
+    <div class="timeline__year">{{ a.year }}</div>
+    <ul class="entry-list">
+    {%- assign prev_year = a.year -%}
+  {%- endif %}
+      <li>
+        <span class="entry-tag">[A{{ forloop.rindex }}]</span>
+        {%- if a.kind == "grant" %} <span class="badge badge--info">Grant</span>{% elsif a.kind == "finalist" %} <span class="badge badge--upcoming">Finalist</span>{% else %} <span class="badge badge--new">Award</span>{% endif %}
+        {{ a.text }}
+      </li>
+{%- endfor %}
+    </ul>
+  </div>
+</div>
